@@ -1,0 +1,386 @@
+.links-columns\@mobile {
+  @media (max-width:#{ $fablet - 1 }px) {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+}
+
+.links-columns\@fablet {
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+}
+
+.links-rows\@tablet_portrait {
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+}
+
+.links-rows\@tablet_landscape {
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+}
+
+.links-rows\@laptop {
+  @media (min-width:#{ $laptop }px) {
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+}
+
+.links-rows\@cinema {
+  @media (min-width:#{ $laptop }px) {
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+}
+
+.links_list {
+  @include primary_subtitle;
+
+  display:flex;
+  align-items:center;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+}
+
+.links-columns\@mobile .links_list {
+  @media (max-width:#{ $fablet - 1 }px) {
+    flex-direction:column;
+    
+    &:not(:last-child) {
+      margin-bottom:3rem;
+    }
+  }
+}
+
+.links-columns\@fablet .links_list {
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    flex-direction:column;
+    
+    &:not(:last-child) {
+      margin-bottom:3rem;
+    }
+  }
+}
+
+.links-rows\@fablet .links_list {
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    flex-direction:row;
+    
+    &:not(:last-child) {
+      margin-right:3rem;
+    }
+  }
+}
+
+.links-rows\@tablet_portrait .links_list {
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    flex-direction:row;
+    
+    &:not(:last-child) {
+      margin-right:4rem;
+    }
+  }
+}
+
+.links-rows\@tablet_landscape .links_list {
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    flex-direction:row;
+    
+    &:not(:last-child) {
+      margin-right:8rem;
+    }
+  }
+}
+
+.links-rows\@laptop .links_list {
+  @media (min-width:#{ $laptop }px) {
+    flex-direction:row;
+    
+    &:not(:last-child) {
+      margin-right:8rem;
+    }
+  }
+}
+
+.links-rows\@cinema .links_list {
+  @media (min-width:#{ $laptop }px) {
+    flex-direction:row;
+    
+    &:not(:last-child) {
+      margin-right:8rem;
+    }
+  }
+}
+
+.links_node:not(:last-child) {
+  @media (max-width:#{ $tablet_portrait - 1 }px) {
+    margin-right:1.5rem;
+  }
+  
+  @media (min-width:#{ $tablet_portrait }px) {
+    margin-right:2rem;
+  }
+}
+
+.links-columns\@mobile .links_node:not(:last-child),
+.links-rows\@mobile .links_node:not(:last-child) {
+  @media (max-width:#{ $fablet - 1 }px) {
+    margin-right:0;
+    position:relative;
+    
+    &:after {
+      background-color:currentColor;
+      content:'';
+      position:absolute;
+      bottom:auto;
+      left:auto;
+      right:auto;
+      top:auto;
+    }
+  }
+}
+
+.links-columns\@fablet .links_node:not(:last-child),
+.links-rows\@fablet .links_node:not(:last-child) {
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    margin-right:0;
+    position:relative;
+    
+    &:after {
+      background-color:currentColor;
+      content:'';
+      position:absolute;
+      bottom:auto;
+      left:auto;
+      right:auto;
+      top:auto;
+    }
+  }
+}
+
+.links-columns\@tablet_portrait .links_node:not(:last-child),
+.links-rows\@tablet_portrait .links_node:not(:last-child) {
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    margin-right:0;
+    position:relative;
+    
+    &:after {
+      background-color:currentColor;
+      content:'';
+      position:absolute;
+      bottom:auto;
+      left:auto;
+      right:auto;
+      top:auto;
+    }
+  }
+}
+
+.links-columns\@tablet_landscape .links_node:not(:last-child),
+.links-rows\@tablet_landscape .links_node:not(:last-child) {
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    margin-right:0;
+    position:relative;
+    
+    &:after {
+      background-color:currentColor;
+      content:'';
+      position:absolute;
+      bottom:auto;
+      left:auto;
+      right:auto;
+      top:auto;
+    }
+  }
+}
+
+.links-columns\@laptop .links_node:not(:last-child),
+.links-rows\@laptop .links_node:not(:last-child) {
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    margin-right:0;
+    position:relative;
+    
+    &:after {
+      background-color:currentColor;
+      content:'';
+      position:absolute;
+      bottom:auto;
+      left:auto;
+      right:auto;
+      top:auto;
+    }
+  }
+}
+
+.links-columns\@cinema .links_node:not(:last-child),
+.links-rows\@cinema .links_node:not(:last-child) {
+  @media (min-width:#{ $cinema }px) {
+    margin-right:0;
+    position:relative;
+    
+    &:after {
+      background-color:currentColor;
+      content:'';
+      position:absolute;
+      bottom:auto;
+      left:auto;
+      right:auto;
+      top:auto;
+    }
+  }
+}
+
+.links-columns\@mobile .links_node:not(:last-child) {
+  @media (max-width:#{ $fablet - 1 }px) {
+    margin-bottom:6rem;
+  
+    &:after {
+      height:3rem;
+      width:2px;
+
+      left:50%;
+      top:100%;
+      transform:translate3D(-50%, 1.5rem, 0);
+    }
+  }
+}
+
+.links-columns\@fablet .links_node:not(:last-child) {
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    margin-bottom:6rem;
+  
+    &:after {
+      height:3rem;
+      width:2px;
+
+      left:50%;
+      top:100%;
+      transform:translate3D(-50%, 1.5rem, 0);
+    }
+  }
+}
+
+.links-rows\@tablet_portrait .links_node:not(:last-child) {
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    margin-right:8rem;
+  
+    &:after {
+      height:2px;
+      width:4rem;
+
+      left:100%;
+      top:50%;
+      transform:translate3D(2rem, -50%, 0);
+    }
+  }
+}
+
+.links-rows\@tablet_landscape .links_node:not(:last-child) {
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    margin-right:12rem;
+  
+    &:after {
+      height:2px;
+      width:8rem;
+
+      left:100%;
+      top:50%;
+      transform:translate3D(2rem, -50%, 0);
+    }
+  }
+}
+
+.links-rows\@laptop .links_node:not(:last-child) {
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    margin-right:12rem;
+  
+    &:after {
+      height:2px;
+      width:8rem;
+
+      left:100%;
+      top:50%;
+      transform:translate3D(2rem, -50%, 0);
+    }
+  }
+}
+
+.links-rows\@cinema .links_node:not(:last-child) {
+  @media (min-width:#{ $cinema }px) {
+    margin-right:12rem;
+  
+    &:after {
+      height:2px;
+      width:8rem;
+
+      left:100%;
+      top:50%;
+      transform:translate3D(2rem, -50%, 0);
+    }
+  }
+}
+
+.links_anchor,
+.links_text {
+  display:block;
+  position:relative;
+  z-index:999;
+  
+  color:inherit;  
+  text-align:center;
+}
+
+.links_anchor {
+  &:after {
+    background-color:currentColor;
+    content:'';
+    height:2px;
+  
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:0;
+  
+    transition:width ease-in-out #{ $beat }s;
+  }
+  
+  &:hover:after,
+  &.hover:after {
+    width:100%;
+  }
+}
+
+.links_anchor[disabled] {
+  cursor:not-allowed;
+  
+  &:hover:after,
+  &.hover:after {
+    width:0;
+  }
+}

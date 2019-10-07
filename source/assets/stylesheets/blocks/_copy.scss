@@ -1,0 +1,159 @@
+.copy {  
+  h2, h3, figcaption, p {
+    @media (max-width:#{ $tablet_portrait - 1 }px) {
+      &:not(:first-child) {
+        margin-top:3rem;
+      }
+  
+      &:not(:last-child) {
+        margin-bottom:3rem;
+      }
+    }
+  
+    @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+      &:not(:first-child) {
+        margin-top:4rem;
+      }
+  
+      &:not(:last-child) {
+        margin-bottom:4rem;
+      }
+    }
+    
+    @media (min-width:#{ $tablet_landscape }px) {
+      margin-left:auto;
+      margin-right:auto;
+      max-width:calc(#{ $tablet_landscape }px - #{ 4 + 8 + 8 + 4 }rem);
+      
+      &:not(:first-child) {
+        margin-top:4rem;
+      }
+  
+      &:not(:last-child) {
+        margin-bottom:4rem;
+      }
+    }
+  }
+  
+  h2, h3 {
+    @media (max-width:#{ $tablet_portrait - 1 }px) {
+      &:not(:first-child) {
+        margin-top:4.5rem;
+      }
+    }
+  
+    @media (min-width:#{ $tablet_portrait }px) {
+      &:not(:first-child) {
+        margin-top:6rem;
+      }
+    }
+  }
+  
+  h2 + h3 {
+    @media (max-width:#{ $tablet_portrait - 1 }px) {
+      &:not(:first-child) {
+        margin-top:3rem;
+      }
+    }
+  
+    @media (min-width:#{ $tablet_portrait }px) {
+      &:not(:first-child) {
+        margin-top:4rem;
+      }
+    }
+  }
+  
+  h2 {
+    @include primary_heading;
+    color:$foreground_1;
+  }
+  
+  h3 {
+    @include secondary_heading;
+    color:$foreground_2;
+  }
+  
+  p {
+    @include primary_copy;
+    
+    a {
+      border-bottom:solid 1px currentColor;
+      color:$highlights_1;
+    
+      &:hover {
+        color:$highlights_2;
+      }
+    }
+  }
+  
+  figure {
+    @media (max-width:#{ $tablet_portrait - 1 }px) {
+      &:not(:first-child) {
+        margin-top:4.5rem;
+      }
+    
+      &:not(:last-child) {
+        margin-bottom:4.5rem;
+      }
+    }
+  
+    @media (min-width:#{ $tablet_portrait }px) {
+      &:not(:first-child) {
+        margin-top:6rem;
+      }
+    
+      &:not(:last-child) {
+        margin-bottom:6rem;
+      }
+    }
+  }
+  
+  /*
+  figure a {
+    @include secondary_plane;
+    
+    border:none;
+    display:block;
+    
+    img {
+      transform:translate3D(0, 0, 0);
+      height:auto;
+      width:100%;
+    }
+  }
+  */
+  
+  figcaption {
+    @include secondary_copy;
+    color:$foreground_2;
+  }
+  
+  img, picture {
+    display:block;
+  }
+  
+  img {
+    @media (max-width:#{ $tablet_portrait - 1 }px) {
+      transform:translate3D(-3rem, 0, 0);
+      width:calc(100% + 6rem);
+    }
+
+    @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+      transform:translate3D(-4rem, 0, 0);
+      width:calc(100% + 8rem);
+    }
+
+    @media (min-width:#{ $tablet_landscape }px) {
+      transform:translate3D(-8rem, 0, 0);
+      width:calc(100% + 16rem);
+    }
+  }
+  
+  em {
+    font-style:italic;
+  }
+
+  strong {
+    font-weight:600;
+  }
+}

@@ -1,0 +1,39 @@
+.blobs {
+  
+}
+
+.blobs_list {
+  @media (max-width:#{ $tablet_portrait - 1 }px) {
+    padding-left:3rem;
+    padding-right:3rem;
+    transform:translate3D(-3rem, 0, 0) !important;
+    width:100% !important;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    padding-left:4rem;
+    padding-right:4rem;
+    transform:translate3D(-4rem, 0, 0) !important;
+    width:100% !important;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) {
+    padding-left:8rem;
+    padding-right:8rem;
+    transform:translate3D(-8rem, 0, 0) !important;
+    width:100% !important;
+  }
+}
+
+.blobs_node {
+  img {
+    @include secondary_plane;
+    
+    transform:translate3D(0, 0, 0) !important;
+    width:100% !important;
+  }
+}
+
+a.blobs_anchor {
+  display:block;
+}

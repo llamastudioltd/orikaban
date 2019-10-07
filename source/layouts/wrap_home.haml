@@ -1,0 +1,57 @@
+= wrap_layout :default do
+  %div{ class: :lead }
+    %h1{ class: :lead_h1 } I'm Ben Sekulowicz-Barclay, a user experience&nbsp;designer. I&nbsp;help people turn their ideas into successful digital&nbsp;products.
+
+  %section{ class: :card }
+    %div{ class: :card_head }
+      %h1{ class: :card_h1 }
+        Recent Projects
+
+    %div{ class: :card_body }
+      %div{ class: [:cells, 'cells-1_up@mobile', 'cells-2_up@fablet', 'cells-2_up@tablet_portrait', 'cells-2_up@tablet_landscape', 'cells-3_up@laptop', 'cells-3_up@cinema'] }
+        %ol{ class: :cells_list }
+          - blog.articles.select { |p| !p.body.strip.empty? }[0...6].each do |post|
+            %li{ class: [:cells_node, :cell] }
+              %div{ class: :cell_head }
+                %h1{ class: :cell_h1 }
+                  = post.data.description
+
+              %div{ class: :cell_meta }
+                %div{ class: [:deets, 'deets-tags'] }
+                  %ul{ class: :deets_list }
+                    - post.tags.each do |tag|
+                      %li{ class: :deets_node }
+                        = tag
+
+              %div{ class: :cell_foot }
+                %div{ class: :calls }
+                  %ul{ class: :calls_list }
+                    %li{ class: :calls_node }
+                      %a{ class: :calls_anchor, href: post.url }
+                        View Case Study
+
+  %section{ class: :card }
+    %div{ class: :card_head }
+      %h1{ class: :card_h1 }
+        Work History
+
+    %div{ class: :card_body }
+      %div{ class: :lines }
+        %ol{ class: :lines_list }
+          - blog.articles.each do |post|
+            %li{ class: [:lines_node, :line, ('line-withCaseStudy' unless post.body.strip.empty?)] }
+              %div{ class: :line_head }
+                %h1{ class: :line_h1 }
+                  #{ post.data.title }
+
+              %div{ class: :line_meta }
+                %h2{ class: :line_h2 }
+                  = post.date.strftime('%Y')
+
+              %div{ class: :line_foot }
+                - unless post.body.strip.empty?
+                  %div{ class: :calls }
+                    %ul{ class: :calls_list }
+                      %li{ class: :calls_node }
+                        %a{ class: :calls_anchor, href: post.url }
+                          %span{ class: :calls_plus } View Case Study

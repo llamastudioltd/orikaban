@@ -1,0 +1,11 @@
+.main {
+  display:grid;
+  
+  @media (max-width:#{ $tablet_portrait - 1 }px) {
+    grid-row-gap:6rem;
+  }
+  
+  @media (min-width:#{ $tablet_portrait }px) {
+    grid-row-gap:12rem;
+  }
+}
