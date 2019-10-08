@@ -77,10 +77,12 @@
     @include primary_copy;
     
     a {
-      border-bottom:solid 1px currentColor;
+      border-bottom:solid 1px $highlights_1;
       color:$highlights_1;
+      transition:border-color ease-in-out #{ $beat }s, color ease-in-out #{ $beat }s;
     
       &:hover {
+        border-color:$highlights_2;
         color:$highlights_2;
       }
     }
@@ -108,21 +110,6 @@
     }
   }
   
-  /*
-  figure a {
-    @include secondary_plane;
-    
-    border:none;
-    display:block;
-    
-    img {
-      transform:translate3D(0, 0, 0);
-      height:auto;
-      width:100%;
-    }
-  }
-  */
-  
   figcaption {
     @include secondary_copy;
     color:$foreground_2;
@@ -130,6 +117,8 @@
   
   img, picture {
     display:block;
+    height:auto;
+    width:100%;
   }
   
   img {
