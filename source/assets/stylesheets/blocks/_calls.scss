@@ -17,10 +17,8 @@
 }
 
 .calls_anchor {
-  @include secondary_plane;
-  
   background-color:$foreground_1;
-  color:$background_2;
+  color:$background_1;
   
   align-items:stretch;
   display:flex;
@@ -37,7 +35,7 @@
   &:hover,
   &.button-over {
     background-color:$highlights_1;
-    color:$background_2;
+    color:$background_1;
   }
 }
 

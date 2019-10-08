@@ -1,7 +1,5 @@
 .cell {
-  @include primary_plane;
-  
-  background-color:$background_2;
+  background-color:$background_1;
   color:$foreground_1;
   display:grid;
   grid-template-areas:

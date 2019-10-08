@@ -1,7 +1,5 @@
 .lines {
-  @include primary_plane;
-  
-  background-color:$background_2;
+  background-color:$background_1;
   color:$foreground_1;
   
   @media (max-width:#{ $tablet_portrait - 1 }px) {

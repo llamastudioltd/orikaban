@@ -1,12 +1,12 @@
 .cells_list {
   display:grid;
+  grid-auto-rows:1fr;
 }
 
 .cells-1_up\@mobile .cells_list {
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
     grid-column-gap:3rem;
     grid-row-gap:3rem;
-    grid-auto-rows:1fr;
     grid-template-columns:1fr;
   }
 }
@@ -15,7 +15,6 @@
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
     grid-column-gap:3rem;
     grid-row-gap:3rem;
-    grid-auto-rows:1fr;
     grid-template-columns:1fr 1fr;
   }
 }
@@ -24,7 +23,6 @@
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
     grid-column-gap:4rem;
     grid-row-gap:4rem;
-    grid-auto-rows:1fr;
     grid-template-columns:1fr 1fr;
   }
 }
@@ -33,7 +31,6 @@
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
     grid-column-gap:4rem;
     grid-row-gap:4rem;
-    grid-auto-rows:1fr;
     grid-template-columns:1fr 1fr;
   }
 }
@@ -42,7 +39,6 @@
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
     grid-column-gap:4rem;
     grid-row-gap:4rem;
-    grid-auto-rows:1fr;
     grid-template-columns:1fr 1fr 1fr;
   }
 }
@@ -51,7 +47,6 @@
   @media (min-width:#{ $cinema }px) {
     grid-column-gap:4rem;
     grid-row-gap:4rem;
-    grid-auto-rows:1fr;
     grid-template-columns:1fr 1fr 1fr;
   }
 }

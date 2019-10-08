@@ -21,13 +21,15 @@ Pink 3° #ffb5b1;
 Pink 4° #ffdad8;
 */
 
-$background_1:#e3f4f4;
-$background_2:#fbfbfa;
+$background_1:#fbfbfa;
+$background_2:#f3f2f0;
+$background_3:#ebeae6;
 $foreground_1:rgba(#000000, 0.80);
-$foreground_2:rgba(#000000, 0.32);
-$foreground_3:rgba(#000000, 0.24);
+$foreground_2:rgba(#000000, 0.24);
+$foreground_3:rgba(#000000, 0.08);
 $highlights_1:#f03f35;
 $highlights_2:#fc8f88;
+$highlights_2:#ffb5b1;
 
 /*
 
@@ -188,16 +190,6 @@ $font_stack:'benton-sans', 'Helvetica Neue', Arial, sans-serif;
   line-height:3.5rem;
 }
 
-// PRIMARY PLANE: CELLS, LINES, POST 
-@mixin primary_plane {
-  box-shadow:0 0 3rem 0 rgba(0,0,0,.04);
-}
-
-// PRIMARY PLANE: CALLS
-@mixin secondary_plane {
-  box-shadow:0 0 3rem 0 rgba(0,0,0,.08);
-}
-
 html {
   font-size:8px;
   font-smoothing:subpixel-antialiased;
@@ -205,7 +197,7 @@ html {
 }
 
 body {
-  background-color:$background_1;
+  background-color:$background_3;
   color:$foreground_1;
   font-variant-numeric:tabular-nums;
 
@@ -233,7 +225,7 @@ a {
 
 ::selection {
   background-color:$highlights_1;
-  color:$background_2;
+  color:$background_1;
 }
 
 

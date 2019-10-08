@@ -94,7 +94,7 @@
 }
 
 .grid_meta {
-  color:$foreground_3;
+  color:$foreground_2;
   
   @media (max-width:#{ $tablet_portrait - 1 }px) {
     grid-area:grid_meta;
@@ -113,5 +113,5 @@
 
 .grid_footer {
   grid-area:grid_footer;
-  color:$foreground_3;
+  color:$foreground_2;
 }

@@ -30,7 +30,7 @@
   color:$foreground_2;
   
   &:not(:last-child):after {
-    content:"/";
+    content:"\B7";
   }
 }
 

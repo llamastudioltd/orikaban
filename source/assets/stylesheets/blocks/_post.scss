@@ -1,7 +1,5 @@
 .post {
-  @include primary_plane;
-  
-  background-color:$background_2;
+  background-color:$background_1;
   color:$foreground_1;
   
   @media (max-width:#{ $tablet_portrait - 1 }px) {
@@ -31,7 +29,7 @@
 }
 
 .post_head {
-  border-bottom:solid 1px $background_1;
+  border-bottom:solid 1px $background_3;
   display:grid;
   grid-template-areas:"post_tags" "." "post_desc" "." "post_misc"; 
   
