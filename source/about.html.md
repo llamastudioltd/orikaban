@@ -21,4 +21,4 @@ I'm Ben Sekulowicz-Barclay and Llama Studio is my little design agency. I'm a UX
   </picture>
 </figure>
 
-If you would like to work with me on bringing a new idea to life, on updating an existing product or on improving how design is integrated into your engineering team, get in touch via [email](mailto:hey@llama.studio), [LinkedIn](https://www.linkedin.com/company/llama-studio-ltd) or [Twitter](ttps://twitter.com/llamastudioltd).
+If you would like to work with me on bringing a new idea to life, on updating an existing product or on improving how design is integrated into your engineering team, get in touch via [email](mailto:hey@llama.studio), [LinkedIn](https://www.linkedin.com/company/llama-studio-ltd) or [Twitter](https://twitter.com/llamastudioltd).
