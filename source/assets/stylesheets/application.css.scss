@@ -175,6 +175,7 @@ $font_stack:'benton-sans', 'Helvetica Neue', Arial, sans-serif;
 
   font-size:2.25rem;
   font-family:$font_stack;
+  font-variant-numeric:tabular-nums;
   font-weight:400;
   line-height:4rem;
 }
@@ -186,6 +187,7 @@ $font_stack:'benton-sans', 'Helvetica Neue', Arial, sans-serif;
 
   font-size:2rem;
   font-family:$font_stack;
+  font-variant-numeric:tabular-nums;
   font-weight:400;
   line-height:3.5rem;
 }
@@ -199,7 +201,6 @@ html {
 body {
   background-color:$background_3;
   color:$foreground_1;
-  font-variant-numeric:tabular-nums;
 
 
   &:after {
