@@ -2,9 +2,8 @@
 %html{ lang: "#{ I18n.locale }" }
   %head
     %meta{ charset: "utf-8"}
-
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0" }
-
+    
     %meta{ name: "description", content: "#{ current_page.data.description }" }
 
     %meta{ property: "og:description", content: "#{ current_page.data.description }" }
@@ -34,11 +33,10 @@
     %div{ class: :grid }
       %header{ class: :grid_header }
         %div{ class: :logo }
-          %h1{ class: :logo_h1 }
-            %a{ class: :logo_anchor, href: "/" }
-              Llama Studio
+          %a{ class: :logo_anchor, href: "/" }
+            Llama Studio            
 
-        %menu{ class: :links }
+        %nav{ "aria-label": "secondary", class: :links }
           %ul{ class: :links_list }
             %li{ class: :links_node }
               %a{ class: [:links_anchor, "#{ "hover" if [:en].include? I18n.locale }"], href: '/' }
@@ -53,12 +51,12 @@
                 - else
                   Es<span class="hide@mobile hide@fablet hide@tablet_portrait hide@tablet_landscape">pañol</span>
 
-      %div{ class: :grid_body }
-        %main{ class: :main }
+      %main{ class: :grid_body }
+        %div{ class: :main }
           = yield
 
       %div{ class: :grid_menu }
-        %menu{ class: [:links, 'links-columns@mobile', 'links-columns@fablet', 'links-rows@tablet_portrait', 'links-rows@tablet_landscape', 'links-rows@laptop', 'links-rows@cinema']}
+        %nav{ "aria-label": "primary", class: [:links, 'links-columns@mobile', 'links-columns@fablet', 'links-rows@tablet_portrait', 'links-rows@tablet_landscape', 'links-rows@laptop', 'links-rows@cinema']}
           %ul{ class: :links_list }
             %li{ class: :links_node }
               %a{ class: [:links_anchor, "#{ "hover" if ['about'].include? current_page.data.hover }"], href: "/about/" }
@@ -82,7 +80,7 @@
                 Twitter
 
       %div{ class: :grid_meta }
-        %menu{ class: [:links, 'links-columns@mobile', 'links-columns@fablet', 'links-rows@tablet_portrait', 'links-rows@tablet_landscape', 'links-rows@laptop', 'links-rows@cinema']}
+        %div{ class: [:links, 'links-columns@mobile', 'links-columns@fablet', 'links-rows@tablet_portrait', 'links-rows@tablet_landscape', 'links-rows@laptop', 'links-rows@cinema']}
           %ul{ class: :links_list }
             %li{ class: :links_node }
               %data{ rel: :london }
@@ -92,7 +90,7 @@
                 39°28'<span class="hide@tablet_portrait hide@tablet_landscape">11.645"</span>N 00°22'<span class="hide@tablet_portrait hide@tablet_landscape">33.424"</span>E
 
       %footer{ class: :grid_footer }
-        %menu{ class: [:links, 'links-columns@mobile', 'links-columns@fablet'] }
+        %nav{ class: [:links, 'links-columns@mobile', 'links-columns@fablet'] }
           %ul{ class: :links_list }
             %li{ class: :links_node }
               &copy; Llama Studio Ltd., #{ Time.new.strftime("%Y") }

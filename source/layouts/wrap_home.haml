@@ -1,9 +1,9 @@
 = wrap_layout :default do
-  %section{ class: :lead }
+  %section{ "aria-label": "Introduction", class: :lead }
     %h1{ class: :lead_h1 } I'm Ben Sekulowicz-Barclay, a user experience&nbsp;designer. I&nbsp;help people turn their ideas into successful digital&nbsp;products.
 
-  %section{ class: :card }
-    %div{ class: :card_head }
+  %section{ "aria-label": "Recent Projects", class: :card }
+    %header{ class: :card_head }
       %h1{ class: :card_h1 }
         Recent Projects
 
@@ -30,8 +30,8 @@
                       %a{ class: :calls_anchor, href: post.url }
                         View Case Study
 
-  %section{ class: :card }
-    %div{ class: :card_head }
+  %section{ "aria-label": "Work History", class: :card }
+    %header{ class: :card_head }
       %h1{ class: :card_h1 }
         Work History
 

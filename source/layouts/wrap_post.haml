@@ -1,5 +1,5 @@
 = wrap_layout :default do
-  %article{ class: :post }
+  %article{ "aria-label": current_page.data.title, class: :post }
     - unless ['about'].include? current_page.data.hover
       %header{ class: :post_head }
         %div{ class: :post_desc }
@@ -21,6 +21,6 @@
               %li{ class: :deets_node }
                 = current_page.date.strftime('%B %Y')
 
-    %section{ class: :post_body }
+    %div{ class: :post_body }
       %div{ class: :copy }
         = yield
