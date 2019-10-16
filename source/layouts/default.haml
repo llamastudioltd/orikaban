@@ -65,7 +65,7 @@
                 - else
                   Information
             %li{ class: :links_node }
-              %a{ class: [:links_anchor, "#{ "links_anchor-over" if ["contact"].include? current_page.data.hover }"], href: "mailto:hey@llama.studio?subject=Hey Llama%20Studio!", tabindex: 3 }
+              %a{ class: [:links_anchor, "#{ "links_anchor-over" if ["contact"].include? current_page.data.hover }"], href: "mailto:hey@llama.studio?subject=Hey%20Llama%20Studio!", tabindex: 3 }
                 - if current_page.data.hover == "contact"
                   %strong Get in Touch
                 - else
