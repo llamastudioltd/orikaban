@@ -1,0 +1,99 @@
+.post {
+  background-color:#FBFBFA;
+  color:#383837;
+
+  @media (max-width:#{ $fablet - 1 }px) {
+    margin-left:-2rem;
+    margin-right:-2rem;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    margin-left:-4rem;
+    margin-right:-4rem;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $cinema }px) {
+
+  }
+}
+
+.post__header {
+  border-bottom:solid 1px #EBEAE6;
+
+  display:flex;
+  align-items:flex-star;
+  flex-direction:column-reverse;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+
+  @media (max-width:#{ $fablet - 1 }px) {
+    padding:4rem 2rem calc(4rem - 1px);
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    padding:4rem 4rem calc(4rem - 1px);
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    padding:4rem 4rem calc(4rem - 1px);
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    padding:8rem 8rem calc(8rem - 1px);
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    padding:8rem 8rem calc(8rem - 1px);
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    padding:8rem 8rem calc(8rem - 1px);
+  }
+}
+
+.post__h1 {
+  @include P4;
+  font-weight:800;
+
+  &:not(:last-child) {
+    margin-top:4rem;
+  }
+}
+
+.post__region {
+  @media (max-width:#{ $fablet - 1 }px) {
+    padding:4rem 2rem;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    padding:4rem;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    padding:4rem;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    padding:8rem;
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    padding:8rem;
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    padding:8rem;
+  }
+}

@@ -2,26 +2,25 @@
 %html{ lang: "#{ I18n.locale }" }
   %head
     %meta{ charset: "utf-8"}
-    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0" }
-    
-    %meta{ name: "description", content: "#{ current_page.data.description }" }
+    %meta{ content: "width=device-width, initial-scale=1.0", name: "viewport" }
 
     %meta{ property: "og:description", content: "#{ current_page.data.description }" }
-    %meta{ property: "og:image", content: "https://llama.studio/apple-touch-icon-180x180.png" }
-    %meta{ property: "og:title", content: "#{ current_page.data.title }" }
-    %meta{ property: "og:url", content: "https://llama.studio#{ current_page.url }" }
+    %meta{ property: "og:image", content: "/apple-touch-icon.png" }
+    %meta{ property: "og:title", content: "#{ current_page.data.title } &mdash; Llama Studio" }
+    %meta{ property: "og:url", content: "https://llama.studio" }
 
-    %link{ rel: "icon", href: "/favicon-16x16.png", sizes: "16x16", type: "image/png" }
-    %link{ rel: "icon", href: "/favicon-32x32.png", sizes: "32x32", type: "image/png" }
-    %link{ rel: "icon", href: "/favicon-96x96.png", sizes: "96x96", type: "image/png" }
+    %meta{ content: "#{ current_page.data.description }", name: "description" }
 
-    %link{ rel: "apple-touch-icon", href: "/apple-touch-icon-120x120.png" }
-    %link{ rel: "apple-touch-icon", href: "/apple-touch-icon-152x152.png", sizes: "152x152" }
-    %link{ rel: "apple-touch-icon", href: "/apple-touch-icon-167x167.png", sizes: "167x167" }
-    %link{ rel: "apple-touch-icon", href: "/apple-touch-icon-180x180.png", sizes: "180x180" }
+    %link{ rel: "icon", href: "/favicon--16x16.png", sizes: "16x16", type: "image/png" }
+    %link{ rel: "icon", href: "/favicon--32x32.png", sizes: "32x32", type: "image/png" }
+    %link{ rel: "icon", href: "/favicon--96x96.png", sizes: "96x96", type: "image/png" }
+
+    %link{ rel: "apple-touch-icon", href: "/apple-touch-icon.png" }
+    %link{ rel: "apple-touch-icon", href: "/apple-touch-icon--152x152.png", sizes: "152x152" }
+    %link{ rel: "apple-touch-icon", href: "/apple-touch-icon--167x167.png", sizes: "167x167" }
+    %link{ rel: "apple-touch-icon", href: "/apple-touch-icon--180x180.png", sizes: "180x180" }
 
     = javascript_include_tag "vendor/turbolinks-5.2.0"
-    = javascript_include_tag "application"
 
     = stylesheet_link_tag "https://use.typekit.net/bvk8xtf.css", media: "all"
     = stylesheet_link_tag "application", media: "all"
@@ -30,72 +29,114 @@
       #{ current_page.data.title } &mdash; Llama Studio
 
   %body{ id: :ue }
-    %div{ class: :grid }
-      %header{ class: :grid_header }
-        %div{ class: :logo }
-          %a{ class: :logo_anchor, href: "/", tabindex: 1 }
-            Llama Studio            
+    %div{ class: :site_header_area }
+      %div{ class: :site_header_area__region }
+        %div{ class: :site_header }
+          %div{ class: :site_header__region }
+            %a{ class: :logo, href: '/' }
+              Llama Studio
 
-        %nav{ "aria-label": "secondary", class: :links }
-          %ul{ class: :links_list }
-            %li{ class: :links_node }
-              %a{ class: [:links_anchor, "#{ "hover" if [:en].include? I18n.locale }"], href: "/", tabindex: 6 }
-                - if I18n.locale == :en
-                  %strong En<span class="hide@mobile hide@fablet hide@tablet_portrait hide@tablet_landscape">glish</span>
-                - else
-                  En<span class="hide@mobile hide@fablet hide@tablet_portrait hide@tablet_landscape">glish</span>
-            %li{ class: :links_node }
-              %a{ class: [:links_anchor, "#{ "hover" if [:es].include? I18n.locale }"], disabled: :disabled, href: "/", tabindex: 7 }
-                - if I18n.locale == :es
-                  %strong Es<span class="hide@mobile hide@fablet hide@tablet_portrait hide@tablet_landscape">pañol</span>
-                - else
-                  Es<span class="hide@mobile hide@fablet hide@tablet_portrait hide@tablet_landscape">pañol</span>
+          %div{ class: :site_header__region }
+            %div{ class: :menu }
+              %ul{ class: :menu__list }
+                %li{ class: :menu__node }
+                  %a{ class: [:menu__link, 'menu__link--over'], href: '/' }
+                    %strong En<span>glish</span>
 
-      %main{ class: :grid_body }
-        %div{ class: :main }
-          = yield
+                %li{ class: :menu__node }
+                  %a{ class: :menu__link, disabled: true, href: '/' }
+                    Es<span>pañol</span>
 
-      %div{ class: :grid_menu }
-        %nav{ "aria-label": "primary", class: [:links, "links-columns@mobile", "links-columns@fablet", "links-rows@tablet_portrait", "links-rows@tablet_landscape", "links-rows@laptop", "links-rows@cinema"]}
-          %ul{ class: :links_list }
-            %li{ class: :links_node }
-              %a{ class: [:links_anchor, "#{ "hover" if ["about"].include? current_page.data.hover }"], href: "/about/", tabindex: 2 }
-                - if current_page.data.hover == "about"
-                  %strong Information
-                - else
-                  Information
-            %li{ class: :links_node }
-              %a{ class: [:links_anchor, "#{ "links_anchor-over" if ["contact"].include? current_page.data.hover }"], href: "mailto:hey@llama.studio?subject=Hey%20Llama%20Studio!", tabindex: 3 }
-                - if current_page.data.hover == "contact"
-                  %strong Get in Touch
-                - else
-                  Get in Touch
+    %div{ class: :site_main_area }
+      %div{ class: :site_main_area__region }
+        = yield
 
-          %ul{ class: :links_list }
-            %li{ class: :links_node }
-              %a{ class: :links_anchor, href: "https://www.linkedin.com/company/llama-studio-ltd/", tabindex: 4 }
-                LinkedIn
-            %li{ class: :links_node }
-              %a{ class: :links_anchor, href: "https://twitter.com/llamastudioltd/", tabindex: 5 }
-                Twitter
+    %div{ class: :site_menu_area }
+      %div{ class: :site_menu_area__region }
+        %div{ class: :site_menu }
+          %div{ class: :site_menu__region }
+            %div{ class: [:menu, 'menu--cols@mobile', 'menu--rows@fablet', 'menu--rows@tablet_portrait', 'menu--rows@tablet_landscape', 'menu--rows@laptop', 'menu--rows@cinema'] }
+              %ul{ class: :menu__list }
+                %li{ class: :menu__node }
+                  %a{ class: [:menu__link, "#{ "menu__link--over" if ["about"].include? current_page.data.hover }"], href: '/about' }
+                    - if current_page.data.hover == "about"
+                      %strong Information
+                    - else
+                      Information
 
-      %div{ class: :grid_meta }
-        %div{ class: [:links, "links-columns@mobile", "links-columns@fablet", "links-rows@tablet_portrait", "links-rows@tablet_landscape", "links-rows@laptop", "links-rows@cinema"]}
-          %ul{ class: :links_list }
-            %li{ class: :links_node }
-              %data{ rel: :london, value: "51°30'26.359\"N 00°07'39.530\"W" }
-                51°30'<span class="hide@tablet_portrait hide@tablet_landscape">26.359"</span>N 00°07"<span class="hide@tablet_portrait hide@tablet_landscape">39.530"</span>W
-            %li{ class: :links_node }
-              %data{ rel: :valencia, value: "39°28'11.645\"N 00°22'33.424\"E" }
-                39°28'<span class="hide@tablet_portrait hide@tablet_landscape">11.645"</span>N 00°22'<span class="hide@tablet_portrait hide@tablet_landscape">33.424"</span>E
+                %li{ class: :menu__node }
+                  %a{ class: [:menu__link, "#{ "menu__link--over" if ["contact"].include? current_page.data.hover }"], href: '/contact' }
+                    - if current_page.data.hover == "contact"
+                      %strong Get in touch
+                    - else
+                      Get in touch
 
-      %footer{ class: :grid_footer }
-        %nav{ class: [:links, "links-columns@mobile", "links-columns@fablet"] }
-          %ul{ class: :links_list }
-            %li{ class: :links_node }
-              &copy; Llama Studio Ltd., #{ Time.new.strftime("%Y") }
-            %li{ class: :links_node }
-              %a{ class: :links_anchor, href: "#ue" }
-                Skip to Top
-                
-    %script{ async: true, defer: true, src: "https://cdn.simpleanalytics.io/hello.js" }
+              %ul{ class: :menu__list }
+                %li{ class: :menu__node }
+                  %a{ class: :menu__link, href: 'https://www.linkedin.com/company/llama-studio-ltd/' }
+                    LinkedIn
+
+                %li{ class: :menu__node }
+                  %a{ class: :menu__link, href: 'https://medium.com/llama-studio' }
+                    Medium
+
+    %div{ class: :site_meta_area }
+      %div{ class: :site_meta_area__region }
+        %div{ class: :site_meta }
+          %div{ class: :site_meta__region }
+            %div{ class: :card }
+              %div{ class: :card__header }
+                %h1{ class: :card__h1 }
+                  Get in touch
+
+              %div{ class: :card__region }
+                %div{ class: :gint }
+                  %dl{ class: :gint__list }
+                    %dt{ class: [:gint__node, 'gint__node--dt'] }
+                      Telephone:
+                    %dd{ class: [:gint__node, 'gint__node--dd'] }
+                      %a{ class: :gint__link, href: 'tel:+447402843424' }
+                        +44 (0)7402 843 432
+                    %dt{ class: [:gint__node, 'gint__node--dt'] }
+                      Email:
+                    %dd{ class: [:gint__node, 'gint__node--dd'] }
+                      %a{ class: :gint__link, href: 'mailto:hey@llama.studio?subject=Hey%20Llama%20Studio!' }
+                        hey@llama.studio
+
+                  %dl{ class: :gint__list }
+                    %dt{ class: [:gint__node, 'gint__node--dt'] }
+                      Telephone:
+                    %dd{ class: [:gint__node, 'gint__node--dd'] }
+                      %a{ class: :gint__link, href: 'tel:+34711001218' }
+                        +34 711 001 218
+                    %dt{ class: [:gint__node, 'gint__node--dt'] }
+                      Email:
+                    %dd{ class: [:gint__node, 'gint__node--dd'] }
+                      %a{ class: :gint__link, href: 'mailto:oye@llama.studio?subject=¡Oye%20Llama%20Studio!' }
+                        oye@llama.studio
+
+          %div{ class: :site_meta__region }
+            %div{ class: :card }
+              %div{ class: :card__header }
+                %h1{ class: :card__h1 }
+                  The newsletter
+
+              %div{ class: :card__region }
+                %form{ class: :form }
+                  %ul{ class: :form__list }
+                    %li{ class: :form__node }
+                      %label{ for: :newsletter_mail }
+                      %input{ id: :newsletter_mail, type: :email, value: '' }
+
+                    %li{ class: :form__node }
+                      %button{ class: [:form_buttons__link, 'form_buttons__link--submit'], type: :submit }
+                        Subscribe
+
+    %div{ class: :site_footer_area }
+      %div{ class: :site_footer_area__region }
+        %div{ class: :site_footer }
+          %div{ class: :site_footer__region }
+            %div{ class: :menu }
+              %ul{ class: :menu__list }
+                %li{ class: :menu__node }
+                  &copy; Llama Studio Ltd., 2016&thinsp;&mdash;&thinsp;#{ Time.new.strftime("%Y") }.

@@ -105,11 +105,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  builder
-  middleman
+  builder (~> 3.0)
+  middleman (~> 4.1)
   middleman-autoprefixer
   middleman-blog
-  redcarpet
+  redcarpet (~> 3.3, >= 3.3.3)
 
 BUNDLED WITH
    2.0.1

@@ -1,0 +1,65 @@
+---
+
+title:  Hello
+
+hover:  index
+layout: default
+
+---
+
+%div{ class: :site_main }
+  %div{ class: :site_main__region }
+    %div{ class: :lead }
+      %h1{ class: :lead__h1 }
+        <strong>I'm Ben Sekulowicz-Barclay, a user experience designer.</strong> Based in Valencia, Spain, I help people all over Europe turn their ideas into successful digital products.
+
+  %div{ class: :site_main__region }
+    %div{ class: :card }
+      %div{ class: :card__header }
+        %h1{ class: :card__h1 }
+          Case Study
+
+      %div{ class: :card__region }
+        %div{ class: [:grid, 'grid--1_up@mobile', 'grid--1_up@fablet', 'grid--1_up@tablet_portrait', 'grid--1_up@tablet_landscape', 'grid--1_up@laptop', 'grid--1_up@cinema'] }
+          %ul{ class: :grid__list }
+            - blog.articles.select { |p| p.data[:category].downcase == 'case study' }.each do |post|
+              %li{ class: :grid__node }
+                %a{ class: :grid_cell, data: { category: post.data.category.downcase }, href: post.url }
+                  %div{ class: :grid_cell__header }
+                    %picture
+                      %source{ srcset: "https://via.placeholder.com/300x200/?text=Fablet", media: "(min-width:667px) and (max-width:767px)" }
+                      %source{ srcset: "https://via.placeholder.com/300x200/?text=TabletPortrait", media: "(min-width:768px) and (max-width:1023px)" }
+                      %source{ srcset: "https://via.placeholder.com/200x100/?text=TabletLandscape", media: "(min-width:1024px) and (max-width:1279px)" }
+                      %source{ srcset: "https://via.placeholder.com/200x100/?text=Laptop", media: "(min-width:1280px) and (max-width:1679px)" }
+                      %source{ srcset: "https://via.placeholder.com/200x100/?text=Cinema", media: "(min-width:1680px)"}
+                      %img{ class: :grid_cell__blob, src: "https://via.placeholder.com/300x200/", alt: "..." }
+
+                  %div{ class: :grid_cell__footer }
+                    %h1{ class: :grid_cell__h1 }
+                      #{ post.data.title }.
+
+  %div{ class: :site_main__region }
+    %div{ class: :card }
+      %div{ class: :card__header }
+        %h1{ class: :card__h1 }
+          Projects
+
+      %div{ class: :card__region }
+        %div{ class: [:grid, 'grid--1_up@mobile', 'grid--2_up@fablet', 'grid--2_up@tablet_portrait', 'grid--2_up@tablet_landscape', 'grid--3_up@laptop', 'grid--3_up@cinema'] }
+          %ul{ class: :grid__list }
+            - blog.articles.select { |p| p.data[:category].downcase != 'case study' }.each do |post|
+              %li{ class: :grid__node }
+                %a{ class: :grid_cell, data: { category: post.data.category }, href: post.url }
+                  %div{ class: :grid_cell__header }
+                    %div{ class: :grid_cell__header }
+                      %picture
+                        %source{ srcset: "https://via.placeholder.com/300x200/?text=Fablet", media: "(min-width:667px) and (max-width:767px)" }
+                        %source{ srcset: "https://via.placeholder.com/300x200/?text=TabletPortrait", media: "(min-width:768px) and (max-width:1023px)" }
+                        %source{ srcset: "https://via.placeholder.com/300x200/?text=TabletLandscape", media: "(min-width:1024px) and (max-width:1279px)" }
+                        %source{ srcset: "https://via.placeholder.com/300x200/?text=Laptop", media: "(min-width:1280px) and (max-width:1679px)" }
+                        %source{ srcset: "https://via.placeholder.com/300x200/?text=Cinema", media: "(min-width:1680px)"}
+                        %img{ class: :grid_cell__blob, src: "https://via.placeholder.com/300x200/", alt: "..." }
+
+                  %div{ class: :grid_cell__footer }
+                    %h1{ class: :grid_cell__h1 }
+                      #{ post.data.title }.

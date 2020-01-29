@@ -1,0 +1,40 @@
+.form {
+  button,
+  input {
+    border:none;
+    box-sizing:border-box;
+
+    height:6rem;
+    margin:0;
+    padding-left:2rem;
+    padding-right:2rem;
+
+    &:focus {
+      outline:none;
+    }
+  }
+
+  button {
+    background-color:#F03F35;
+    color:#FFF;
+    width:auto;
+  }
+
+  input {
+    background-color:#F7F7F5;
+    color:#383837;
+    width:100%;
+  }
+
+  label {
+    display:none;
+  }
+}
+
+.form__list {
+  display:grid;
+  grid-auto-flow:row;
+  grid-template-columns:1fr auto;
+  grid-column-gap:0;
+  grid-row-gap:0;
+}

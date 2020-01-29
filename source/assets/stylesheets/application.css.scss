@@ -2,28 +2,196 @@
 @import 'tools';
 
 /*
+COLOURS:
 
-PALLETTE:
+Grey 1°: #EBEAE6
+Grey 2°: #F3F2F0
+Grey 3°: #F7F7F5
+Grey 4°: #FBFBFA
 
-Grey 1° #ebeae6;
-Grey 2° #f3f2f0;
-Grey 3° #f7f7f5;
-Grey 4° #fbfbfa;
+Blue 1°: #B7E3E4
+Blue 2°: #D5EEEE
+Blue 3°: #E3F4F4
+Blue 4°: #F1F9F9
 
-Blue 1° #b7e3e4;
-Blue 2° #d5eeee;
-Blue 3° #e3f4f4;
-Blue 4° #f1f9f9;
+Pink 1°: #F03F35
+Pink 2°: #FC8F88
+Pink 3°: #FFB5B1
+Pink 4°: #FFDAD8
 
-Pink 1° #f03f35;
-Pink 2° #fc8f88;
-Pink 3° #ffb5b1;
-Pink 4° #ffdad8;
+Text 1°: #383837
+Text 2°: #A9A8A6
+Text 3°: #EAE9E9
+
 */
+
+/*
+SIZES:
+
+16/24 - BODY
+18/28 - PLUS 1
+28/40 - PLUS 2
+32/48 - PLUS 3
+48/64 - PLUS 4
+
+*/
+
+@mixin P0 {
+  font-size:2rem;
+  line-height:3rem;
+}
+
+@mixin P1 {
+  font-size:2.25rem;
+  line-height:4rem;
+}
+
+@mixin P2 {
+  font-size:3.5rem;
+  line-height:5rem;
+}
+
+@mixin P3 {
+  @media (max-width:#{ $fablet - 1 }px) {
+    font-size:calc(2.5vw + 2rem);
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    font-size:calc(1.5vw + 2rem);
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    font-size:calc(1.5vw + 2rem);
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    font-size:calc(1.0vw + 2rem);
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    font-size:calc(1.0vw + 2rem);
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    font-size:calc(#{ ($cinema / 100) * 1.0 }px + 2rem);
+    line-height:1.5;
+  }
+}
+
+@mixin P4 {
+  @media (max-width:#{ $fablet - 1 }px) {
+    font-size:calc(3.5vw + 2rem);
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    font-size:calc(2.5vw + 2rem);
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    font-size:calc(2.5vw + 2rem);
+    line-height:1.333;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    font-size:calc(2.0vw + 2rem);
+    line-height:1.333;
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    font-size:calc(2.0vw + 2rem);
+    line-height:1.333;
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    font-size:calc(#{ ($cinema / 100) * 2.0 }px + 2rem);
+    line-height:1.333;
+  }
+}
+
+html {
+  font-size:8px;
+  font-smoothing:subpixel-antialiased;
+  font-variant-numeric:tabular-nums;
+  text-size-adjust:none;
+}
+
+body {
+  background-color:#EBEAE6;
+  color:#383837;
+
+  &:after {
+    content:'';
+    background-image:url(../images/body-valencia.svg);
+    background-position:50% 50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    position:fixed;
+    z-index:-1;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul, figcaption, input, button {
+  @include P0;
+
+  font-family:'benton-sans', 'IBM Plex Sans', sans-serif;
+  font-weight:500;
+}
+
+a {
+  color:inherit;
+  text-decoration:none;
+}
+
+em, i {
+  font-style:italic;
+}
+
+b, strong {
+  font-weight:800;
+}
+
+@import 'layouts/site_header_area';
+@import 'layouts/site_main_area';
+@import 'layouts/site_menu_area';
+@import 'layouts/site_meta_area';
+@import 'layouts/site_footer_area';
+
+@import 'layouts/site_header';
+@import 'layouts/site_main';
+@import 'layouts/site_menu';
+@import 'layouts/site_meta';
+@import 'layouts/site_footer';
+
+@import 'objects/card';
+@import 'objects/copy';
+@import 'objects/form';
+@import 'objects/gint';
+@import 'objects/logo';
+@import 'objects/lead';
+@import 'objects/menu';
+
+@import 'objects/grid';
+@import 'objects/grid_cell';
+
+@import 'objects/post';
+@import 'objects/post_grid';
+@import 'objects/post_meta';
 
 /* ARGH! */
 
 .turbolinks-progress-bar {
-  background-color:$highlights_1;
-  height:1px;
+  background-color:#00FF00;
+  height:.5rem;
 }

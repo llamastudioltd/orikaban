@@ -1,0 +1,54 @@
+.grid_cell {
+  display:grid;
+  grid-auto-flow:row;
+  grid-template-rows:1fr;
+  grid-column-gap:0;
+  grid-row-gap:2rem;
+}
+
+.grid_cell[data-category='case study'] {
+  grid-row-gap:4rem;
+}
+
+.grid_cell__header {
+  background-color:#FBFBFA;
+  color:#383837;
+}
+
+.grid_cell__blob {
+  display:block;
+  height:auto;
+  width:100%;
+}
+
+.grid_cell__h1 {
+  @include P1;
+}
+
+.grid_cell[data-category='case study'] .grid_cell__h1 {
+  @include P3;
+
+  @media (max-width:#{ $fablet - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    max-width:calc(#{ 100% /12 * 9 } - 4rem);
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    max-width:calc(#{ 100% /12 * 8 } - 4rem);
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    max-width:calc(#{ 100% /12 * 8 } - 4rem);
+  }
+}

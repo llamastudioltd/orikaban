@@ -1,26 +1,16 @@
 = wrap_layout :default do
   %article{ "aria-label": current_page.data.title, class: :post }
     - unless ['about'].include? current_page.data.hover
-      %header{ class: :post_head }
-        %div{ class: :post_desc }
-          %h1{ class: :post_h1 }
-            #{ current_page.data.description }
-      
-        %div{ class: :post_tags }
-          %div{ class: [:deets, 'deets-tags'] }
-            %ul{ class: :deets_list }
-              - current_page.tags.each do |tag|
-                %li{ class: :deets_node }
-                  = tag
+      %header{ class: :post__header }
+        %h1{ class: :post__h1 }
+          #{ current_page.data.title }.
 
-        %div{ class: :post_misc }
-          %div{ class: [:deets, 'deets-misc'] }
-            %ul{ class: :deets_list }
-              %li{ class: :deets_node }
-                = current_page.data.author
-              %li{ class: :deets_node }
-                = current_page.date.strftime('%B %Y')
+        %div{ class: [:post_meta, 'post_meta--tags'] }
+          %ul{ class: :post_meta__list }
+            - current_page.tags.each do |tag|
+              %li{ class: :post_meta__node }
+                = tag
 
-    %div{ class: :post_body }
+    %div{ class: :post__region }
       %div{ class: :copy }
         = yield

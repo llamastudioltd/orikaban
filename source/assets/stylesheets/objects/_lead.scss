@@ -1,0 +1,35 @@
+.lead {
+  @media (max-width:#{ $fablet - 1 }px) {
+    padding-bottom:4rem;
+    padding-top:4rem;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    padding-bottom:8rem;
+    padding-top:8rem;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    padding-bottom:8rem;
+    padding-top:8rem;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    padding-bottom:8rem;
+    padding-top:8rem;
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    padding-bottom:16rem;
+    padding-top:16rem;
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    padding-bottom:16rem;
+    padding-top:16rem;
+  }
+}
+
+.lead__h1 {
+  @include P4;
+}

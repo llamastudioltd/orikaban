@@ -1,0 +1,55 @@
+.card {
+
+}
+
+.site_main .card {
+  display:grid;
+  grid-auto-flow:row;
+  grid-template-rows:1fr;
+  grid-column-gap:0;
+  grid-row-gap:6rem;
+}
+
+.site_meta .card {
+  display:grid;
+  grid-auto-flow:row;
+  grid-template-rows:1fr;
+  grid-column-gap:0;
+  grid-row-gap:2rem;
+}
+
+.card__header {
+
+}
+
+.site_main .card__h1 {
+  font-size:2rem;
+  font-weight:800;
+  line-height:3rem;
+
+  padding-left:4rem;
+  position:relative;
+
+  &:before {
+    background-color:currentColor;
+    color:currentColor;
+    content:'';
+    height:2px;
+    width:3rem;
+
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translate3D(0, -50%, 0);
+  };
+}
+
+.site_meta .card__h1 {
+  font-size:2.25rem;
+  font-weight:700;
+  line-height:3.5rem;
+}
+
+.card__region {
+
+}
