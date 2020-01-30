@@ -64,7 +64,7 @@
 }
 
 .post__h1 {
-  @include P4;
+  @include H1;
   font-weight:800;
 
   &:not(:last-child) {

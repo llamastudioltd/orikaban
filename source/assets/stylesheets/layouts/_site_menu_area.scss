@@ -1,6 +1,14 @@
 .site_menu_area {
+  color:#383837;
+
   @media (max-width:#{ $fablet - 1 }px) {
-    padding:0 2rem 4em;
+    &:not(:first-child) {
+      margin-top:4rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:4rem;
+    }
   }
 
   @media (min-width:#{ $fablet }px) {
@@ -13,32 +21,11 @@
 
     position:absolute;
     left:50%;
+    top:0;
     transform:translate3D(-50%, 0, 0);
-  }
-
-  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    top:4rem;
-  }
-
-  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    top:4rem;
-  }
-
-  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    top:4rem;
-  }
-
-  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    top:8rem;
-  }
-
-  @media (min-width:#{ $cinema }px) {
-    top:8rem;
   }
 }
 
 .site_menu_area__region {
-  margin-left:auto;
-  margin-right:auto;
-  max-width:#{ $cinema }px;
+
 }

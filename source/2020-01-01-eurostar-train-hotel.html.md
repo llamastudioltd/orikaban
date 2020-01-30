@@ -2,7 +2,7 @@
 
 title: Helping Eurostar on their journey from transport provider to travel company
 
-category: case study
+category: article
 tags: UX, Service design
 
 ---
@@ -20,34 +20,14 @@ Before 2018, Eurostar used a co-branded platform run by Expedia to up-sell hotel
 With six months until the contract with Expedia expired, I needed a strategy for how to design, build and launch a viable product on time and without a drop in sales. I was working in a domain I knew little about, with little time to speak to customers and with a team that had been rapidly assembled and never worked together.
 
 <figure>
-  <div class="post_grid post_grid--1_up@mobile post_grid--2_up@fablet post_grid--2_up@tablet_portrait post_grid--2_up@tablet_landscape post_grid--2_up@laptop post_grid--2_up@cinema">
-    <ol class="post_grid__list">
-      <li class="post_grid__node">
-        <a class="post_grid__link" href="/assets/images/20190402/01_01.png" target="_blank">
-          <picture>
-            <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/20190402/01_01@fablet.png">
-            <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/20190402/01_01@tablet_portrait.png">
-            <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/20190402/01_01@tablet_landscape.png">
-            <source media="(min-width:1280px) and (max-width:1439px)" srcset="/assets/images/20190402/01_01@laptop.png">
-            <source media="(min-width:1440px)" srcset="/assets/images/20190402/01_01@cinema.png">
-            <img src="/assets/images/20190402/01_01@mobile.png" alt="Screenshot of the AirTable used to analyse competitors" />
-          </picture>
-        </a>
-      </li>
-      <li class="post_grid__node">
-        <a class="post_grid__link" href="/assets/images/20190402/01_02.png" target="_blank">
-          <picture>
-            <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/20190402/01_02@fablet.png">
-            <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/20190402/01_02@tablet_portrait.png">
-            <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/20190402/01_02@tablet_landscape.png">
-            <source media="(min-width:1280px) and (max-width:1439px)" srcset="/assets/images/20190402/01_02@laptop.png">
-            <source media="(min-width:1440px)" srcset="/assets/images/20190402/01_02@cinema.png">
-            <img src="/assets/images/20190402/01_02@mobile.png" alt="Screenshot of the AirTable used to analyse competitors" />
-          </picture>
-        </a>
-      </li>
-    </ol>
-  </div>
+  <picture>
+    <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/20190402/01_01@fablet.png">
+    <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/20190402/01_01@tablet_portrait.png">
+    <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/20190402/01_01@tablet_landscape.png">
+    <source media="(min-width:1280px) and (max-width:1439px)" srcset="/assets/images/20190402/01_01@laptop.png">
+    <source media="(min-width:1440px)" srcset="/assets/images/20190402/01_01@cinema.png">
+    <img src="/assets/images/20190402/01_01@mobile.png" alt="Screenshot of the AirTable used to analyse competitors" />
+  </picture>
   <figcaption>I used AirTable to build a searchable database of competitor products. It contained a ranked index of layouts and features as they appeared on different providers platforms.</figcaption>
 </figure>
 
@@ -58,58 +38,14 @@ To understand what Eurostar's customers wanted from such a platform, I ran ad-ho
 The interviews revealed that the Eurostar brand carried a latent respect and trust which could be used to carve out a distinctive space for Eurostar in the market. The team adopted a principle of being as transparent and clear on pricing as possible, showing how a package was discounted and with no gimmicks around scarcity. This also positioned the small number of hotels available at launch as a positive, highlighting how Eurostar had visited and verified each hotel to reinforce the values of trustworthiness and expertise.
 
 <figure>
-  <div class="post_grid post_grid--1_up@mobile post_grid--2_up@fablet post_grid--2_up@tablet_portrait post_grid--2_up@tablet_landscape post_grid--2_up@laptop post_grid--2_up@cinema">
-    <ol class="post_grid__list">
-      <li class="post_grid__node">
-        <a class="post_grid__link" href="/assets/images/20190402/02_01.png" target="_blank">
-          <picture>
-            <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/20190402/02_01@fablet.png">
-            <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/20190402/02_01@tablet_portrait.png">
-            <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/20190402/02_01@tablet_landscape.png">
-            <source media="(min-width:1280px) and (max-width:1439px)" srcset="/assets/images/20190402/02_01@laptop.png">
-            <source media="(min-width:1440px)" srcset="/assets/images/20190402/02_01@cinema.png">
-            <img src="/assets/images/20190402/02_01@mobile.png" alt="Early wireframe of hotel search screen on desktop" />
-          </picture>
-        </a>
-      </li>
-      <li class="post_grid__node">
-        <a class="post_grid__link" href="/assets/images/20190402/02_02.png" target="_blank">
-          <picture>
-            <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/20190402/02_02@fablet.png">
-            <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/20190402/02_02@tablet_portrait.png">
-            <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/20190402/02_02@tablet_landscape.png">
-            <source media="(min-width:1280px) and (max-width:1439px)" srcset="/assets/images/20190402/02_02@laptop.png">
-            <source media="(min-width:1440px)" srcset="/assets/images/20190402/02_02@cinema.png">
-            <img src="/assets/images/20190402/02_02@mobile.png" alt="Early wireframe of hotel map screen on desktop" />
-          </picture>
-        </a>
-      </li>
-      <li class="post_grid__node">
-        <a class="post_grid__link" href="/assets/images/20190402/02_03.png" target="_blank">
-          <picture>
-            <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/20190402/02_03@fablet.png">
-            <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/20190402/02_03@tablet_portrait.png">
-            <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/20190402/02_03@tablet_landscape.png">
-            <source media="(min-width:1280px) and (max-width:1439px)" srcset="/assets/images/20190402/02_03@laptop.png">
-            <source media="(min-width:1440px)" srcset="/assets/images/20190402/02_03@cinema.png">
-            <img src="/assets/images/20190402/02_03@mobile.png" alt="Early wireframe of hotel room selection on desktop" />
-          </picture>
-        </a>
-      </li>
-      <li class="post_grid__node">
-        <a class="post_grid__link" href="/assets/images/20190402/02_04.png" target="_blank">
-          <picture>
-            <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/20190402/02_04@fablet.png">
-            <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/20190402/02_04@tablet_portrait.png">
-            <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/20190402/02_04@tablet_landscape.png">
-            <source media="(min-width:1280px) and (max-width:1439px)" srcset="/assets/images/20190402/02_04@laptop.png">
-            <source media="(min-width:1440px)" srcset="/assets/images/20190402/02_04@cinema.png">
-            <img src="/assets/images/20190402/02_04@mobile.png" alt="Early wireframe of train selection on desktop" />
-          </picture>
-        </a>
-      </li>
-    </ol>
-  </div>
+  <picture>
+    <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/20190402/02_01@fablet.png">
+    <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/20190402/02_01@tablet_portrait.png">
+    <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/20190402/02_01@tablet_landscape.png">
+    <source media="(min-width:1280px) and (max-width:1439px)" srcset="/assets/images/20190402/02_01@laptop.png">
+    <source media="(min-width:1440px)" srcset="/assets/images/20190402/02_01@cinema.png">
+    <img src="/assets/images/20190402/02_01@mobile.png" alt="Early wireframe of hotel search screen on desktop" />
+  </picture>
 
   <figcaption>Early wireframes of the Train + Hotel product showing how I integrated additional navigation and filtering elements into the existing Eurostar booking path templates.</figcaption>
 </figure>
@@ -123,34 +59,14 @@ The first version of Eurostar's new Train + Hotel platform was launched on time 
 My first step was to validate and deepen my understanding by speaking to many more customers and potential customers. These discussions reinforced what I had heard about other providers and their behaviour concerning pricing and offers, but also exposed that Eurostar was lacking in this area, especially in how cheap train tickets were frequently advertised but hard to buy. This research, running over many months, reinforced the principles the team had adopted and gave me insights that I could share with the wider business to improve how customers felt about Eurostar as a whole.
 
 <figure>
-  <div class="post_grid post_grid--1_up@mobile post_grid--2_up@fablet post_grid--2_up@tablet_portrait post_grid--2_up@tablet_landscape post_grid--2_up@laptop post_grid--2_up@cinema">
-    <ol class="post_grid__list">
-      <li class="post_grid__node">
-        <a class="post_grid__link" href="/assets/images/20190402/03_01.png">
-          <picture>
-            <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/20190402/03_01@fablet.png">
-            <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/20190402/03_01@tablet_portrait.png">
-            <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/20190402/03_01@tablet_landscape.png">
-            <source media="(min-width:1280px) and (max-width:1439px)" srcset="/assets/images/20190402/03_01@laptop.png">
-            <source media="(min-width:1440px)" srcset="/assets/images/20190402/03_01@cinema.png">
-            <img src="/assets/images/20190402/03_01@mobile.png" alt="Variant one for displaying the basket above the fold on desktop" />
-          </picture>
-        </a>
-      </li>
-      <li class="post_grid__node">
-        <a class="post_grid__link" href="/assets/images/20190402/03_02.png">
-          <picture>
-            <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/20190402/03_02@fablet.png">
-            <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/20190402/03_02@tablet_portrait.png">
-            <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/20190402/03_02@tablet_landscape.png">
-            <source media="(min-width:1280px) and (max-width:1439px)" srcset="/assets/images/20190402/03_02@laptop.png">
-            <source media="(min-width:1440px)" srcset="/assets/images/20190402/03_02@cinema.png">
-            <img src="/assets/images/20190402/03_02@mobile.png" alt="Variant two for displaying the basket above the fold on desktop" />
-          </picture>
-        </a>
-      </li>
-    </ol>
-  </div>
+  <picture>
+    <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/20190402/03_01@fablet.png">
+    <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/20190402/03_01@tablet_portrait.png">
+    <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/20190402/03_01@tablet_landscape.png">
+    <source media="(min-width:1280px) and (max-width:1439px)" srcset="/assets/images/20190402/03_01@laptop.png">
+    <source media="(min-width:1440px)" srcset="/assets/images/20190402/03_01@cinema.png">
+    <img src="/assets/images/20190402/03_01@mobile.png" alt="Variant one for displaying the basket above the fold on desktop" />
+  </picture>
   <figcaption>Responding to feedback from users, the existing Eurostar train booking template was adapted to incorporate a new  component displaying the package prominently above the fold. These two variants were tested as part of the solution.</figcaption>
 </figure>
 

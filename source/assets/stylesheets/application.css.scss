@@ -28,90 +28,119 @@ Text 3°: #EAE9E9
 /*
 SIZES:
 
-16/24 - BODY
-18/28 - PLUS 1
-28/40 - PLUS 2
-32/48 - PLUS 3
-48/64 - PLUS 4
+16
+18
+21
+24
+30
+36
+48
 
 */
 
-@mixin P0 {
+@mixin P1 {
   font-size:2rem;
   line-height:3rem;
 }
 
-@mixin P1 {
+@mixin P2 {
   font-size:2.25rem;
   line-height:4rem;
 }
 
-@mixin P2 {
-  font-size:3.5rem;
-  line-height:5rem;
-}
-
-@mixin P3 {
+@mixin H3 {
   @media (max-width:#{ $fablet - 1 }px) {
-    font-size:calc(2.5vw + 2rem);
+    font-size:2.25rem;
     line-height:1.5;
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    font-size:calc(1.5vw + 2rem);
+    font-size:2.25rem;
     line-height:1.5;
   }
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    font-size:calc(1.5vw + 2rem);
+    font-size:2.625rem;
     line-height:1.5;
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    font-size:calc(1.0vw + 2rem);
+    font-size:2.625rem;
     line-height:1.5;
   }
 
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    font-size:calc(1.0vw + 2rem);
+    font-size:3rem;
     line-height:1.5;
   }
 
   @media (min-width:#{ $cinema }px) {
-    font-size:calc(#{ ($cinema / 100) * 1.0 }px + 2rem);
+    font-size:3rem;
     line-height:1.5;
   }
 }
 
-@mixin P4 {
+@mixin H2 {
   @media (max-width:#{ $fablet - 1 }px) {
-    font-size:calc(3.5vw + 2rem);
+    font-size:2.625rem;
     line-height:1.5;
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    font-size:calc(2.5vw + 2rem);
+    font-size:2.625rem;
     line-height:1.5;
   }
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    font-size:calc(2.5vw + 2rem);
-    line-height:1.333;
+    font-size:3rem;
+    line-height:1.5;
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    font-size:calc(2.0vw + 2rem);
-    line-height:1.333;
+    font-size:3rem;
+    line-height:1.5;
   }
 
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    font-size:calc(2.0vw + 2rem);
-    line-height:1.333;
+    font-size:3.75rem;
+    line-height:1.5;
   }
 
   @media (min-width:#{ $cinema }px) {
-    font-size:calc(#{ ($cinema / 100) * 2.0 }px + 2rem);
-    line-height:1.333;
+    font-size:3.75rem;
+    line-height:1.5;
+  }
+}
+
+@mixin H1 {
+  @media (max-width:#{ $fablet - 1 }px) {
+    font-size:3rem;
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    font-size:3rem;
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    font-size:3.75rem;
+    line-height:1.4;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    font-size:3.75rem;
+    line-height:1.4;
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    font-size:6rem;
+    line-height:1.4;
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    font-size:6rem;
+    line-height:1.4;
   }
 }
 
@@ -123,8 +152,11 @@ html {
 }
 
 body {
-  background-color:#EBEAE6;
+  background-color:#F3F2F0;
   color:#383837;
+
+  font-family:'ibm-plex-sans', 'IBM Plex Sans', sans-serif;
+  font-weight:400;
 
   &:after {
     content:'';
@@ -142,13 +174,6 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6, p, dl, ol, ul, figcaption, input, button {
-  @include P0;
-
-  font-family:'benton-sans', 'IBM Plex Sans', sans-serif;
-  font-weight:500;
-}
-
 a {
   color:inherit;
   text-decoration:none;
@@ -162,32 +187,64 @@ b, strong {
   font-weight:800;
 }
 
+.hide {
+  display:none;
+}
+
+.hide\@mobile {
+  @media (max-width:#{ $fablet - 1 }px) {
+    display:none;
+  }
+}
+
+.hide\@fablet {
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    display:none;
+  }
+}
+
+.hide\@tablet_portrait {
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    display:none;
+  }
+}
+
+.hide\@tablet_landscape {
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    display:none;
+  }
+}
+
+.hide\@laptop {
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    display:none;
+  }
+}
+
+.hide\@cinema {
+  @media (min-width:#{ $cinema }px) {
+    display:none;
+  }
+}
+
+@import 'layouts/site_area';
+
+@import 'layouts/site_footer_area';
 @import 'layouts/site_header_area';
 @import 'layouts/site_main_area';
 @import 'layouts/site_menu_area';
-@import 'layouts/site_meta_area';
-@import 'layouts/site_footer_area';
-
-@import 'layouts/site_header';
-@import 'layouts/site_main';
-@import 'layouts/site_menu';
-@import 'layouts/site_meta';
-@import 'layouts/site_footer';
-
-@import 'objects/card';
-@import 'objects/copy';
-@import 'objects/form';
-@import 'objects/gint';
-@import 'objects/logo';
-@import 'objects/lead';
-@import 'objects/menu';
 
 @import 'objects/grid';
 @import 'objects/grid_cell';
 
 @import 'objects/post';
-@import 'objects/post_grid';
 @import 'objects/post_meta';
+
+@import 'objects/card';
+@import 'objects/copy';
+@import 'objects/lead';
+@import 'objects/logo';
+@import 'objects/menu';
 
 /* ARGH! */
 

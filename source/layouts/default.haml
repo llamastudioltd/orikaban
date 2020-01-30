@@ -29,114 +29,59 @@
       #{ current_page.data.title } &mdash; Llama Studio
 
   %body{ id: :ue }
-    %div{ class: :site_header_area }
-      %div{ class: :site_header_area__region }
-        %div{ class: :site_header }
-          %div{ class: :site_header__region }
-            %a{ class: :logo, href: '/' }
-              Llama Studio
+    %div{ class: :site_area, id: :site }
+      %div{ class: :site_header_area }
+        %div{ class: :site_header_area__region }
+          %a{ class: :logo, href: '/' }
+            Llama Studio
 
-          %div{ class: :site_header__region }
-            %div{ class: :menu }
-              %ul{ class: :menu__list }
-                %li{ class: :menu__node }
-                  %a{ class: [:menu__link, 'menu__link--over'], href: '/' }
-                    %strong En<span>glish</span>
+        %div{ class: :site_header_area__region }
+          %div{ class: :menu }
+            %ul{ class: :menu__list }
+              %li{ class: :menu__node }
+                %a{ class: [:menu__link, 'hover'], href: '/' }
+                  %strong
+                    En<span class="hide@fablet hide@tablet_portrait">glish</span>
 
-                %li{ class: :menu__node }
-                  %a{ class: :menu__link, disabled: true, href: '/' }
-                    Es<span>pañol</span>
+              %li{ class: :menu__node }
+                %a{ class: :menu__link, disabled: true, href: '/' }
+                  Es<span class="hide@fablet hide@tablet_portrait">pañol</span>
 
-    %div{ class: :site_main_area }
-      %div{ class: :site_main_area__region }
+      %div{ class: :site_main_area }
         = yield
 
-    %div{ class: :site_menu_area }
-      %div{ class: :site_menu_area__region }
-        %div{ class: :site_menu }
-          %div{ class: :site_menu__region }
-            %div{ class: [:menu, 'menu--cols@mobile', 'menu--rows@fablet', 'menu--rows@tablet_portrait', 'menu--rows@tablet_landscape', 'menu--rows@laptop', 'menu--rows@cinema'] }
-              %ul{ class: :menu__list }
-                %li{ class: :menu__node }
-                  %a{ class: [:menu__link, "#{ "menu__link--over" if ["about"].include? current_page.data.hover }"], href: '/about' }
-                    - if current_page.data.hover == "about"
-                      %strong Information
-                    - else
-                      Information
+      %div{ class: :site_menu_area }
+        %div{ class: :site_menu_area__region }
+          %div{ class: [:menu, 'menu--cols@mobile', 'menu--rows@tablet_portrait', 'menu--rows@tablet_landscape', 'menu--rows@laptop', 'menu--rows@cinema'] }
+            %ul{ class: :menu__list }
+              %li{ class: :menu__node }
+                %a{ class: [:menu__link, "#{ "hover" if ["about"].include? current_page.data.hover }"], href: '/about' }
+                  - if current_page.data.hover == "about"
+                    %strong Information
+                  - else
+                    Information
 
-                %li{ class: :menu__node }
-                  %a{ class: [:menu__link, "#{ "menu__link--over" if ["contact"].include? current_page.data.hover }"], href: '/contact' }
-                    - if current_page.data.hover == "contact"
-                      %strong Get in touch
-                    - else
-                      Get in touch
+              %li{ class: :menu__node }
+                %a{ class: [:menu__link, "#{ "hover" if ["contact"].include? current_page.data.hover }"], href: '/contact' }
+                  - if current_page.data.hover == "contact"
+                    %strong Get in touch
+                  - else
+                    Get in touch
 
-              %ul{ class: :menu__list }
-                %li{ class: :menu__node }
-                  %a{ class: :menu__link, href: 'https://www.linkedin.com/company/llama-studio-ltd/' }
-                    LinkedIn
+            %ul{ class: :menu__list }
+              %li{ class: :menu__node }
+                %a{ class: :menu__link, href: 'https://www.linkedin.com/company/llama-studio-ltd/' }
+                  LinkedIn
 
-                %li{ class: :menu__node }
-                  %a{ class: :menu__link, href: 'https://medium.com/llama-studio' }
-                    Medium
+              %li{ class: :menu__node }
+                %a{ class: :menu__link, href: 'https://medium.com/llama-studio' }
+                  Medium
 
-    %div{ class: :site_meta_area }
-      %div{ class: :site_meta_area__region }
-        %div{ class: :site_meta }
-          %div{ class: :site_meta__region }
-            %div{ class: :card }
-              %div{ class: :card__header }
-                %h1{ class: :card__h1 }
-                  Get in touch
+      %div{ class: :site_footer_area }
+        %div{ class: :site_footer_area__region }
 
-              %div{ class: :card__region }
-                %div{ class: :gint }
-                  %dl{ class: :gint__list }
-                    %dt{ class: [:gint__node, 'gint__node--dt'] }
-                      Telephone:
-                    %dd{ class: [:gint__node, 'gint__node--dd'] }
-                      %a{ class: :gint__link, href: 'tel:+447402843424' }
-                        +44 (0)7402 843 432
-                    %dt{ class: [:gint__node, 'gint__node--dt'] }
-                      Email:
-                    %dd{ class: [:gint__node, 'gint__node--dd'] }
-                      %a{ class: :gint__link, href: 'mailto:hey@llama.studio?subject=Hey%20Llama%20Studio!' }
-                        hey@llama.studio
-
-                  %dl{ class: :gint__list }
-                    %dt{ class: [:gint__node, 'gint__node--dt'] }
-                      Telephone:
-                    %dd{ class: [:gint__node, 'gint__node--dd'] }
-                      %a{ class: :gint__link, href: 'tel:+34711001218' }
-                        +34 711 001 218
-                    %dt{ class: [:gint__node, 'gint__node--dt'] }
-                      Email:
-                    %dd{ class: [:gint__node, 'gint__node--dd'] }
-                      %a{ class: :gint__link, href: 'mailto:oye@llama.studio?subject=¡Oye%20Llama%20Studio!' }
-                        oye@llama.studio
-
-          %div{ class: :site_meta__region }
-            %div{ class: :card }
-              %div{ class: :card__header }
-                %h1{ class: :card__h1 }
-                  The newsletter
-
-              %div{ class: :card__region }
-                %form{ class: :form }
-                  %ul{ class: :form__list }
-                    %li{ class: :form__node }
-                      %label{ for: :newsletter_mail }
-                      %input{ id: :newsletter_mail, type: :email, value: '' }
-
-                    %li{ class: :form__node }
-                      %button{ class: [:form_buttons__link, 'form_buttons__link--submit'], type: :submit }
-                        Subscribe
-
-    %div{ class: :site_footer_area }
-      %div{ class: :site_footer_area__region }
-        %div{ class: :site_footer }
-          %div{ class: :site_footer__region }
-            %div{ class: :menu }
-              %ul{ class: :menu__list }
-                %li{ class: :menu__node }
-                  &copy; Llama Studio Ltd., 2016&thinsp;&mdash;&thinsp;#{ Time.new.strftime("%Y") }.
+        %div{ class: :site_footer_area__region }
+          %div{ class: :menu }
+            %ul{ class: :menu__list }
+              %li{ class: :menu__node }
+                &copy; Llama Studio Ltd., 2016&thinsp;&mdash;&thinsp;#{ Time.new.strftime("%Y") }.

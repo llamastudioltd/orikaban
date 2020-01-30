@@ -4,7 +4,7 @@ title: Information
 description: Information
 
 hover: about
-layout: wrap_post
+layout: wrap_page
 
 ---
 

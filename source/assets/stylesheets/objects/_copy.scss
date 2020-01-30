@@ -1,95 +1,75 @@
 .copy {
-  h2, h3, figcaption, p {
-    @include P1;
+  h2, h3, dl, ol, ul, p, figcaption {
+    @include P2;
 
-    @media (max-width:#{ $tablet_landscape - 1 }px) {
-      &:not(:first-child) {
-        margin-top:4rem;
-      }
+    margin-left:auto;
+    margin-right:auto;
+    max-width:calc(#{ $tablet_landscape }px - #{ 8 + 8 + 8 + 8 }rem);
 
-      &:not(:last-child) {
-        margin-bottom:4rem;
-      }
+    &:not(:first-child) {
+      margin-top:2rem;
     }
 
+    &:not(:last-child) {
+      margin-bottom:2rem;
+    }
+  }
+
+  ol, ul, p, figcaption {
     @media (min-width:#{ $tablet_landscape }px) {
-      margin-left:auto;
-      margin-right:auto;
-      max-width:calc(#{ $tablet_landscape }px - #{ 4 + 8 + 8 + 4 }rem);
+      text-align:justify;
+    }
+  }
 
-      &:not(:first-child) {
-        margin-top:4rem;
-      }
+  p a {
+    border-bottom:solid 1px #F03F35;
+    color:#F03F35;
+    transition:border-color ease-in-out #{ $beat }s, color ease-in-out #{ $beat }s;
 
-      &:not(:last-child) {
-        margin-bottom:4rem;
-      }
+    &:hover {
+      border-color:#FC8F88;
+      color:#FC8F88;
     }
   }
 
   h2, h3 {
     &:not(:first-child) {
-      margin-top:6rem;
+      margin-top:4rem;
     }
   }
 
   h2 + h3 {
     &:not(:first-child) {
-      margin-top:4rem;
+      margin-top:2rem;
     }
   }
 
   h2 {
-    @include P2;
+    @include H2;
 
     color:#383837;
-    font-weight:800;
+    font-weight:700;
   }
 
   h3 {
-    @include P1;
+    @include H3;
 
     color:#A9A8A6;
-    font-weight:800;
-  }
-
-  p {
-    a {
-      border-bottom:solid 1px #F03F35;
-      color:#F03F35;
-      transition:border-color ease-in-out #{ $beat }s, color ease-in-out #{ $beat }s;
-
-      &:hover {
-        border-color:#F03F35;
-        color:#F03F35;
-      }
-    }
+    font-weight:700;
   }
 
   figure {
-    @media (max-width:#{ $tablet_portrait - 1 }px) {
-      &:not(:first-child) {
-        margin-top:4.5rem;
-      }
-
-      &:not(:last-child) {
-        margin-bottom:4.5rem;
-      }
+    &:not(:first-child) {
+      margin-top:4rem;
     }
 
-    @media (min-width:#{ $tablet_portrait }px) {
-      &:not(:first-child) {
-        margin-top:6rem;
-      }
-
-      &:not(:last-child) {
-        margin-bottom:6rem;
-      }
+    &:not(:last-child) {
+      margin-bottom:4rem;
     }
   }
 
   figcaption {
-    @include P0;
+    @include P1;
 
     color:#A9A8A6;
   }
@@ -101,9 +81,14 @@
   }
 
   img {
-    @media (max-width:#{ $tablet_portrait - 1 }px) {
-      transform:translate3D(-3rem, 0, 0);
-      width:calc(100% + 6rem);
+    @media (max-width:#{ $fablet - 1 }px) {
+      transform:translate3D(-2rem, 0, 0);
+      width:calc(100% + 4rem);
+    }
+
+    @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+      transform:translate3D(-4rem, 0, 0);
+      width:calc(100% + 8rem);
     }
 
     @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
@@ -115,13 +100,5 @@
       transform:translate3D(-8rem, 0, 0);
       width:calc(100% + 16rem);
     }
-  }
-
-  em {
-    font-style:italic;
-  }
-
-  strong {
-    font-weight:600;
   }
 }

@@ -1,34 +1,99 @@
 .site_footer_area {
-  background-color:#383837;
-  color:#F7F7F5;
+  color:#A9A8A6;
 
   @media (max-width:#{ $fablet - 1 }px) {
-    padding:0 2rem 4rem;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+
+    &:not(:first-child) {
+      margin-top:4rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:4rem;
+    }
+  }
+
+  @media (min-width:#{ $fablet }px) {
+    display:flex;
+    align-items:center;
+    flex-direction:row-reverse;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+
+  @media (max-width:#{ $fablet - 1 }px) {
+    &:not(:first-child) {
+      margin-top:4rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:4rem;
+    }
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    padding:0 4rem 4rem;
+    &:not(:first-child) {
+      margin-top:4rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:4rem;
+    }
   }
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    padding:0 4rem 4rem;
+    &:not(:first-child) {
+      margin-top:4rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:4rem;
+    }
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    padding:0 4rem 4rem;
+    &:not(:first-child) {
+      margin-top:8rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:8rem;
+    }
   }
 
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    padding:0 8rem 8rem;
+    &:not(:first-child) {
+      margin-top:8rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:8rem;
+    }
   }
 
   @media (min-width:#{ $cinema }px) {
-    padding:0 16rem 8rem;
+    &:not(:first-child) {
+      margin-top:8rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:8rem;
+    }
   }
 }
 
 .site_footer_area__region {
-  margin-left:auto;
-  margin-right:auto;
-  max-width:#{ $cinema }px;
+  @media (max-width:#{ $fablet - 1 }px) {
+    &:not(:last-child) {
+      margin-bottom:4rem;
+    }
+  }
+
+  @media (min-width:#{ $fablet }px) {
+
+  }
 }
