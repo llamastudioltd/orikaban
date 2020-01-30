@@ -1,5 +1,5 @@
 .site_menu_area {
-  color:#383837;
+  color:var(--foreground-body-color-1);
 
   @media (max-width:#{ $fablet - 1 }px) {
     &:not(:first-child) {

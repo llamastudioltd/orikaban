@@ -26,16 +26,18 @@ layout: default
               %a{ class: :grid_cell, data: { category: post.data.category.downcase }, href: post.url }
                 %div{ class: :grid_cell__header }
                   %picture
-                    %source{ srcset: "https://via.placeholder.com/300x200/?text=Fablet", media: "(min-width:667px) and (max-width:767px)" }
-                    %source{ srcset: "https://via.placeholder.com/300x200/?text=TabletPortrait", media: "(min-width:768px) and (max-width:1023px)" }
-                    %source{ srcset: "https://via.placeholder.com/200x100/?text=TabletLandscape", media: "(min-width:1024px) and (max-width:1279px)" }
-                    %source{ srcset: "https://via.placeholder.com/200x100/?text=Laptop", media: "(min-width:1280px) and (max-width:1679px)" }
-                    %source{ srcset: "https://via.placeholder.com/200x100/?text=Cinema", media: "(min-width:1680px)"}
-                    %img{ class: :grid_cell__blob, src: "https://via.placeholder.com/300x200/", alt: "..." }
+                    %source{ srcset: "https://via.placeholder.com/300x200/FBFBFA/FBFBFA/?text=Fablet", media: "(min-width:667px) and (max-width:767px)" }
+                    %source{ srcset: "https://via.placeholder.com/300x200/FBFBFA/FBFBFA/?text=TabletPortrait", media: "(min-width:768px) and (max-width:1023px)" }
+                    %source{ srcset: "https://via.placeholder.com/200x100/FBFBFA/FBFBFA/?text=TabletLandscape", media: "(min-width:1024px) and (max-width:1279px)" }
+                    %source{ srcset: "https://via.placeholder.com/200x100/FBFBFA/FBFBFA/?text=Laptop", media: "(min-width:1280px) and (max-width:1679px)" }
+                    %source{ srcset: "https://via.placeholder.com/200x100/FBFBFA/FBFBFA/?text=Cinema", media: "(min-width:1680px)"}
+                    %img{ src: "https://via.placeholder.com/300x200/FBFBFA/FBFBFA/", alt: "Thumbnail image - '#{ post.data.title }'" }
 
                 %div{ class: :grid_cell__footer }
                   %h1{ class: :grid_cell__h1 }
-                    #{ post.data.title }.
+                    #{ post.data.client }
+                  %h2{ class: :grid_cell__h2 }
+                    #{ post.data.title }
 
 %div{ class: :page_body_area__region }
   %div{ class: :card }
@@ -52,13 +54,15 @@ layout: default
                 %div{ class: :grid_cell__header }
                   %div{ class: :grid_cell__header }
                     %picture
-                      %source{ srcset: "https://via.placeholder.com/300x200/?text=Fablet", media: "(min-width:667px) and (max-width:767px)" }
-                      %source{ srcset: "https://via.placeholder.com/300x200/?text=TabletPortrait", media: "(min-width:768px) and (max-width:1023px)" }
-                      %source{ srcset: "https://via.placeholder.com/300x200/?text=TabletLandscape", media: "(min-width:1024px) and (max-width:1279px)" }
-                      %source{ srcset: "https://via.placeholder.com/300x200/?text=Laptop", media: "(min-width:1280px) and (max-width:1679px)" }
-                      %source{ srcset: "https://via.placeholder.com/300x200/?text=Cinema", media: "(min-width:1680px)"}
-                      %img{ class: :grid_cell__blob, src: "https://via.placeholder.com/300x200/", alt: "..." }
+                      %source{ srcset: "https://via.placeholder.com/300x200/FBFBFA/FBFBFA/?text=Fablet", media: "(min-width:667px) and (max-width:767px)" }
+                      %source{ srcset: "https://via.placeholder.com/300x200/FBFBFA/FBFBFA/?text=TabletPortrait", media: "(min-width:768px) and (max-width:1023px)" }
+                      %source{ srcset: "https://via.placeholder.com/300x200/FBFBFA/FBFBFA/?text=TabletLandscape", media: "(min-width:1024px) and (max-width:1279px)" }
+                      %source{ srcset: "https://via.placeholder.com/300x200/FBFBFA/FBFBFA/?text=Laptop", media: "(min-width:1280px) and (max-width:1679px)" }
+                      %source{ srcset: "https://via.placeholder.com/300x200/FBFBFA/FBFBFA/?text=Cinema", media: "(min-width:1680px)"}
+                      %img{ src: "https://via.placeholder.com/300x200/FBFBFA/FBFBFA/", alt: "Thumbnail image - '#{ post.data.title }'" }
 
                 %div{ class: :grid_cell__footer }
                   %h1{ class: :grid_cell__h1 }
-                    #{ post.data.title }.
+                    #{ post.data.client }
+                  %h2{ class: :grid_cell__h2 }
+                    #{ post.data.title }

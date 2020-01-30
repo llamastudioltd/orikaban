@@ -1,5 +1,5 @@
 !!! 5
-%html{ lang: "#{ I18n.locale }" }
+%html{ data: { theme: :lite }, lang: "#{ I18n.locale }" }
   %head
     %meta{ charset: "utf-8"}
     %meta{ content: "width=device-width, initial-scale=1.0", name: "viewport" }
@@ -62,7 +62,7 @@
                     Information
 
               %li{ class: :menu__node }
-                %a{ class: [:menu__link, "#{ "hover" if ["contact"].include? current_page.data.hover }"], href: '/contact' }
+                %a{ class: [:menu__link, "#{ "hover" if ["contact"].include? current_page.data.hover }"], href: 'mailto:hey@llama.studio?subject=Hey%20Llama%20Studio!' }
                   - if current_page.data.hover == "contact"
                     %strong Get in touch
                   - else

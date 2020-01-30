@@ -1,5 +1,5 @@
 .site_footer_area {
-  color:#A9A8A6;
+  color:var(--foreground-body-color-2);
 
   @media (max-width:#{ $fablet - 1 }px) {
     display:flex;

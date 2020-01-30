@@ -25,6 +25,22 @@ Text 3°: #EAE9E9
 
 */
 
+:root {
+  --background-body-color-1:#EBEAE6;
+
+  --foreground-body-color-1:#383837;
+  --foreground-body-color-2:#A9A8A6;
+
+  --background-post-color-1:#FBFBFA;
+
+  --foreground-post-color-1:#383837;
+  --foreground-post-color-2:#A9A8A6;
+
+
+  --foreground-tint-color-1:#F03F35;
+  --foreground-tint-color-2:#FC8F88;
+}
+
 /*
 SIZES:
 
@@ -152,8 +168,8 @@ html {
 }
 
 body {
-  background-color:#F3F2F0;
-  color:#383837;
+  background-color:var(--background-body-color-1);
+  color:var(--foreground-body-color-1);
 
   font-family:'ibm-plex-sans', 'IBM Plex Sans', sans-serif;
   font-weight:400;
@@ -249,6 +265,6 @@ b, strong {
 /* ARGH! */
 
 .turbolinks-progress-bar {
-  background-color:#00FF00;
+  background-color:var(--foreground-tint-color-1);
   height:.5rem;
 }

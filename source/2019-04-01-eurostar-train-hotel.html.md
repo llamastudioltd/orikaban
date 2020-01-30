@@ -1,8 +1,10 @@
 ---
 
-title: Helping Eurostar on their journey from transport provider to travel company
+title: Helping a transport provider on their journey to become a travel company
 
 category: article
+client: Eurostar
+
 tags: UX, Service design
 
 ---

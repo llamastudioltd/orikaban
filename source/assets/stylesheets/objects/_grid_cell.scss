@@ -20,25 +20,14 @@
 }
 
 .grid_cell__header {
-  background-color:#FBFBFA;
-  color:#383837;
+  img {
+    display:block;
+    height:auto;
+    width:100%;
+  }
 }
 
-.grid_cell__blob {
-  display:block;
-  height:auto;
-  width:100%;
-}
-
-.grid_cell[data-category='article'] .grid_cell__h1 {
-  @media (max-width:#{ $fablet - 1 }px) {
-    @include P2;
-  }
-
-  @media (min-width:#{ $fablet }px) {
-    @include H2;
-  }
-
+.grid_cell[data-category='article'] .grid_cell__footer {
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
     max-width:calc(#{ 100% /12 * 9 } - 4rem);
   }
@@ -52,6 +41,36 @@
   }
 }
 
-.grid_cell[data-category='project'] .grid_cell__h1 {
+.grid_cell__h1,
+.grid_cell__h2 {
+  display:inline;
+}
+
+.grid_cell__h1 {
+  font-weight:800;
+
+  &:after {
+    content:'\20\2014\20';
+    font-weight:600;
+  }
+}
+
+.grid_cell__h2 {
+  font-weight:400;
+}
+
+.grid_cell[data-category='article'] .grid_cell__h1,
+.grid_cell[data-category='article'] .grid_cell__h2 {
+  @media (max-width:#{ $fablet - 1 }px) {
+    @include P2;
+  }
+
+  @media (min-width:#{ $fablet }px) {
+    @include H2;
+  }
+}
+
+.grid_cell[data-category='project'] .grid_cell__h1,
+.grid_cell[data-category='project'] .grid_cell__h2 {
   @include P2;
 }

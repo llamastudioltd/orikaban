@@ -22,13 +22,13 @@
   }
 
   p a {
-    border-bottom:solid 1px #F03F35;
-    color:#F03F35;
+    border-bottom:solid 1px var(--foreground-tint-color-1);
+    color:var(--foreground-tint-color-1);
     transition:border-color ease-in-out #{ $beat }s, color ease-in-out #{ $beat }s;
 
     &:hover {
-      border-color:#FC8F88;
-      color:#FC8F88;
+      border-color:var(--foreground-tint-color-2);
+      color:var(--foreground-tint-color-2);
     }
   }
 
@@ -47,14 +47,14 @@
   h2 {
     @include H2;
 
-    color:#383837;
+    color:var(--foreground-post-color-1);
     font-weight:700;
   }
 
   h3 {
     @include H3;
 
-    color:#A9A8A6;
+    color:var(--foreground-post-color-2);
     font-weight:700;
   }
 
@@ -71,7 +71,7 @@
   figcaption {
     @include P1;
 
-    color:#A9A8A6;
+    color:var(--foreground-post-color-2);
   }
 
   img, picture {

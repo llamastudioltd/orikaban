@@ -9,7 +9,7 @@
 }
 
 .post_meta__node {
-  color:#F03F35;
+  color:var(--foreground-tint-color-1);
   position:relative;
 
   &:not(:last-child) {
