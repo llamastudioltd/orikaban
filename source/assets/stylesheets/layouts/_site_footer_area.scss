@@ -1,20 +1,17 @@
-.site_footer_area {
-  color:var(--foreground-body-color-2);
+[data-test=true] {
+  .site_footer_area {
+    background-color:rgba(#0F0, 0.1);
+    outline:solid 1px #0F0;
+  }
+}
 
+.site_footer_area {
   @media (max-width:#{ $fablet - 1 }px) {
     display:flex;
-    align-items:center;
+    align-items:flex-start;
     flex-direction:column;
     flex-wrap:nowrap;
-    justify-content:space-between;
-
-    &:not(:first-child) {
-      margin-top:4rem;
-    }
-
-    &:not(:last-child) {
-      margin-bottom:4rem;
-    }
+    justify-content:center;
   }
 
   @media (min-width:#{ $fablet }px) {
@@ -24,65 +21,12 @@
     flex-wrap:nowrap;
     justify-content:space-between;
   }
+}
 
-  @media (max-width:#{ $fablet - 1 }px) {
-    &:not(:first-child) {
-      margin-top:4rem;
-    }
-
-    &:not(:last-child) {
-      margin-bottom:4rem;
-    }
-  }
-
-  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    &:not(:first-child) {
-      margin-top:4rem;
-    }
-
-    &:not(:last-child) {
-      margin-bottom:4rem;
-    }
-  }
-
-  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    &:not(:first-child) {
-      margin-top:4rem;
-    }
-
-    &:not(:last-child) {
-      margin-bottom:4rem;
-    }
-  }
-
-  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    &:not(:first-child) {
-      margin-top:8rem;
-    }
-
-    &:not(:last-child) {
-      margin-bottom:8rem;
-    }
-  }
-
-  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    &:not(:first-child) {
-      margin-top:8rem;
-    }
-
-    &:not(:last-child) {
-      margin-bottom:8rem;
-    }
-  }
-
-  @media (min-width:#{ $cinema }px) {
-    &:not(:first-child) {
-      margin-top:8rem;
-    }
-
-    &:not(:last-child) {
-      margin-bottom:8rem;
-    }
+[data-test=true] {
+  .site_footer_area__region {
+    background-color:rgba(#0F0, 0.1);
+    outline:solid 1px #0F0;
   }
 }
 
@@ -93,7 +37,23 @@
     }
   }
 
-  @media (min-width:#{ $fablet }px) {
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $cinema }px) {
 
   }
 }

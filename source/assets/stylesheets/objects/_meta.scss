@@ -1,0 +1,46 @@
+[data-test=true] {
+  .meta {
+    background-color:rgba(#F00, 0.1);
+    outline:solid 1px #F00;
+  }
+}
+
+.meta {
+
+}
+
+.meta__list {
+  display:flex;
+  align-items:center;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:flex-start;
+}
+
+.meta__node {
+  &:not(:last-child) {
+    margin-right:.5rem;
+  }
+}
+
+[data-test=true] {
+  .meta__text {
+    background-color:rgba(#F00, 0.1);
+    outline:solid 1px #F00;
+  }
+}
+
+.meta__text {
+  @include to_upper;
+
+  font-family:$font_meta;
+  font-size:1.5rem;
+  font-weight:400;
+  line-height:2.5rem;
+
+  background-color:var(--link_foreground_1);
+  color:var(--link_background_1);
+  border-radius:2px;
+  display:block;
+  padding:.75rem 1.5rem;
+}

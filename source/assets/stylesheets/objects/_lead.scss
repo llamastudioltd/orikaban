@@ -1,33 +1,80 @@
+[data-test=true] {
+  .lead {
+    background-color:rgba(#F00, 0.1);
+    outline:solid 1px #F00;
+  }
+}
+
 .lead {
   @media (max-width:#{ $fablet - 1 }px) {
-
+    padding-bottom:0;
+    padding-top:0;
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-
+    padding-bottom:8rem;
+    padding-top:8rem;
   }
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    margin-bottom:8rem;
-    margin-top:16rem;
+    padding-bottom:8rem;
+    padding-top:8rem;
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    margin-bottom:8rem;
-    margin-top:16rem;
+    padding-bottom:12rem;
+    padding-top:12rem;
   }
 
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    margin-bottom:8rem;
-    margin-top:16rem;
+    padding-bottom:16rem;
+    padding-top:16rem;
   }
 
   @media (min-width:#{ $cinema }px) {
-    margin-bottom:8rem;
-    margin-top:16rem;
+    padding-bottom:16rem;
+    padding-top:16rem;
+  }
+}
+
+[data-test=true] {
+  .lead__h1 {
+    background-color:rgba(#F00, 0.1);
+    outline:solid 1px #F00;
   }
 }
 
 .lead__h1 {
-  @include H1;
+  font-family:$font_body;
+  font-weight:700;
+
+  @media (max-width:#{ $fablet - 1 }px) {
+    font-size:3.75rem;
+    line-height:5rem;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    font-size:4.5rem;
+    line-height:6rem;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    font-size:4.5rem;
+    line-height:6rem;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    font-size:4.5rem;
+    line-height:6rem;
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    font-size:6rem;
+    line-height:7.5rem;
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    font-size:6rem;
+    line-height:7.5rem;
+  }
 }

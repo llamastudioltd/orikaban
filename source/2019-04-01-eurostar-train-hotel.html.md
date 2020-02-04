@@ -4,8 +4,9 @@ title: Helping a transport provider on their journey to become a travel company
 
 category: article
 client: Eurostar
-
 tags: UX, Service design
+
+hover: index
 
 ---
 
@@ -23,12 +24,12 @@ With six months until the contract with Expedia expired, I needed a strategy for
 
 <figure>
   <picture>
-    <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/F3F2F0/F3F2F0/?text=Fablet">
-    <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/F3F2F0/F3F2F0/?text=TabletPortrait">
-    <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/200x100/F3F2F0/F3F2F0/?text=TabletLandscape">
-    <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/200x100/F3F2F0/F3F2F0/?text=Laptop">
-    <source media="(min-width:1680px)" srcset="https://via.placeholder.com/200x100/F3F2F0/F3F2F0/?text=Cinema">
-    <img alt="Thumbnail image - 'Helping a transport provider on their journey to become a travel company'" src="https://via.placeholder.com/300x200/F3F2F0/F3F2F0/">
+    <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/383837/383837/?text=Fablet">
+    <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/383837/383837/?text=TabletPortrait">
+    <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/200x100/383837/383837/?text=TabletLandscape">
+    <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/200x100/383837/383837/?text=Laptop">
+    <source media="(min-width:1680px)" srcset="https://via.placeholder.com/200x100/383837/383837/?text=Cinema">
+    <img alt="Placeholder image" src="https://via.placeholder.com/300x200/383837/383837/">
   </picture>
   <figcaption>I used AirTable to build a searchable database of competitor products. It contained a ranked index of layouts and features as they appeared on different providers platforms.</figcaption>
 </figure>
@@ -41,12 +42,12 @@ The interviews revealed that the Eurostar brand carried a latent respect and tru
 
 <figure>
   <picture>
-    <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/F3F2F0/F3F2F0/?text=Fablet">
-    <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/F3F2F0/F3F2F0/?text=TabletPortrait">
-    <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/200x100/F3F2F0/F3F2F0/?text=TabletLandscape">
-    <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/200x100/F3F2F0/F3F2F0/?text=Laptop">
-    <source media="(min-width:1680px)" srcset="https://via.placeholder.com/200x100/F3F2F0/F3F2F0/?text=Cinema">
-    <img alt="Placeholder image" src="https://via.placeholder.com/300x200/F3F2F0/F3F2F0/">
+    <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/383837/383837/?text=Fablet">
+    <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/383837/383837/?text=TabletPortrait">
+    <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/200x100/383837/383837/?text=TabletLandscape">
+    <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/200x100/383837/383837/?text=Laptop">
+    <source media="(min-width:1680px)" srcset="https://via.placeholder.com/200x100/383837/383837/?text=Cinema">
+    <img alt="Placeholder image" src="https://via.placeholder.com/300x200/383837/383837/">
   </picture>
   <figcaption>Early wireframes of the Train + Hotel product showing how I integrated additional navigation and filtering elements into the existing Eurostar booking path templates.</figcaption>
 </figure>
@@ -61,12 +62,12 @@ My first step was to validate and deepen my understanding by speaking to many mo
 
 <figure>
   <picture>
-    <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/F3F2F0/F3F2F0/?text=Fablet">
-    <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/F3F2F0/F3F2F0/?text=TabletPortrait">
-    <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/200x100/F3F2F0/F3F2F0/?text=TabletLandscape">
-    <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/200x100/F3F2F0/F3F2F0/?text=Laptop">
-    <source media="(min-width:1680px)" srcset="https://via.placeholder.com/200x100/F3F2F0/F3F2F0/?text=Cinema">
-    <img alt="Placeholder image" src="https://via.placeholder.com/300x200/F3F2F0/F3F2F0/">
+    <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/383837/383837/?text=Fablet">
+    <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/383837/383837/?text=TabletPortrait">
+    <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/200x100/383837/383837/?text=TabletLandscape">
+    <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/200x100/383837/383837/?text=Laptop">
+    <source media="(min-width:1680px)" srcset="https://via.placeholder.com/200x100/383837/383837/?text=Cinema">
+    <img alt="Placeholder image" src="https://via.placeholder.com/300x200/383837/383837/">
   </picture>
   <figcaption>Responding to feedback from users, the existing Eurostar train booking template was adapted to incorporate a new  component displaying the package prominently above the fold. These two variants were tested as part of the solution.</figcaption>
 </figure>

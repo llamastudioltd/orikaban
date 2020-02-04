@@ -4,5 +4,8 @@ title: Reimagining the way the automotive industry design and produce new vehicl
 
 category: project
 client: JATO
+tags: UX, Service design
+
+hover: index
 
 ---
