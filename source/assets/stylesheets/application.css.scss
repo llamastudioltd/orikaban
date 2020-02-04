@@ -25,22 +25,22 @@ Text 3°: #EAE9E9
 
 TYPE:
 
-12/18 - META (*)
+12/18
 14/22
-16/24
+16/24 - 15/24?
 18/28
-21/28 - BODY (*), CELL (M), MENU (*), POST H3 (M)
-24/32 - CARD (M), CELL (L + T), POST H3 (L + T)
-30/40 - LEAD (M), POST (M), CARD (L + T), POST H2 (L + T)
-36/48 - LEAD (T), POST (T)
-48/60 - LEAD (L), POST (L)
+21/28
+24/32
+30/40
+36/48
+48/60
 
 */
 
 $font_lead:'calluna', sans-serif;
 $font_head:'calluna', sans-serif;
 $font_body:'calluna', sans-serif;
-$font_meta:'ibm-plex-sans', sans-serif;
+$font_meta:'calluna-sans', sans-serif;
 
 html {
   font-smoothing:subpixel-antialiased;

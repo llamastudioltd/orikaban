@@ -27,7 +27,7 @@ html[data-theme="test"] {
   @include to_upper;
 
   font-family:$font_meta;
-  font-size:1.75rem;
+  font-size:1.875rem;
   font-weight:400;
   line-height:3.5rem;
 
@@ -145,7 +145,7 @@ html[data-theme="test"] {
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(6rem, -50%, 0);
+      transform:translate3D(6rem, -100%, 0);
     }
   }
 }
@@ -166,7 +166,7 @@ html[data-theme="test"] {
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(6rem, -50%, 0);
+      transform:translate3D(6rem, -100%, 0);
     }
   }
 }
@@ -187,7 +187,7 @@ html[data-theme="test"] {
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(8rem, -50%, 0);
+      transform:translate3D(8rem, -100%, 0);
     }
   }
 }
@@ -208,7 +208,7 @@ html[data-theme="test"] {
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(10rem, -50%, 0);
+      transform:translate3D(10rem, -100%, 0);
     }
   }
 }
@@ -229,7 +229,7 @@ html[data-theme="test"] {
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(10rem, -50%, 0);
+      transform:translate3D(10rem, -100%, 0);
     }
   }
 }

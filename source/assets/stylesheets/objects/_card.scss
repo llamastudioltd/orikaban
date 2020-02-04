@@ -48,7 +48,7 @@ html[data-theme="test"] {
   @include to_upper;
 
   font-family:$font_meta;
-  font-size:1.75rem;
+  font-size:1.875rem;
   font-weight:600;
   line-height:2.5rem;
 
@@ -64,6 +64,6 @@ html[data-theme="test"] {
     position:absolute;
     left:0;
     top:50%;
-    transform:translate3D(0, -50%, 0);
+    transform:translate3D(0, -100%, 0);
   }
 }
