@@ -1,4 +1,4 @@
-[data-test=true] {
+html[data-theme="test"] {
   .meta {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;
@@ -23,7 +23,7 @@
   }
 }
 
-[data-test=true] {
+html[data-theme="test"] {
   .meta__text {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;

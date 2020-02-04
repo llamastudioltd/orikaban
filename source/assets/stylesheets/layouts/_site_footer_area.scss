@@ -1,4 +1,4 @@
-[data-test=true] {
+html[data-theme="test"] {
   .site_footer_area {
     background-color:rgba(#0F0, 0.1);
     outline:solid 1px #0F0;
@@ -23,7 +23,7 @@
   }
 }
 
-[data-test=true] {
+html[data-theme="test"] {
   .site_footer_area__region {
     background-color:rgba(#0F0, 0.1);
     outline:solid 1px #0F0;

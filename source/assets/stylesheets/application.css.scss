@@ -22,24 +22,8 @@ Pink 4°: #FFDAD8
 Text 1°: #383837
 Text 2°: #A9A8A6
 Text 3°: #EAE9E9
-*/
 
-$body_background_1:#383837;
-
-$body_foreground_1:#EBEAE6;
-$body_foreground_2:#70706F;
-
-$page_background_1:#F7F7F5;
-$page_background_2:#EBEAE6;
-
-$page_foreground_1:#383837;
-$page_foreground_2:#A9A8A6;
-
-$link_background_1:#FBFBFA;
-$link_foreground_1:#F03F35;
-
-/*
-SIZES:
+TYPE:
 
 12/18 - META (*)
 14/22
@@ -50,27 +34,12 @@ SIZES:
 30/40 - LEAD (M), POST (M), CARD (L + T), POST H2 (L + T)
 36/48 - LEAD (T), POST (T)
 48/60 - LEAD (L), POST (L)
+
 */
 
 $font_head:'skolar-sans-latin', sans-serif;
 $font_body:'skolar-latin', sans-serif;
 $font_meta:'skolar-sans-latin', sans-serif;
-
-:root {
-  --body_background_1:#{ $body_background_1 };
-
-  --body_foreground_1:#{ $body_foreground_1 };
-  --body_foreground_2:#{ $body_foreground_2 };
-
-  --page_background_1:#{ $page_background_1 };
-  --page_background_2:#{ $page_background_2 };
-
-  --page_foreground_1:#{ $page_foreground_1 };
-  --page_foreground_2:#{ $page_foreground_2 };
-
-  --link_background_1:#{ $link_background_1 };
-  --link_foreground_1:#{ $link_foreground_1 };
-}
 
 html {
   font-smoothing:subpixel-antialiased;
@@ -102,7 +71,32 @@ html {
   }
 }
 
-[data-test=true] {
+:root {
+  --page_background_1:#F7F7F5;
+  --page_background_2:#EBEAE6;
+
+  --page_foreground_1:#383837;
+  --page_foreground_2:#A9A8A6;
+
+  --link_background_1:#FBFBFA;
+  --link_foreground_1:#F03F35;
+};
+
+html[data-theme="dark"] {
+  --body_background_1:#383837;
+
+  --body_foreground_1:#EBEAE6;
+  --body_foreground_2:#70706F;
+}
+
+html[data-theme="lite"] {
+  --body_background_1:#EBEAE6;
+
+  --body_foreground_1:#383837;
+  --body_foreground_2:#A9A8A6;
+}
+
+html[data-theme="test"] {
   body {
     background-color:#FFF;
     color:#000;
@@ -112,6 +106,7 @@ html {
 body {
   background-color:var(--body_background_1);
   color:var(--body_foreground_1);
+
   display:grid;
   grid-auto-flow:row;
   grid-template-rows:1fr;
@@ -120,10 +115,10 @@ body {
   margin-left:auto;
   margin-right:auto;
   max-width:calc(#{ $cinema }px - #{ 16rem + 16rem });
+  position:relative;
 
   &:after {
     content:'';
-    background-image:url(../images/body-valencia.svg);
     background-position:50% 50%;
     background-repeat:no-repeat;
     background-size:cover;
@@ -167,6 +162,18 @@ body {
   }
 }
 
+html[data-theme="dark"] {
+  body:after {
+    background-image:url(../images/dark/body-valencia.svg);
+  }
+}
+
+html[data-theme="lite"] {
+  body:after {
+    background-image:url(../images/lite/body-valencia.svg);
+  }
+}
+
 h1, h2, h3, h4, h5, h6, dl, ol, ul, p, figcaption {
   font-family:$font_body;
   font-size:2.625rem;
@@ -201,6 +208,7 @@ img[src*="placeholder"] {
 
 @import 'layouts/site_header_area';
 @import 'layouts/site_main_area';
+@import 'layouts/site_menu_area';
 @import 'layouts/site_footer_area';
 
 @import 'objects/card';
@@ -216,6 +224,6 @@ img[src*="placeholder"] {
 /* ARGH! */
 
 .turbolinks-progress-bar {
-  background-color:#0F0;
+  background-color:var(--link_foreground_1);
   height:.5rem;
 }

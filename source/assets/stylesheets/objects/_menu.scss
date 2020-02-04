@@ -1,4 +1,4 @@
-[data-test=true] {
+html[data-theme="test"] {
   .menu {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;
@@ -117,7 +117,7 @@
   }
 }
 
-[data-test=true] {
+html[data-theme="test"] {
   .menu__link,
   .menu__text {
     background-color:rgba(#F00, 0.1);
@@ -139,11 +139,8 @@
   &.hover {
     color:var(--body_foreground_1);
   }
-}
 
-.site_header_area {
-  .menu__link,
-  .menu__link strong {
+  strong {
     font-weight:400;
   }
 }

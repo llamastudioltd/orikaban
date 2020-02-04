@@ -1,5 +1,5 @@
 !!! 5
-%html{ data: { test: false }, lang: "#{ I18n.locale }" }
+%html{ data: { theme: "dark" }, lang: "#{ I18n.locale }" }
   %head
     %meta{ charset: "utf-8"}
     %meta{ content: "width=device-width, initial-scale=1.0", name: "viewport" }
@@ -34,45 +34,45 @@
         %a{ class: :logo, href: '/' }
           Llama Studio
 
-      %div{ class: :site_header_area__region }
-        %div{ class: :menu }
-          %ul{ class: :menu__list }
-            %li{ class: :menu__node }
-              %a{ class: [:menu__link, "#{ "hover" if ["index"].include? current_page.data.hover }"], href: '/' }
-                - if current_page.data.hover == "index"
-                  %strong Portfolio
-                - else
-                  Portfolio
-
-            %li{ class: :menu__node }
-              %a{ class: [:menu__link, "#{ "hover" if ["about"].include? current_page.data.hover }"], href: '/about' }
-                - if current_page.data.hover == "about"
-                  %strong About
-                - else
-                  About
-
-            %li{ class: :menu__node }
-              %a{ class: [:menu__link, "#{ "hover" if ["contact"].include? current_page.data.hover }"], href: 'mailto:hey@llama.studio?subject=Hey%20Llama%20Studio!' }
-                - if current_page.data.hover == "contact"
-                  %strong Get in touch
-                - else
-                  Get in touch
-
-          %ul{ class: :menu__list }
-            %li{ class: :menu__node }
-              %a{ class: :menu__link, href: 'https://www.linkedin.com/company/llama-studio-ltd/' }
-                LinkedIn
-
-            %li{ class: :menu__node }
-              %a{ class: :menu__link, href: 'https://medium.com/llama-studio' }
-                Medium
-
-            %li{ class: :menu__node }
-              %a{ class: :menu__link, href: 'https://twitter.com/llamastudioltd' }
-                Twitter
-
     %div{ class: :site_main_area }
       = yield
+
+    %div{ class: :site_menu_area }
+      %div{ class: :menu }
+        %ul{ class: :menu__list }
+          %li{ class: :menu__node }
+            %a{ class: [:menu__link, "#{ "hover" if ["index"].include? current_page.data.hover }"], href: '/' }
+              - if current_page.data.hover == "index"
+                %strong Portfolio
+              - else
+                Portfolio
+
+          %li{ class: :menu__node }
+            %a{ class: [:menu__link, "#{ "hover" if ["about"].include? current_page.data.hover }"], href: '/about' }
+              - if current_page.data.hover == "about"
+                %strong About
+              - else
+                About
+
+          %li{ class: :menu__node }
+            %a{ class: [:menu__link, "#{ "hover" if ["contact"].include? current_page.data.hover }"], href: 'mailto:hey@llama.studio?subject=Hey%20Llama%20Studio!' }
+              - if current_page.data.hover == "contact"
+                %strong Get in touch
+              - else
+                Get in touch
+
+        %ul{ class: :menu__list }
+          %li{ class: :menu__node }
+            %a{ class: :menu__link, href: 'https://www.linkedin.com/company/llama-studio-ltd/' }
+              LinkedIn
+
+          %li{ class: :menu__node }
+            %a{ class: :menu__link, href: 'https://medium.com/llama-studio' }
+              Medium
+
+          %li{ class: :menu__node }
+            %a{ class: :menu__link, href: 'https://twitter.com/llamastudioltd' }
+              Twitter
 
     %div{ class: :site_footer_area }
       %div{ class: :site_footer_area__region }

@@ -1,4 +1,4 @@
-[data-test=true] {
+html[data-theme="test"] {
   .lead {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;
@@ -37,7 +37,7 @@
   }
 }
 
-[data-test=true] {
+html[data-theme="test"] {
   .lead__h1 {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;

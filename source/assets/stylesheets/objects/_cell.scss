@@ -1,4 +1,4 @@
-[data-test=true] {
+html[data-theme="test"] {
   .cell {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;
@@ -13,7 +13,7 @@
   grid-row-gap:2rem;
 }
 
-[data-test=true] {
+html[data-theme="test"] {
   .cell__header,
   .cell__region {
     background-color:rgba(#F00, 0.1);
@@ -74,7 +74,7 @@
   }
 }
 
-[data-test=true] {
+html[data-theme="test"] {
   .cell__h1,
   .cell__h2 {
     background-color:rgba(#F00, 0.1);

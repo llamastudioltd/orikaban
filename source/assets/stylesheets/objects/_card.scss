@@ -1,4 +1,4 @@
-[data-test=true] {
+html[data-theme="test"] {
   .card {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;
@@ -36,7 +36,7 @@
   }
 }
 
-[data-test=true] {
+html[data-theme="test"] {
   .card__header,
   .card__region {
     background-color:rgba(#F00, 0.1);

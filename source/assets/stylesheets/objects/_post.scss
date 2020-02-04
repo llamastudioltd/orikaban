@@ -1,4 +1,4 @@
-[data-test=true] {
+html[data-theme="test"] {
   .post {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;
@@ -35,7 +35,7 @@
   }
 }
 
-[data-test=true] {
+html[data-theme="test"] {
   .post__header,
   .post__region {
     background-color:rgba(#F00, 0.1);
@@ -82,7 +82,7 @@
   grid-row-gap:4rem;
 }
 
-[data-test=true] {
+html[data-theme="test"] {
   .post__h1 {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;
@@ -128,7 +128,7 @@
   }
 }
 
-[data-test=true] {
+html[data-theme="test"] {
   .post__region {
     figure {
       background-color:rgba(#F00, 0.1);
