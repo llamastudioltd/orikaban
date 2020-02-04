@@ -22,7 +22,11 @@ html[data-theme="test"] {
 }
 
 .cell__header {
+  background-color:var(--body_background_2);
 
+  img[src*="placeholder"] {
+    opacity:0.2;
+  }
 }
 
 @media (max-width:#{ $fablet - 1 }px) {

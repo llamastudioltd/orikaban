@@ -50,7 +50,7 @@ html[data-theme="test"] {
   font-family:$font_meta;
   font-size:1.75rem;
   font-weight:600;
-  line-height:3rem;
+  line-height:2.5rem;
 
   padding-left:6rem;
   position:relative;
@@ -64,6 +64,6 @@ html[data-theme="test"] {
     position:absolute;
     left:0;
     top:50%;
-    transform:translate3D(0, -.25rem, 0);
+    transform:translate3D(0, -50%, 0);
   }
 }

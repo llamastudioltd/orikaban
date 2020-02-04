@@ -28,27 +28,19 @@ html[data-theme="test"] {
 
   font-family:$font_meta;
   font-size:1.75rem;
-  font-weight:600;
-  line-height:3rem;
+  font-weight:400;
+  line-height:3.5rem;
+
+  display:flex;
+  align-items:center;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:flex-start;
 
   @media (max-width:#{ $fablet - 1 }px) {
-    display:flex;
-    align-items:flex-start;
-    flex-direction:column;
-    flex-wrap:nowrap;
-    justify-content:center;
-
     &:not(:last-child) {
-      margin-bottom:4rem;
+      margin-right:4rem;
     }
-  }
-
-  @media (min-width:#{ $fablet }px) {
-    display:flex;
-    align-items:center;
-    flex-direction:row;
-    flex-wrap:nowrap;
-    justify-content:flex-start;
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
@@ -59,7 +51,7 @@ html[data-theme="test"] {
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
     &:not(:last-child) {
-      margin-right:4rem;
+      margin-right:8rem;
     }
   }
 
@@ -80,13 +72,22 @@ html[data-theme="test"] {
       margin-right:8rem;
     }
   }
+}
 
+@media (max-width:#{ $fablet - 1 }px) {
+  .menu--cols\@mobile .menu__list {
+    display:flex;
+    align-items:flex-start;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+  }
 }
 
 .menu__node {
   @media (max-width:#{ $fablet - 1 }px) {
     &:not(:last-child) {
-      margin-bottom:2rem;
+      margin-right:2rem;
     }
   }
 
@@ -98,13 +99,13 @@ html[data-theme="test"] {
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
     &:not(:last-child) {
-      margin-right:2rem;
+      margin-right:4rem;
     }
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
     &:not(:last-child) {
-      margin-right:3rem;
+      margin-right:4rem;
     }
   }
 
@@ -121,9 +122,18 @@ html[data-theme="test"] {
   }
 }
 
-@media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-  .menu--rows\@tablet_landscape .menu__node:not(:last-child) {
+@media (max-width:#{ $fablet - 1 }px) {
+  .menu--cols\@mobile .menu__node:not(:last-child) {
+    margin-bottom:2rem;
+    margin-right:0;
+  }
+}
+
+@media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+  .menu--rows\@fablet .menu__node:not(:last-child) {
+    margin-bottom:0;
     margin-right:8rem;
+
     position:relative;
 
     &:after {
@@ -135,45 +145,91 @@ html[data-theme="test"] {
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(6rem, -.25rem, 0);
+      transform:translate3D(6rem, -50%, 0);
+    }
+  }
+}
+
+@media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+  .menu--rows\@tablet_portrait .menu__node:not(:last-child) {
+    margin-bottom:0;
+    margin-right:8rem;
+
+    position:relative;
+
+    &:after {
+      background-color:currentColor;
+      content:"";
+      height:.2rem;
+      width:4rem;
+
+      position:absolute;
+      right:0;
+      top:50%;
+      transform:translate3D(6rem, -50%, 0);
+    }
+  }
+}
+
+@media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+  .menu--rows\@tablet_landscape .menu__node:not(:last-child) {
+    margin-bottom:0;
+    margin-right:10rem;
+
+    position:relative;
+
+    &:after {
+      background-color:currentColor;
+      content:"";
+      height:.2rem;
+      width:6rem;
+
+      position:absolute;
+      right:0;
+      top:50%;
+      transform:translate3D(8rem, -50%, 0);
     }
   }
 }
 
 @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
   .menu--rows\@laptop .menu__node:not(:last-child) {
-    margin-right:10rem;
+    margin-bottom:0;
+    margin-right:12rem;
+
     position:relative;
 
     &:after {
       background-color:currentColor;
       content:"";
       height:.2rem;
-      width:6rem;
+      width:8rem;
 
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(8rem, -.25rem, 0);
+      transform:translate3D(10rem, -50%, 0);
     }
   }
 }
 
 @media (min-width:#{ $cinema }px) {
   .menu--rows\@cinema .menu__node:not(:last-child) {
-    margin-right:10rem;
+    margin-bottom:0;
+    margin-right:12rem;
+
     position:relative;
 
     &:after {
       background-color:currentColor;
       content:"";
       height:.2rem;
-      width:6rem;
+      width:8rem;
 
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(8rem, -.25rem, 0);
+      transform:translate3D(10rem, -50%, 0);
     }
   }
 }
@@ -193,7 +249,8 @@ html[data-theme="test"] {
 }
 
 .menu__link {
-  transition:color #{ $beat }s ease-in-out;
+  font-weight:600;
+  transition:border-color #{ $beat }s ease-in-out, color #{ $beat }s ease-in-out;
   white-space:nowrap;
 
   &:hover,
@@ -203,5 +260,81 @@ html[data-theme="test"] {
 
   strong {
     font-weight:600;
+  }
+}
+
+@media (max-width:#{ $fablet - 1 }px) {
+  .menu--cols\@mobile .menu__link {
+
+  }
+}
+
+@media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+  .menu--rows\@fablet .menu__link {
+    border-bottom:solid .2rem transparent;
+    color:var(--body_foreground_1);
+
+    &:hover,
+    &.hover {
+      border-bottom-color:var(--body_foreground_1);
+    }
+  }
+}
+
+@media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+  .menu--rows\@tablet_portrait .menu__link {
+    border-bottom:solid .2rem transparent;
+    color:var(--body_foreground_1);
+
+    &:hover,
+    &.hover {
+      border-bottom-color:var(--body_foreground_1);
+    }
+  }
+}
+
+@media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+  .menu--rows\@tablet_landscape .menu__link {
+    border-bottom:solid .2rem transparent;
+    color:var(--body_foreground_1);
+
+    &:hover,
+    &.hover {
+      border-bottom-color:var(--body_foreground_1);
+    }
+  }
+}
+
+@media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+  .menu--rows\@laptop .menu__link {
+    border-bottom:solid .2rem transparent;
+    color:var(--body_foreground_1);
+
+    &:hover,
+    &.hover {
+      border-bottom-color:var(--body_foreground_1);
+    }
+  }
+}
+
+@media (min-width:#{ $cinema }px) {
+  .menu--rows\@cinema .menu__link {
+    border-bottom:solid .2rem transparent;
+    color:var(--body_foreground_1);
+
+    &:hover,
+    &.hover {
+      border-bottom-color:var(--body_foreground_1);
+    }
+  }
+}
+
+.menu__link[disabled] {
+  color:var(--body_foreground_2);
+  cursor:not-allowed;
+
+  &:hover,
+  &.hover {
+    color:var(--body_foreground_2);
   }
 }

@@ -235,7 +235,7 @@ html[data-theme="test"] {
 
   h3 {
     color:var(--post_foreground_2);
-    font-family:$font_meta;
+    font-family:$font_head;
     font-weight:600;
 
     @media (max-width:#{ $fablet - 1 }px) {
@@ -323,7 +323,7 @@ html[data-theme="test"] {
   figcaption {
     color:var(--post_foreground_2);
     font-family:$font_meta;
-    font-size:2.25rem;
+    font-size:2rem;
     line-height:3.5rem;
   }
 

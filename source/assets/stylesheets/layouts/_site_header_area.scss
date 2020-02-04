@@ -81,27 +81,5 @@ html[data-theme="test"] {
 }
 
 .site_header_area__region {
-  @media (max-width:#{ $fablet - 1 }px) {
 
-  }
-
-  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-
-  }
-
-  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-
-  }
-
-  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-
-  }
-
-  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-
-  }
-
-  @media (min-width:#{ $cinema }px) {
-
-  }
 }

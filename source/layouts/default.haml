@@ -34,56 +34,60 @@
         %a{ class: :logo, href: '/' }
           Llama Studio
 
+      %div{ class: :site_header_area__region }
+        %div{ class: :menu }
+          %ul{ class: :menu__list }
+            %li{ class: :menu__node }
+              %a{ class: [:menu__link, 'hover'], href: '/' }
+                %strong En<span class="hide@fablet hide@tablet_portrait">glish</span>
+
+            %li{ class: :menu__node }
+              %a{ class: :menu__link, disabled: true, href: '/' }
+                Es<span class="hide@fablet hide@tablet_portrait">pañol</span>
+
     %div{ class: :site_main_area }
       = yield
 
     %div{ class: :site_menu_area }
-      %div{ class: [:menu] }
-        %ul{ class: :menu__list }
-          %li{ class: :menu__node }
-            %a{ class: [:menu__link, "#{ "hover" if ["index"].include? current_page.data.hover }"], href: '/' }
-              - if current_page.data.hover == "index"
-                %strong Portfolio
-              - else
-                Portfolio
+      %div{ class: :site_menu_area__region }
+        %div{ class: [:menu, 'menu--cols@mobile', 'menu--rows@fablet', 'menu--rows@tablet_portrait', 'menu--rows@tablet_landscape', 'menu--rows@laptop', 'menu--rows@cinema'] }
+          %ul{ class: :menu__list }
+            %li{ class: :menu__node }
+              %a{ class: [:menu__link, "#{ "hover" if ["index"].include? current_page.data.hover }"], href: '/' }
+                - if current_page.data.hover == "index"
+                  %strong Portfolio
+                - else
+                  Portfolio
 
-          %li{ class: :menu__node }
-            %a{ class: [:menu__link, "#{ "hover" if ["about"].include? current_page.data.hover }"], href: '/about' }
-              - if current_page.data.hover == "about"
-                %strong About
-              - else
-                About
+            %li{ class: :menu__node }
+              %a{ class: [:menu__link, "#{ "hover" if ["about"].include? current_page.data.hover }"], href: '/about' }
+                - if current_page.data.hover == "about"
+                  %strong About
+                - else
+                  About
 
-          %li{ class: :menu__node }
-            %a{ class: [:menu__link, "#{ "hover" if ["contact"].include? current_page.data.hover }"], href: 'mailto:hey@llama.studio?subject=Hey%20Llama%20Studio!' }
-              - if current_page.data.hover == "contact"
-                %strong Get in touch
-              - else
-                Get in touch
-
-        %ul{ class: :menu__list }
-          %li{ class: :menu__node }
-            %a{ class: :menu__link, href: 'https://www.linkedin.com/company/llama-studio-ltd/' }
-              LinkedIn
-
-          %li{ class: :menu__node }
-            %a{ class: :menu__link, href: 'https://medium.com/llama-studio' }
-              Medium
-
-          %li{ class: :menu__node }
-            %a{ class: :menu__link, href: 'https://twitter.com/llamastudioltd' }
-              Twitter
+            %li{ class: :menu__node }
+              %a{ class: [:menu__link, "#{ "hover" if ["contact"].include? current_page.data.hover }"], href: 'mailto:hey@llama.studio?subject=Hey%20Llama%20Studio!' }
+                - if current_page.data.hover == "contact"
+                  %strong Contact
+                - else
+                  Contact
 
     %div{ class: :site_footer_area }
       %div{ class: :site_footer_area__region }
-        %ul{ class: :menu__list }
-          %li{ class: :menu__node }
-            %a{ class: :menu__link, href: '/' }
-              Environment &amp; Ethics
+        %div{ class: [:menu, 'menu--cols@mobile'] }
+          %ul{ class: :menu__list }
+            %li{ class: :menu__node }
+              %a{ class: :menu__link, href: 'https://www.linkedin.com/company/llama-studio-ltd/' }
+                LinkedIn
 
-          %li{ class: :menu__node }
-            %a{ class: :menu__link, href: '/' }
-              Privacy Policy
+            %li{ class: :menu__node }
+              %a{ class: :menu__link, href: 'https://medium.com/llama-studio' }
+                Medium
+
+            %li{ class: :menu__node }
+              %a{ class: :menu__link, href: 'https://twitter.com/llamastudioltd' }
+                Twitter
 
       %div{ class: :site_footer_area__region }
         %ul{ class: :menu__list }
