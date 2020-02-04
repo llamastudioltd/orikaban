@@ -10,7 +10,7 @@ hover: index
 
 ---
 
-This is the story of how I helped Eurostar reposition themselves as trusted experts in travel to Northern Europe and designed their new Train + Hotel package booking platform, offering a range of selected hotels, discounted train journeys, experiences, insurance and more.
+This is the story of how I helped [Eurostar](https://www.eurostar.com) reposition themselves as trusted experts in travel to Northern Europe and designed their new [Train &amp; Hotel](https://www.eurostar.com/rw-en/packages) package booking platform, offering a range of selected hotels, discounted train journeys, experiences, insurance and more.
 
 ## The challenge
 

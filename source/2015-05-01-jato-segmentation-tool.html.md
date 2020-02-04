@@ -3,7 +3,7 @@
 title: Designing segmenting and reporting tools for an automotive data company
 
 category: project
-client: JATO
+client: Jato
 tags: UX, Service design
 
 hover: index
