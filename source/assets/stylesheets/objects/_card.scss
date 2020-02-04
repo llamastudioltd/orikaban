@@ -45,40 +45,25 @@ html[data-theme="test"] {
 }
 
 .card__title {
-  font-family:$font_head;
-  font-weight:400;
+  @include to_upper;
+
+  font-family:$font_meta;
+  font-size:1.75rem;
+  font-weight:600;
+  line-height:3rem;
+
+  padding-left:6rem;
+  position:relative;
 
   &:before {
-    content:"\20\2014\A0";
-  }
+    background-color:currentColor;
+    content:"";
+    height:.2rem;
+    width:4rem;
 
-  @media (max-width:#{ $fablet - 1 }px) {
-    font-size:2.625rem;
-    line-height:4rem;
-  }
-
-  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    font-size:3.75rem;
-    line-height:5rem;
-  }
-
-  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    font-size:3.75rem;
-    line-height:5rem;
-  }
-
-  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    font-size:3.75rem;
-    line-height:5rem;
-  }
-
-  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    font-size:3.75rem;
-    line-height:5rem;
-  }
-
-  @media (min-width:#{ $cinema }px) {
-    font-size:3.75rem;
-    line-height:5rem;
+    position:absolute;
+    left:0;
+    top:50%;
+    transform:translate3D(0, -.25rem, 0);
   }
 }

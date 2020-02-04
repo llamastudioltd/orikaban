@@ -45,7 +45,9 @@ html[data-theme="test"] {
 }
 
 .lead__title {
-  font-family:$font_head;
+  font-family:$font_lead;
+  font-feature-settings:'liga', 'clig', 'dlig', 'onum';
+  font-weight:900;
 
   @media (max-width:#{ $fablet - 1 }px) {
     font-size:3.75rem;
@@ -75,17 +77,5 @@ html[data-theme="test"] {
   @media (min-width:#{ $cinema }px) {
     font-size:6rem;
     line-height:7.5rem;
-  }
-}
-
-html[data-theme="lite"] {
-  .lead__title {
-    font-weight:900;
-  }
-}
-
-html[data-theme="dark"] {
-  .lead__title {
-    font-weight:800;
   }
 }

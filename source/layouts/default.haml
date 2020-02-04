@@ -38,7 +38,7 @@
       = yield
 
     %div{ class: :site_menu_area }
-      %div{ class: :menu }
+      %div{ class: [:menu] }
         %ul{ class: :menu__list }
           %li{ class: :menu__node }
             %a{ class: [:menu__link, "#{ "hover" if ["index"].include? current_page.data.hover }"], href: '/' }

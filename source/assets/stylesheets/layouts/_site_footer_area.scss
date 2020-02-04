@@ -12,6 +12,14 @@ html[data-theme="test"] {
     flex-direction:column;
     flex-wrap:nowrap;
     justify-content:center;
+
+    &:not(:first-child) {
+      margin-top:4rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:4rem;
+    }
   }
 
   @media (min-width:#{ $fablet }px) {
@@ -20,6 +28,32 @@ html[data-theme="test"] {
     flex-direction:row-reverse;
     flex-wrap:nowrap;
     justify-content:space-between;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    &:not(:first-child) {
+      margin-top:4rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:4rem;
+    }
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $cinema }px) {
+
   }
 }
 
@@ -33,7 +67,7 @@ html[data-theme="test"] {
 .site_footer_area__region {
   @media (max-width:#{ $fablet - 1 }px) {
     &:not(:last-child) {
-      margin-bottom:8rem;
+      margin-bottom:4rem;
     }
   }
 

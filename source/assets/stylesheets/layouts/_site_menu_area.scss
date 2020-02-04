@@ -18,32 +18,29 @@ html[data-theme="test"] {
     justify-content:space-between;
 
     height:8rem;
+    right:0;
+    top:0;
     position:absolute;
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    right:4rem;
-    top:4rem;
+
   }
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    right:4rem;
-    top:4rem;
+
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    right:6rem;
-    top:6rem;
+
   }
 
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    right:8rem;
-    top:8rem;
+
   }
 
   @media (min-width:#{ $cinema }px) {
-    right:16rem;
-    top:8rem;
+
   }
 }
 

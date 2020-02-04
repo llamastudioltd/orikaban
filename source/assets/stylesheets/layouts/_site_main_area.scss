@@ -13,26 +13,74 @@ html[data-theme="test"] {
 
   @media (max-width:#{ $fablet - 1 }px) {
     grid-row-gap:8rem;
+
+    &:not(:first-child) {
+      margin-top:8rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:8rem;
+    }
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
     grid-row-gap:8rem;
+
+    &:not(:first-child) {
+      margin-top:8rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:8rem;
+    }
   }
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
     grid-row-gap:8rem;
+
+    &:not(:first-child) {
+      margin-top:8rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:8rem;
+    }
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
     grid-row-gap:12rem;
+
+    &:not(:first-child) {
+      margin-top:12rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:12rem;
+    }
   }
 
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
     grid-row-gap:16rem;
+
+    &:not(:first-child) {
+      margin-top:16rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:16rem;
+    }
   }
 
   @media (min-width:#{ $cinema }px) {
     grid-row-gap:16rem;
+
+    &:not(:first-child) {
+      margin-top:16rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom:16rem;
+    }
   }
 }
 

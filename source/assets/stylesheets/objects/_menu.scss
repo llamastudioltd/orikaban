@@ -24,8 +24,12 @@ html[data-theme="test"] {
 }
 
 .menu__list {
-  font-family:$font_head;
-  font-weight:400;
+  @include to_upper;
+
+  font-family:$font_meta;
+  font-size:1.75rem;
+  font-weight:600;
+  line-height:3rem;
 
   @media (max-width:#{ $fablet - 1 }px) {
     display:flex;
@@ -35,7 +39,7 @@ html[data-theme="test"] {
     justify-content:center;
 
     &:not(:last-child) {
-      margin-bottom:8rem;
+      margin-bottom:4rem;
     }
   }
 
@@ -117,6 +121,63 @@ html[data-theme="test"] {
   }
 }
 
+@media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+  .menu--rows\@tablet_landscape .menu__node:not(:last-child) {
+    margin-right:8rem;
+    position:relative;
+
+    &:after {
+      background-color:currentColor;
+      content:"";
+      height:.2rem;
+      width:4rem;
+
+      position:absolute;
+      right:0;
+      top:50%;
+      transform:translate3D(6rem, -.25rem, 0);
+    }
+  }
+}
+
+@media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+  .menu--rows\@laptop .menu__node:not(:last-child) {
+    margin-right:10rem;
+    position:relative;
+
+    &:after {
+      background-color:currentColor;
+      content:"";
+      height:.2rem;
+      width:6rem;
+
+      position:absolute;
+      right:0;
+      top:50%;
+      transform:translate3D(8rem, -.25rem, 0);
+    }
+  }
+}
+
+@media (min-width:#{ $cinema }px) {
+  .menu--rows\@cinema .menu__node:not(:last-child) {
+    margin-right:10rem;
+    position:relative;
+
+    &:after {
+      background-color:currentColor;
+      content:"";
+      height:.2rem;
+      width:6rem;
+
+      position:absolute;
+      right:0;
+      top:50%;
+      transform:translate3D(8rem, -.25rem, 0);
+    }
+  }
+}
+
 html[data-theme="test"] {
   .menu__link,
   .menu__text {
@@ -141,6 +202,6 @@ html[data-theme="test"] {
   }
 
   strong {
-    font-weight:400;
+    font-weight:600;
   }
 }

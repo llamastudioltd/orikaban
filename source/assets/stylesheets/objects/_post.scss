@@ -15,23 +15,23 @@ html[data-theme="test"] {
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    border-radius:2px;
+
   }
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    border-radius:2px;
+
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    border-radius:2px;
+
   }
 
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    border-radius:2px;
+
   }
 
   @media (min-width:#{ $cinema }px) {
-    border-radius:2px;
+
   }
 }
 
@@ -90,7 +90,8 @@ html[data-theme="test"] {
 }
 
 .post__title {
-  font-family:$font_head;
+  font-family:$font_lead;
+  font-feature-settings:'liga', 'clig', 'dlig', 'onum';
   font-weight:900;
 
   &:not(:last-child) {
@@ -177,6 +178,7 @@ html[data-theme="test"] {
 
   h2, h3, h4, h5, h6 {
     font-family:$font_head;
+    font-feature-settings:'liga', 'clig', 'dlig', 'onum';
 
     &:not(:first-child) {
       margin-top:4rem;
@@ -227,14 +229,14 @@ html[data-theme="test"] {
 
     @media (min-width:#{ $cinema }px) {
       font-size:3.75rem;
-      font-weight:700;
       line-height:5rem;
     }
   }
 
   h3 {
     color:var(--post_foreground_2);
-    font-weight:400;
+    font-family:$font_meta;
+    font-weight:600;
 
     @media (max-width:#{ $fablet - 1 }px) {
       font-size:2.625rem;
