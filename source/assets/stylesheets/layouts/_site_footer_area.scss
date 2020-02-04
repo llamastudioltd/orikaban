@@ -33,7 +33,7 @@ html[data-theme="test"] {
 .site_footer_area__region {
   @media (max-width:#{ $fablet - 1 }px) {
     &:not(:last-child) {
-      margin-bottom:4rem;
+      margin-bottom:8rem;
     }
   }
 

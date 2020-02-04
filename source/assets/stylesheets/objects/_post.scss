@@ -6,8 +6,8 @@ html[data-theme="test"] {
 }
 
 .post {
-  background-color:var(--page_background_1);
-  color:var(--page_foreground_1);
+  background-color:var(--post_background_1);
+  color:var(--post_foreground_1);
 
   @media (max-width:#{ $fablet - 1 }px) {
     margin-left:-2rem;
@@ -71,7 +71,7 @@ html[data-theme="test"] {
 }
 
 .post__header {
-  border-bottom:solid 1px var(--page_background_2);
+  border-bottom:solid 1px var(--post_background_2);
   margin-bottom:-1px;
 
   display:grid;
@@ -83,15 +83,15 @@ html[data-theme="test"] {
 }
 
 html[data-theme="test"] {
-  .post__h1 {
+  .post__title {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;
   }
 }
 
-.post__h1 {
-  font-family:$font_body;
-  font-weight:700;
+.post__title {
+  font-family:$font_head;
+  font-weight:900;
 
   &:not(:last-child) {
     grid-row:2;
@@ -177,7 +177,6 @@ html[data-theme="test"] {
 
   h2, h3, h4, h5, h6 {
     font-family:$font_head;
-    font-weight:700;
 
     &:not(:first-child) {
       margin-top:4rem;
@@ -198,35 +197,31 @@ html[data-theme="test"] {
   }
 
   h2 {
-    color:var(--page_foreground_1);
+    color:var(--post_foreground_1);
+    font-weight:900;
 
     @media (max-width:#{ $fablet - 1 }px) {
       font-size:3rem;
-      font-weight:700;
       line-height:4rem;
     }
 
     @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
       font-size:3.75rem;
-      font-weight:700;
       line-height:5rem;
     }
 
     @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
       font-size:3.75rem;
-      font-weight:700;
       line-height:5rem;
     }
 
     @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
       font-size:3.75rem;
-      font-weight:700;
       line-height:5rem;
     }
 
     @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
       font-size:3.75rem;
-      font-weight:700;
       line-height:5rem;
     }
 
@@ -238,7 +233,8 @@ html[data-theme="test"] {
   }
 
   h3 {
-    color:var(--page_foreground_2);
+    color:var(--post_foreground_2);
+    font-weight:400;
 
     @media (max-width:#{ $fablet - 1 }px) {
       font-size:2.625rem;
@@ -323,7 +319,7 @@ html[data-theme="test"] {
   }
 
   figcaption {
-    color:var(--page_foreground_2);
+    color:var(--post_foreground_2);
     font-family:$font_meta;
     font-size:2.25rem;
     line-height:3.5rem;
@@ -347,7 +343,6 @@ html[data-theme="test"] {
   }
 
   img {
-
     @media (max-width:#{ $fablet - 1 }px) {
       transform:translate3D(-2rem, 0, 0);
       width:calc(100% + #{ 2rem + 2rem });
@@ -378,4 +373,14 @@ html[data-theme="test"] {
       width:calc(100% + #{ 8rem + 8rem });
     }
   }
+
+  a {
+    color:var(--link_foreground_1);
+    text-decoration:underline;
+  }
+
+  a:hover {
+    color:var(--post_foreground_1);
+    text-decoration:none;
+  };
 }

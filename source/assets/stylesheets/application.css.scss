@@ -47,7 +47,7 @@ html {
   text-size-adjust:none;
 
   @media (max-width:#{ $fablet - 1 }px) {
-    font-size:8px;
+    font-size:7px;
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
@@ -72,11 +72,11 @@ html {
 }
 
 :root {
-  --page_background_1:#F7F7F5;
-  --page_background_2:#EBEAE6;
+  --post_background_1:#F7F7F5;
+  --post_background_2:#EBEAE6;
 
-  --page_foreground_1:#383837;
-  --page_foreground_2:#A9A8A6;
+  --post_foreground_1:#383837;
+  --post_foreground_2:#A9A8A6;
 
   --link_background_1:#FBFBFA;
   --link_foreground_1:#F03F35;
@@ -133,7 +133,7 @@ body {
 
   @media (max-width:#{ $fablet - 1 }px) {
     grid-row-gap:8rem;
-    padding:2rem;
+    padding:4rem 2rem;
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {

@@ -38,15 +38,14 @@ html[data-theme="test"] {
 }
 
 html[data-theme="test"] {
-  .lead__h1 {
+  .lead__title {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;
   }
 }
 
-.lead__h1 {
-  font-family:$font_body;
-  font-weight:700;
+.lead__title {
+  font-family:$font_head;
 
   @media (max-width:#{ $fablet - 1 }px) {
     font-size:3.75rem;
@@ -76,5 +75,17 @@ html[data-theme="test"] {
   @media (min-width:#{ $cinema }px) {
     font-size:6rem;
     line-height:7.5rem;
+  }
+}
+
+html[data-theme="lite"] {
+  .lead__title {
+    font-weight:900;
+  }
+}
+
+html[data-theme="dark"] {
+  .lead__title {
+    font-weight:800;
   }
 }

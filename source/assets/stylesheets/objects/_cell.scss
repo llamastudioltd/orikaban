@@ -75,15 +75,15 @@ html[data-theme="test"] {
 }
 
 html[data-theme="test"] {
-  .cell__h1,
-  .cell__h2 {
+  .cell__title,
+  .cell__subtitle {
     background-color:rgba(#F00, 0.1);
     outline:solid 1px #F00;
   }
 }
 
-.cell__h1,
-.cell__h2 {
+.cell__title,
+.cell__subtitle {
   display:inline;
   font-family:$font_head;
 
@@ -120,8 +120,8 @@ html[data-theme="test"] {
 
 @media (max-width:#{ $fablet - 1 }px) {
   .grid--1_up\@mobile {
-    .cell__h1,
-    .cell__h2 {
+    .cell__title,
+    .cell__subtitle {
 
     }
   }
@@ -129,8 +129,8 @@ html[data-theme="test"] {
 
 @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
   .grid--1_up\@fablet {
-    .cell__h1,
-    .cell__h2 {
+    .cell__title,
+    .cell__subtitle {
 
     }
   }
@@ -138,8 +138,8 @@ html[data-theme="test"] {
 
 @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
   .grid--1_up\@tablet_portrait {
-    .cell__h1,
-    .cell__h2 {
+    .cell__title,
+    .cell__subtitle {
       font-size:3rem;
       line-height:4rem;
     }
@@ -148,8 +148,8 @@ html[data-theme="test"] {
 
 @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
   .grid--1_up\@tablet_landscape {
-    .cell__h1,
-    .cell__h2 {
+    .cell__title,
+    .cell__subtitle {
 
     }
   }
@@ -157,8 +157,8 @@ html[data-theme="test"] {
 
 @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
   .grid--1_up\@laptop {
-    .cell__h1,
-    .cell__h2 {
+    .cell__title,
+    .cell__subtitle {
 
     }
   }
@@ -166,21 +166,23 @@ html[data-theme="test"] {
 
 @media (min-width:#{ $cinema }px) {
   .grid--1_up\@cinema {
-    .cell__h1,
-    .cell__h2 {
+    .cell__title,
+    .cell__subtitle {
 
     }
   }
 }
 
-.cell__h1 {
-  font-weight:700;
+.cell__title {
+  font-weight:800;
 
-  &:after {
-    content:"\A0\2014\20";
-  }
+
 }
 
-.cell__h2 {
+.cell__subtitle {
   font-weight:400;
+
+  &:before {
+    content:"\A0\2014\A0";
+  }
 }
