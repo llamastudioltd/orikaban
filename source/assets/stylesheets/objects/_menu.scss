@@ -27,9 +27,9 @@ html[data-theme="test"] {
   @include to_upper;
 
   font-family:$font_meta;
-  font-size:1.875rem;
+  font-size:1.75rem;
   font-weight:400;
-  line-height:3.5rem;
+  line-height:1.5;
 
   display:flex;
   align-items:center;
@@ -139,13 +139,13 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:.2rem;
+      height:1px;
       width:4rem;
 
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(6rem, -100%, 0);
+      transform:translate3D(6rem, -50%, 0);
     }
   }
 }
@@ -160,13 +160,13 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:.2rem;
+      height:1px;
       width:4rem;
 
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(6rem, -100%, 0);
+      transform:translate3D(6rem, -50%, 0);
     }
   }
 }
@@ -181,13 +181,13 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:.2rem;
+      height:1px;
       width:6rem;
 
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(8rem, -100%, 0);
+      transform:translate3D(8rem, -50%, 0);
     }
   }
 }
@@ -202,13 +202,13 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:.2rem;
+      height:1px;
       width:8rem;
 
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(10rem, -100%, 0);
+      transform:translate3D(10rem, -50%, 0);
     }
   }
 }
@@ -223,13 +223,13 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:.2rem;
+      height:1px;
       width:8rem;
 
       position:absolute;
       right:0;
       top:50%;
-      transform:translate3D(10rem, -100%, 0);
+      transform:translate3D(10rem, -50%, 0);
     }
   }
 }
@@ -271,60 +271,55 @@ html[data-theme="test"] {
 
 @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
   .menu--rows\@fablet .menu__link {
-    border-bottom:solid .2rem transparent;
     color:var(--body_foreground_1);
 
     &:hover,
     &.hover {
-      border-bottom-color:var(--body_foreground_1);
+
     }
   }
 }
 
 @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
   .menu--rows\@tablet_portrait .menu__link {
-    border-bottom:solid .2rem transparent;
     color:var(--body_foreground_1);
 
     &:hover,
     &.hover {
-      border-bottom-color:var(--body_foreground_1);
+
     }
   }
 }
 
 @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
   .menu--rows\@tablet_landscape .menu__link {
-    border-bottom:solid .2rem transparent;
     color:var(--body_foreground_1);
 
     &:hover,
     &.hover {
-      border-bottom-color:var(--body_foreground_1);
+
     }
   }
 }
 
 @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
   .menu--rows\@laptop .menu__link {
-    border-bottom:solid .2rem transparent;
     color:var(--body_foreground_1);
 
     &:hover,
     &.hover {
-      border-bottom-color:var(--body_foreground_1);
+
     }
   }
 }
 
 @media (min-width:#{ $cinema }px) {
   .menu--rows\@cinema .menu__link {
-    border-bottom:solid .2rem transparent;
     color:var(--body_foreground_1);
 
     &:hover,
     &.hover {
-      border-bottom-color:var(--body_foreground_1);
+
     }
   }
 }

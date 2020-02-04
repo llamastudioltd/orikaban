@@ -48,9 +48,9 @@ html[data-theme="test"] {
   @include to_upper;
 
   font-family:$font_meta;
-  font-size:1.875rem;
+  font-size:1.75rem;
   font-weight:600;
-  line-height:2.5rem;
+  line-height:1.5;
 
   padding-left:6rem;
   position:relative;
@@ -58,12 +58,12 @@ html[data-theme="test"] {
   &:before {
     background-color:currentColor;
     content:"";
-    height:.2rem;
+    height:1px;
     width:4rem;
 
     position:absolute;
     left:0;
     top:50%;
-    transform:translate3D(0, -100%, 0);
+    transform:translate3D(0, -50%, 0);
   }
 }

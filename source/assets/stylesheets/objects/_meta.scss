@@ -36,10 +36,11 @@ html[data-theme="test"] {
   font-family:$font_meta;
   font-size:1.5rem;
   font-weight:600;
-  line-height:2.5rem;
+  line-height:1;
 
   background-color:var(--link_foreground_1);
+  border-radius:2px;
   color:var(--link_background_1);
   display:block;
-  padding:.75rem 1.5rem;
+  padding:1.25rem 1.5rem;
 }

@@ -23,9 +23,43 @@ html[data-theme="test"] {
 
 .cell__header {
   background-color:var(--body_background_2);
+  border-radius:4px;
+  overflow:hidden;
 
   img[src*="placeholder"] {
-    opacity:0.2;
+    opacity:0;
+  }
+}
+
+.cell__region {
+  @media (max-width:#{ $fablet - 1 }px) {
+    font-size:2.625rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    font-size:2.625rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    font-size:2.625rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    font-size:2.625rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    font-size:3rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    font-size:3rem;
+    line-height:1.25;
   }
 }
 
@@ -48,7 +82,8 @@ html[data-theme="test"] {
 @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
   .grid--1_up\@tablet_portrait {
     .cell__region {
-
+      font-size:3rem;
+      line-height:1.25;
     }
   }
 }
@@ -90,101 +125,17 @@ html[data-theme="test"] {
   display:inline;
   font-family:$font_head;
   font-feature-settings:'liga', 'clig', 'dlig', 'onum';
-
-  @media (max-width:#{ $fablet - 1 }px) {
-    font-size:2.625rem;
-    line-height:3.5rem;
-  }
-
-  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    font-size:2.625rem;
-    line-height:3.5rem;
-  }
-
-  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    font-size:2.625rem;
-    line-height:3.5rem;
-  }
-
-  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    font-size:2.625rem;
-    line-height:3.5rem;
-  }
-
-  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    font-size:3rem;
-    line-height:4rem;
-  }
-
-  @media (min-width:#{ $cinema }px) {
-    font-size:3rem;
-    line-height:4rem;
-  }
-}
-
-@media (max-width:#{ $fablet - 1 }px) {
-  .grid--1_up\@mobile {
-    .cell__title,
-    .cell__subtitle {
-
-    }
-  }
-}
-
-@media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-  .grid--1_up\@fablet {
-    .cell__title,
-    .cell__subtitle {
-
-    }
-  }
-}
-
-@media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-  .grid--1_up\@tablet_portrait {
-    .cell__title,
-    .cell__subtitle {
-      font-size:3rem;
-      line-height:4rem;
-    }
-  }
-}
-
-@media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-  .grid--1_up\@tablet_landscape {
-    .cell__title,
-    .cell__subtitle {
-
-    }
-  }
-}
-
-@media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-  .grid--1_up\@laptop {
-    .cell__title,
-    .cell__subtitle {
-
-    }
-  }
-}
-
-@media (min-width:#{ $cinema }px) {
-  .grid--1_up\@cinema {
-    .cell__title,
-    .cell__subtitle {
-
-    }
-  }
 }
 
 .cell__title {
-  font-weight:900;
+  font-weight:700;
 }
 
 .cell__subtitle {
-  font-weight:300;
+  font-weight:400;
 
   &:before {
     content:"\A0\2014\A0";
+    font-weight:300;
   }
 }

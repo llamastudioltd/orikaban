@@ -25,22 +25,22 @@ Text 3°: #EAE9E9
 
 TYPE:
 
-12/18
-14/22
-16/24 - 15/24?
-18/28
-21/28
-24/32
-30/40
-36/48
-48/60
+12
+14
+16 - 15?
+18
+21
+24
+30
+36
+48
 
 */
 
-$font_lead:'calluna', sans-serif;
-$font_head:'calluna', sans-serif;
-$font_body:'calluna', sans-serif;
-$font_meta:'calluna-sans', sans-serif;
+$font_lead:'maiola', serif;
+$font_head:'maiola', serif;
+$font_body:'ibm-plex-sans', sans-serif;
+$font_meta:'ibm-plex-sans', sans-serif;
 
 html {
   font-smoothing:subpixel-antialiased;
@@ -85,7 +85,7 @@ html {
 
 html[data-theme="dark"] {
   --body_background_1:#383837;
-  --body_background_2:#A9A8A6;
+  --body_background_2:#{ mix(#FFFFFF, #383837, 8% ) };
 
   --body_foreground_1:#EBEAE6;
   --body_foreground_2:#70706F;
@@ -93,7 +93,7 @@ html[data-theme="dark"] {
 
 html[data-theme="lite"] {
   --body_background_1:#EBEAE6;
-  --body_background_2:#F3F2F0;
+  --body_background_2:#{ mix(#000000, #EBEAE6, 8% ) };
 
   --body_foreground_1:#383837;
   --body_foreground_2:#A9A8A6;
@@ -166,9 +166,9 @@ html[data-theme="lite"] {
 
 h1, h2, h3, h4, h5, h6, dl, ol, ul, p, figcaption {
   font-family:$font_body;
-  font-size:2.625rem;
+  font-size:2.25rem;
   font-weight:400;
-  line-height:4rem;
+  line-height:1.75;
 }
 
 a {
@@ -181,7 +181,7 @@ em, i {
 }
 
 b, strong {
-  font-weight:500;
+  font-weight:600;
 }
 
 img {
@@ -190,10 +190,6 @@ img {
   margin:0;
   padding:0;
   width:100%;
-}
-
-img[src*="placeholder"] {
-  opacity:0.2;
 }
 
 @import 'layouts/site_header_area';
