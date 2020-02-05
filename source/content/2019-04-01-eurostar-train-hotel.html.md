@@ -25,24 +25,28 @@ With six months until the contract with Expedia expired, I needed a strategy for
 <figure>
   <ul data-count="2">
     <li>
-      <picture>
-        <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
-        <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
-        <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
-        <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
-        <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
-        <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
-      </picture>
+      <a href="">
+        <picture>
+          <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
+          <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
+          <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
+        </picture>
+      </a>
     </li>
     <li>
-      <picture>
-        <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
-        <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
-        <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
-        <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
-        <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
-        <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
-      </picture>
+      <a href="">
+        <picture>
+          <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
+          <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
+          <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
+        </picture>
+      </a>
     </li>
   </ul>
   <figcaption>I used AirTable to build a searchable database of competitor products. It contained a ranked index of layouts and features as they appeared on different providers platforms.</figcaption>
@@ -57,14 +61,16 @@ The interviews revealed that the Eurostar brand carried a latent respect and tru
 <figure>
   <ul data-count="1">
     <li>
-      <picture>
-        <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
-        <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
-        <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
-        <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
-        <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
-        <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
-      </picture>
+      <a href="">
+        <picture>
+          <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
+          <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
+          <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
+        </picture>
+      </a>
     </li>
   </ul>
   <figcaption>Early wireframes of the Train + Hotel product showing how I integrated additional navigation and filtering elements into the existing Eurostar booking path templates.</figcaption>
@@ -81,44 +87,52 @@ My first step was to validate and deepen my understanding by speaking to many mo
 <figure>
   <ul data-count="4">
     <li>
-      <picture>
-        <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
-        <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
-        <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
-        <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
-        <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
-        <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
-      </picture>
+      <a href="">
+        <picture>
+          <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
+          <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
+          <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
+        </picture>
+      </a>
     </li>
     <li>
-      <picture>
-        <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
-        <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
-        <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
-        <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
-        <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
-        <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
-      </picture>
+      <a href="">
+        <picture>
+          <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
+          <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
+          <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
+        </picture>
+      </a>
     </li>
     <li>
-      <picture>
-        <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
-        <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
-        <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
-        <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
-        <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
-        <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
-      </picture>
+      <a href="">
+        <picture>
+          <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
+          <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
+          <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
+        </picture>
+      </a>
     </li>
     <li>
-      <picture>
-        <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
-        <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
-        <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
-        <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
-        <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
-        <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
-      </picture>
+      <a href="">
+        <picture>
+          <source media="(min-width:667px) and (max-width:767px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Fablet">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletPortrait">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=TabletLandscape">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Laptop">
+          <source media="(min-width:1680px)" srcset="https://via.placeholder.com/300x200/FF0000/FF0000/?text=Cinema">
+          <img alt="Placeholder image" src="https://via.placeholder.com/300x200/FF0000/FF0000/">
+        </picture>
+      </a>
     </li>
   </ul>
   <figcaption>Responding to feedback from users, the existing Eurostar train booking template was adapted to incorporate a new  component displaying the package prominently above the fold. These two variants were tested as part of the solution.</figcaption>
