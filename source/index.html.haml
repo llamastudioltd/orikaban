@@ -24,15 +24,15 @@ layout: default
           - blog.articles.select { |p| p.data[:category].downcase == 'article' }.each do |post|
             %li{ class: :grid__node }
               %a{ class: :cell }
-                %a{ class: :cell, data: { category: post.data.category.downcase }, href: post.url }
+                %a{ class: :cell, data: { category: post.data.category.downcase }, href: url_for(post.path) }
                   %div{ class: :cell__header }
                     %picture
-                      %source{ srcset: "https://via.placeholder.com/300x200/FF0000/00FF00/?text=Fablet", media: "(min-width:667px) and (max-width:767px)" }
-                      %source{ srcset: "https://via.placeholder.com/300x200/FF0000/00FF00/?text=TabletPortrait", media: "(min-width:768px) and (max-width:1023px)" }
-                      %source{ srcset: "https://via.placeholder.com/200x100/FF0000/00FF00/?text=TabletLandscape", media: "(min-width:1024px) and (max-width:1279px)" }
-                      %source{ srcset: "https://via.placeholder.com/200x100/FF0000/00FF00/?text=Laptop", media: "(min-width:1280px) and (max-width:1679px)" }
-                      %source{ srcset: "https://via.placeholder.com/200x100/FF0000/00FF00/?text=Cinema", media: "(min-width:1680px)"}
-                      %img{ src: "https://via.placeholder.com/300x200/FF0000/00FF00/", alt: "Thumbnail image - '#{ post.data.title }'" }
+                      %source{ srcset: "#{ post.url }cell@fablet.png", media: "(min-width:667px) and (max-width:767px)" }
+                      %source{ srcset: "#{ post.url }cell@tablet_portrait.png", media: "(min-width:768px) and (max-width:1023px)" }
+                      %source{ srcset: "#{ post.url }cell@tablet_landscape.png", media: "(min-width:1024px) and (max-width:1279px)" }
+                      %source{ srcset: "#{ post.url }cell@laptop.png", media: "(min-width:1280px) and (max-width:1679px)" }
+                      %source{ srcset: "#{ post.url }cell@cinema.png", media: "(min-width:1680px)"}
+                      %img{ src: "#{ post.url }cell@mobile.png", alt: "Cover image - '#{ post.data.title }'" }
 
                   %div{ class: :cell__region }
                     %div{ class: :cell__title }
@@ -53,15 +53,15 @@ layout: default
           - blog.articles.select { |p| p.data[:category].downcase == 'project' }.each do |post|
             %li{ class: :grid__node }
               %a{ class: :cell }
-                %a{ class: :cell, data: { category: post.data.category.downcase }, href: post.url }
+                %a{ class: :cell, data: { category: post.data.category.downcase }, href: url_for(post.path) }
                   %div{ class: :cell__header }
                     %picture
-                      %source{ srcset: "https://via.placeholder.com/300x200/FF0000/00FF00/?text=Fablet", media: "(min-width:667px) and (max-width:767px)" }
-                      %source{ srcset: "https://via.placeholder.com/300x200/FF0000/00FF00/?text=TabletPortrait", media: "(min-width:768px) and (max-width:1023px)" }
-                      %source{ srcset: "https://via.placeholder.com/200x100/FF0000/00FF00/?text=TabletLandscape", media: "(min-width:1024px) and (max-width:1279px)" }
-                      %source{ srcset: "https://via.placeholder.com/200x100/FF0000/00FF00/?text=Laptop", media: "(min-width:1280px) and (max-width:1679px)" }
-                      %source{ srcset: "https://via.placeholder.com/200x100/FF0000/00FF00/?text=Cinema", media: "(min-width:1680px)"}
-                      %img{ src: "https://via.placeholder.com/300x200/FF0000/00FF00/", alt: "Thumbnail image - '#{ post.data.title }'" }
+                      %source{ srcset: "#{ post.url }cell@fablet.png", media: "(min-width:667px) and (max-width:767px)" }
+                      %source{ srcset: "#{ post.url }cell@tablet_portrait.png", media: "(min-width:768px) and (max-width:1023px)" }
+                      %source{ srcset: "#{ post.url }cell@tablet_landscape.png", media: "(min-width:1024px) and (max-width:1279px)" }
+                      %source{ srcset: "#{ post.url }cell@laptop.png", media: "(min-width:1280px) and (max-width:1679px)" }
+                      %source{ srcset: "#{ post.url }cell@cinema.png", media: "(min-width:1680px)"}
+                      %img{ src: "#{ post.url }cell@mobile.png", alt: "Cover image - '#{ post.data.title }'" }
 
                   %div{ class: :cell__region }
                     %div{ class: :cell__region }
@@ -69,4 +69,4 @@ layout: default
                         #{ post.data.client }
 
                       %div{ class: :cell__subtitle }
-                        #{ post.data.title }
+                        #{ post.data.title }.

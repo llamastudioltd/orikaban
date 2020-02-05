@@ -23,11 +23,65 @@ html[data-theme="test"] {
 
 .cell__header {
   background-color:var(--body_background_2);
-  border-radius:4px;
-  overflow:hidden;
 
-  img[src*="placeholder"] {
-    opacity:0;
+  @media (max-width:#{ $fablet - 1 }px) {
+    padding:2rem;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    padding:4rem;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    padding:4rem;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    padding:6rem;
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    padding:8rem;
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    padding:8rem;
+  }
+}
+
+@media (max-width:#{ $fablet - 1 }px) {
+  .grid--1_up\@mobile .cell__header {
+
+  }
+}
+
+@media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+  .grid--1_up\@fablet .cell__header {
+
+  }
+}
+
+@media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+  .grid--1_up\@tablet_portrait .cell__header {
+
+  }
+}
+
+@media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+  .grid--1_up\@tablet_landscape .cell__header {
+    padding:6rem 12rem;
+  }
+}
+
+@media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+  .grid--1_up\@laptop .cell__header {
+    padding:8rem 16rem;
+  }
+}
+
+@media (min-width:#{ $cinema }px) {
+  .grid--1_up\@cinema .cell__header {
+    padding:8rem 16rem;
   }
 }
 
@@ -64,51 +118,39 @@ html[data-theme="test"] {
 }
 
 @media (max-width:#{ $fablet - 1 }px) {
-  .grid--1_up\@mobile {
-    .cell__region {
+  .grid--1_up\@mobile .cell__region {
 
-    }
   }
 }
 
 @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-  .grid--1_up\@fablet {
-    .cell__region {
+  .grid--1_up\@fablet .cell__region {
 
-    }
   }
 }
 
 @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-  .grid--1_up\@tablet_portrait {
-    .cell__region {
-      font-size:3rem;
-      line-height:1.25;
-    }
+  .grid--1_up\@tablet_portrait .cell__region {
+    font-size:3rem;
+    line-height:1.25;
   }
 }
 
 @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-  .grid--1_up\@tablet_landscape {
-    .cell__region {
-      width:calc(50% - 2rem);
-    }
+  .grid--1_up\@tablet_landscape .cell__region {
+    width:calc(50% - 2rem);
   }
 }
 
 @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-  .grid--1_up\@laptop {
-    .cell__region {
-      width:calc(50% - 2rem);
-    }
+  .grid--1_up\@laptop .cell__region {
+    width:calc(50% - 2rem);
   }
 }
 
 @media (min-width:#{ $cinema }px) {
-  .grid--1_up\@cinema {
-    .cell__region {
-      width:calc(50% - 2rem);
-    }
+  .grid--1_up\@cinema .cell__region {
+    width:calc(50% - 2rem);
   }
 }
 

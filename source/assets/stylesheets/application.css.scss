@@ -74,7 +74,7 @@ html {
 
 :root {
   --post_background_1:#F7F7F5;
-  --post_background_2:#EBEAE6;
+  --post_background_2:#F3F2F0;
 
   --post_foreground_1:#383837;
   --post_foreground_2:#A9A8A6;
@@ -90,14 +90,20 @@ html[data-theme="dark"] {
 
   --body_foreground_1:#EBEAE6;
   --body_foreground_2:#70706F;
+
+
+  --post_background_2:#EBEAE6;
 }
 
 html[data-theme="lite"] {
   --body_background_1:#EBEAE6;
-  --body_background_2:#{ mix(#000000, #EBEAE6, 8% ) };
+  --body_background_2:#F3F2F0;
 
   --body_foreground_1:#383837;
   --body_foreground_2:#A9A8A6;
+
+
+  --post_background_2:#F3F2F0;
 }
 
 html[data-theme="test"] {
@@ -155,13 +161,13 @@ body {
 
 html[data-theme="dark"] {
   body:after {
-    background-image:url(../images/dark/body-valencia.svg);
+    background-image:url(../images/dark/body--valencia.svg);
   }
 }
 
 html[data-theme="lite"] {
   body:after {
-    background-image:url(../images/lite/body-valencia.svg);
+    background-image:url(../images/lite/body--valencia.svg);
   }
 }
 

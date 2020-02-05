@@ -249,7 +249,7 @@ html[data-theme="test"] {
 }
 
 .menu__link {
-  font-weight:700;
+  font-weight:600;
   transition:color #{ $beat }s ease-in-out;
   white-space:nowrap;
 
@@ -259,7 +259,7 @@ html[data-theme="test"] {
   }
 
   strong {
-    font-weight:700;
+    font-weight:600;
   }
 
   @media (max-width:#{ $fablet - 1 }px) {
