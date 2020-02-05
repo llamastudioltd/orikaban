@@ -139,7 +139,7 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:1px;
+      height:.25rem;
       width:4rem;
 
       position:absolute;
@@ -160,7 +160,7 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:1px;
+      height:.25rem;
       width:4rem;
 
       position:absolute;
@@ -181,7 +181,7 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:1px;
+      height:.25rem;
       width:6rem;
 
       position:absolute;
@@ -202,7 +202,7 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:1px;
+      height:.25rem;
       width:8rem;
 
       position:absolute;
@@ -223,7 +223,7 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:1px;
+      height:.25rem;
       width:8rem;
 
       position:absolute;
@@ -249,8 +249,8 @@ html[data-theme="test"] {
 }
 
 .menu__link {
-  font-weight:600;
-  transition:border-color #{ $beat }s ease-in-out, color #{ $beat }s ease-in-out;
+  font-weight:700;
+  transition:color #{ $beat }s ease-in-out;
   white-space:nowrap;
 
   &:hover,
@@ -259,7 +259,55 @@ html[data-theme="test"] {
   }
 
   strong {
-    font-weight:600;
+    font-weight:700;
+  }
+
+  @media (max-width:#{ $fablet - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $fablet }px) {
+    position:relative;
+
+    &:after {
+      background-color:currentColor;
+      content:'';
+      transition:width #{ $beat }s ease-in-out;
+
+      height:.25rem;
+      width:0;
+
+      position:absolute;
+      bottom:-.8rem;
+      left:0;
+    }
+
+    &:hover,
+    &.hover {
+      &:after {
+        width:100%;
+      }
+    }
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+
+  }
+
+  @media (min-width:#{ $cinema }px) {
+
   }
 }
 
@@ -272,64 +320,37 @@ html[data-theme="test"] {
 @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
   .menu--rows\@fablet .menu__link {
     color:var(--body_foreground_1);
-
-    &:hover,
-    &.hover {
-
-    }
   }
 }
 
 @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
   .menu--rows\@tablet_portrait .menu__link {
     color:var(--body_foreground_1);
-
-    &:hover,
-    &.hover {
-
-    }
   }
 }
 
 @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
   .menu--rows\@tablet_landscape .menu__link {
     color:var(--body_foreground_1);
-
-    &:hover,
-    &.hover {
-
-    }
   }
 }
 
 @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
   .menu--rows\@laptop .menu__link {
     color:var(--body_foreground_1);
-
-    &:hover,
-    &.hover {
-
-    }
   }
 }
 
 @media (min-width:#{ $cinema }px) {
   .menu--rows\@cinema .menu__link {
     color:var(--body_foreground_1);
-
-    &:hover,
-    &.hover {
-
-    }
   }
 }
 
 .menu__link[disabled] {
   color:var(--body_foreground_2);
-  cursor:not-allowed;
 
-  &:hover,
-  &.hover {
-    color:var(--body_foreground_2);
+  &:after {
+    width:0;
   }
 }

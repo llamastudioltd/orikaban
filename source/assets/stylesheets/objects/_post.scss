@@ -7,7 +7,6 @@ html[data-theme="test"] {
 
 .post {
   background-color:var(--post_background_1);
-  border-radius:4px;
   color:var(--post_foreground_1);
 
   @media (max-width:#{ $fablet - 1 }px) {
@@ -16,23 +15,23 @@ html[data-theme="test"] {
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-
+    border-radius:4px;
   }
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-
+    border-radius:4px;
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-
+    border-radius:4px;
   }
 
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-
+    border-radius:4px;
   }
 
   @media (min-width:#{ $cinema }px) {
-
+    border-radius:4px;
   }
 }
 
@@ -334,47 +333,117 @@ html[data-theme="test"] {
     grid-template-columns:1fr;
     grid-template-rows:auto;
     grid-column-gap:0;
-    grid-row-gap:4rem;
 
-    &:not(:first-child) {
-      margin-top:4rem;
+    @media (max-width:#{ $fablet - 1 }px) {
+      grid-row-gap:2rem;
+
+      &:not(:first-child) {
+        margin-top:2rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom:2rem;
+      }
     }
 
-    &:not(:last-child) {
-      margin-bottom:4rem;
+    @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+      grid-row-gap:4rem;
+
+      &:not(:first-child) {
+        margin-top:4rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom:4rem;
+      }
+    }
+
+    @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+      grid-row-gap:4rem;
+
+      &:not(:first-child) {
+        margin-top:4rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom:4rem;
+      }
+    }
+
+    @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+      grid-row-gap:4rem;
+
+      &:not(:first-child) {
+        margin-top:4rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom:4rem;
+      }
+    }
+
+    @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+      grid-row-gap:4rem;
+
+      &:not(:first-child) {
+        margin-top:4rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom:4rem;
+      }
+    }
+
+    @media (min-width:#{ $cinema }px) {
+      grid-row-gap:4rem;
+
+      &:not(:first-child) {
+        margin-top:4rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom:4rem;
+      }
+    }
+  }
+
+  picture {
+    background-color:var(--post_foreground_3);
+    width:100%;
+
+    @media (max-width:#{ $fablet - 1 }px) {
+      padding:2rem;
+      transform:translate3D(-2rem, 0, 0);
+    }
+
+    @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+      padding:4rem;
+      transform:translate3D(-4rem, 0, 0);
+    }
+
+    @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+      padding:4rem;
+      transform:translate3D(-4rem, 0, 0);
+    }
+
+    @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+      padding:6rem;
+      transform:translate3D(-6rem, 0, 0);
+    }
+
+    @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+      padding:8rem;
+      transform:translate3D(-8rem, 0, 0);
+    }
+
+    @media (min-width:#{ $cinema }px) {
+      padding:8rem;
+      transform:translate3D(-8rem, 0, 0);
     }
   }
 
   img {
-    @media (max-width:#{ $fablet - 1 }px) {
-      transform:translate3D(-2rem, 0, 0);
-      width:calc(100% + #{ 2rem + 2rem });
-    }
-
-    @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-      transform:translate3D(-4rem, 0, 0);
-      width:calc(100% + #{ 4rem + 4rem });
-    }
-
-    @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-      transform:translate3D(-4rem, 0, 0);
-      width:calc(100% + #{ 4rem + 4rem });
-    }
-
-    @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-      transform:translate3D(-6rem, 0, 0);
-      width:calc(100% + #{ 6rem + 6rem });
-    }
-
-    @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-      transform:translate3D(-8rem, 0, 0);
-      width:calc(100% + #{ 8rem + 8rem });
-    }
-
-    @media (min-width:#{ $cinema }px) {
-      transform:translate3D(-8rem, 0, 0);
-      width:calc(100% + #{ 8rem + 8rem });
-    }
+    border-radius:2px;
   }
 
   a {
