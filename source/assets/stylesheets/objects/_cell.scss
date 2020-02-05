@@ -87,7 +87,7 @@ html[data-theme="test"] {
 
 .cell__region {
   @media (max-width:#{ $fablet - 1 }px) {
-    font-size:2.625rem;
+    font-size:3rem;
     line-height:1.25;
   }
 
@@ -125,7 +125,8 @@ html[data-theme="test"] {
 
 @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
   .grid--1_up\@fablet .cell__region {
-
+    font-size:3rem;
+    line-height:1.25;
   }
 }
 
