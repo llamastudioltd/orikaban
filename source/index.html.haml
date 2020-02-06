@@ -27,11 +27,11 @@ layout: default
                 %a{ class: :cell, data: { category: post.data.category.downcase }, href: url_for(post.path) }
                   %div{ class: :cell__header }
                     %picture
-                      %source{ srcset: "#{ post.url }cell@fablet.png", media: "(min-width:667px) and (max-width:767px)" }
-                      %source{ srcset: "#{ post.url }cell@tablet_portrait.png", media: "(min-width:768px) and (max-width:1023px)" }
-                      %source{ srcset: "#{ post.url }cell@tablet_landscape.png", media: "(min-width:1024px) and (max-width:1279px)" }
-                      %source{ srcset: "#{ post.url }cell@laptop.png", media: "(min-width:1280px) and (max-width:1679px)" }
-                      %source{ srcset: "#{ post.url }cell@cinema.png", media: "(min-width:1680px)"}
+                      %source{ media: "(min-width:667px) and (max-width:767px)", srcset: "#{ post.url }cell@fablet.png" }
+                      %source{ media: "(min-width:768px) and (max-width:1023px)", srcset: "#{ post.url }cell@tablet_portrait.png" }
+                      %source{ media: "(min-width:1024px) and (max-width:1279px)", srcset: "#{ post.url }cell@tablet_landscape.png" }
+                      %source{ media: "(min-width:1280px) and (max-width:1679px)", srcset: "#{ post.url }cell@laptop.png" }
+                      %source{ media: "(min-width:1680px)", srcset: "#{ post.url }cell@cinema.png" }
                       %img{ src: "#{ post.url }cell@mobile.png", alt: "Cover image - '#{ post.data.title }'" }
 
                   %div{ class: :cell__region }
@@ -56,11 +56,11 @@ layout: default
                 %a{ class: :cell, data: { category: post.data.category.downcase }, href: url_for(post.path) }
                   %div{ class: :cell__header }
                     %picture
-                      %source{ srcset: "#{ post.url }cell@fablet.png", media: "(min-width:667px) and (max-width:767px)" }
-                      %source{ srcset: "#{ post.url }cell@tablet_portrait.png", media: "(min-width:768px) and (max-width:1023px)" }
-                      %source{ srcset: "#{ post.url }cell@tablet_landscape.png", media: "(min-width:1024px) and (max-width:1279px)" }
-                      %source{ srcset: "#{ post.url }cell@laptop.png", media: "(min-width:1280px) and (max-width:1679px)" }
-                      %source{ srcset: "#{ post.url }cell@cinema.png", media: "(min-width:1680px)"}
+                      %source{ media: "(min-width:667px) and (max-width:767px)", srcset: "#{ post.url }cell@fablet.png" }
+                      %source{ media: "(min-width:768px) and (max-width:1023px)", srcset: "#{ post.url }cell@tablet_portrait.png" }
+                      %source{ media: "(min-width:1024px) and (max-width:1279px)", srcset: "#{ post.url }cell@tablet_landscape.png" }
+                      %source{ media: "(min-width:1280px) and (max-width:1679px)", srcset: "#{ post.url }cell@laptop.png" }
+                      %source{ media: "(min-width:1680px)", srcset: "#{ post.url }cell@cinema.png" }
                       %img{ src: "#{ post.url }cell@mobile.png", alt: "Cover image - '#{ post.data.title }'" }
 
                   %div{ class: :cell__region }

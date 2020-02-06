@@ -27,7 +27,7 @@ html[data-theme="test"] {
   @include to_upper;
 
   font-family:$font_meta;
-  font-size:1.75rem;
+  font-size:1.625rem;
   font-weight:400;
   line-height:1.5;
 
@@ -139,7 +139,7 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:.25rem;
+      height:2px;
       width:4rem;
 
       position:absolute;
@@ -160,7 +160,7 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:.25rem;
+      height:2px;
       width:4rem;
 
       position:absolute;
@@ -181,7 +181,7 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:.25rem;
+      height:2px;
       width:6rem;
 
       position:absolute;
@@ -202,7 +202,7 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:.25rem;
+      height:2px;
       width:8rem;
 
       position:absolute;
@@ -223,7 +223,7 @@ html[data-theme="test"] {
     &:after {
       background-color:currentColor;
       content:"";
-      height:.25rem;
+      height:2px;
       width:8rem;
 
       position:absolute;
@@ -274,7 +274,7 @@ html[data-theme="test"] {
       content:'';
       transition:width #{ $beat }s ease-in-out;
 
-      height:.25rem;
+      height:2px;
       width:0;
 
       position:absolute;

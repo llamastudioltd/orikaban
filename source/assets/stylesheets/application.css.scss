@@ -78,9 +78,6 @@ Text 3°: #EAE9E9
 */
 
 :root {
-  --post_background_1:#F7F7F5;
-  --post_background_2:#F3F2F0;
-
   --post_foreground_1:#383837;
   --post_foreground_2:#A9A8A6;
   --post_foreground_3:#EBEAE6;
@@ -91,12 +88,13 @@ Text 3°: #EAE9E9
 
 html[data-theme="dark"] {
   --body_background_1:#383837;
-  --body_background_2:#{ mix(#FFFFFF, #383837, 8% ) };
+//--body_background_2:#{ rgba(#FFFFFF, 0.1) };
+  --body_background_2:#4C4C4B;
 
   --body_foreground_1:#EBEAE6;
   --body_foreground_2:#70706F;
 
-
+  --post_background_1:#F7F7F5;
   --post_background_2:#EBEAE6;
 }
 
@@ -107,8 +105,8 @@ html[data-theme="lite"] {
   --body_foreground_1:#383837;
   --body_foreground_2:#A9A8A6;
 
-
-  --post_background_2:#F3F2F0;
+  --post_background_1:#FBFBFA;
+  --post_background_2:#F7F7F5;
 }
 
 html[data-theme="test"] {

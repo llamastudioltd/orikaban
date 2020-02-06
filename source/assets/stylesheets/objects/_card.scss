@@ -45,12 +45,8 @@ html[data-theme="test"] {
 }
 
 .card__title {
-  @include to_upper;
-
-  font-family:$font_meta;
-  font-size:1.75rem;
-  font-weight:600;
-  line-height:1.5;
+  font-family:$font_head;
+  font-weight:400;
 
   padding-left:6rem;
   position:relative;
@@ -58,12 +54,42 @@ html[data-theme="test"] {
   &:before {
     background-color:currentColor;
     content:"";
-    height:.25rem;
+    height:1px;
     width:4rem;
 
     position:absolute;
     left:0;
     top:50%;
     transform:translate3D(0, -50%, 0);
+  }
+
+  @media (max-width:#{ $fablet - 1 }px) {
+    font-size:3.75rem;
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    font-size:3.75rem;
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    font-size:3.75rem;
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    font-size:3.75rem;
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    font-size:3.75rem;
+    line-height:1.5;
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    font-size:3.75rem;
+    line-height:1.5;
   }
 }

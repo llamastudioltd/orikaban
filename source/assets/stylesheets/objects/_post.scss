@@ -347,9 +347,10 @@ html[data-theme="test"] {
     grid-template-columns:1fr;
     grid-template-rows:auto;
     grid-column-gap:0;
-    grid-row-gap:2rem;
 
     @media (max-width:#{ $fablet - 1 }px) {
+      grid-row-gap:2rem;
+
       &:not(:first-child) {
         margin-top:2rem;
       }
@@ -360,6 +361,8 @@ html[data-theme="test"] {
     }
 
     @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+      grid-row-gap:4rem;
+
       &:not(:first-child) {
         margin-top:4rem;
       }
@@ -370,6 +373,8 @@ html[data-theme="test"] {
     }
 
     @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+      grid-row-gap:4rem;
+
       &:not(:first-child) {
         margin-top:4rem;
       }
@@ -380,6 +385,8 @@ html[data-theme="test"] {
     }
 
     @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+      grid-row-gap:4rem;
+
       &:not(:first-child) {
         margin-top:4rem;
       }
@@ -390,6 +397,8 @@ html[data-theme="test"] {
     }
 
     @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+      grid-row-gap:4rem;
+
       &:not(:first-child) {
         margin-top:4rem;
       }
@@ -400,6 +409,8 @@ html[data-theme="test"] {
     }
 
     @media (min-width:#{ $cinema }px) {
+      grid-row-gap:4rem;
+
       &:not(:first-child) {
         margin-top:4rem;
       }
@@ -426,7 +437,7 @@ html[data-theme="test"] {
       width:100%;
 
       grid-template-columns:1fr;
-      grid-column-gap:2rem;
+      grid-column-gap:0;
       grid-row-gap:2rem;
     }
 
@@ -436,7 +447,7 @@ html[data-theme="test"] {
       width:100%;
 
       grid-template-columns:1fr;
-      grid-column-gap:4rem;
+      grid-column-gap:0;
       grid-row-gap:4rem;
     }
 
@@ -445,17 +456,9 @@ html[data-theme="test"] {
       transform:translate3D(-4rem, 0, 0);
       width:100%;
 
-      grid-column-gap:4rem;
+      grid-template-columns:1fr;
+      grid-column-gap:0;
       grid-row-gap:4rem;
-
-      &[data-count="1"] {
-        grid-template-columns:1fr;
-      }
-
-      &[data-count="2"],
-      &[data-count="4"] {
-        grid-template-columns:1fr 1fr;
-      }
     }
 
     @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
@@ -515,6 +518,10 @@ html[data-theme="test"] {
     a {
       display:block;
       text-decoration:none;
+    }
+
+    img {
+      box-shadow:0 0 2rem rgba(#000, .2);
     }
   }
 

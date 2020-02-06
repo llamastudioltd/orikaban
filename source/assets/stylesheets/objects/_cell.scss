@@ -75,13 +75,13 @@ html[data-theme="test"] {
 
 @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
   .grid--1_up\@laptop .cell__header {
-    padding:8rem 16rem;
+
   }
 }
 
 @media (min-width:#{ $cinema }px) {
   .grid--1_up\@cinema .cell__header {
-    padding:8rem 16rem;
+
   }
 }
 
