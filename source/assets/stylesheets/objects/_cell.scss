@@ -218,19 +218,22 @@ html[data-theme="lite"] {
 
 @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
   .grid--1_up\@tablet_landscape .cell__header {
-
+    padding-left:12.5%;
+    padding-right:12.5%;
   }
 }
 
 @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
   .grid--1_up\@laptop .cell__header {
-
+    padding-left:16.667%;
+    padding-right:16.667%;
   }
 }
 
 @media (min-width:#{ $cinema }px) {
   .grid--1_up\@cinema .cell__header {
-
+    padding-left:20%;
+    padding-right:20%;
   }
 }
 

@@ -71,26 +71,26 @@ html[data-theme="test"] {
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
     font-size:3.75rem;
-    line-height:1.5;
+    line-height:1.25;
   }
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
     font-size:3.75rem;
-    line-height:1.5;
+    line-height:1.25;
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
     font-size:3.75rem;
-    line-height:1.5;
+    line-height:1.25;
   }
 
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
     font-size:3.75rem;
-    line-height:1.5;
+    line-height:1.25;
   }
 
   @media (min-width:#{ $cinema }px) {
     font-size:3.75rem;
-    line-height:1.5;
+    line-height:1.25;
   }
 }
