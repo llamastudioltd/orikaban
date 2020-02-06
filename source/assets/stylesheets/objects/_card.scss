@@ -1,10 +1,3 @@
-html[data-theme="test"] {
-  .card {
-    background-color:rgba(#F00, 0.1);
-    outline:solid 1px #F00;
-  }
-}
-
 .card {
   display:grid;
   grid-auto-flow:row;
@@ -33,14 +26,6 @@ html[data-theme="test"] {
 
   @media (min-width:#{ $cinema }px) {
     grid-row-gap:8rem;
-  }
-}
-
-html[data-theme="test"] {
-  .card__header,
-  .card__region {
-    background-color:rgba(#F00, 0.1);
-    outline:solid 1px #F00;
   }
 }
 

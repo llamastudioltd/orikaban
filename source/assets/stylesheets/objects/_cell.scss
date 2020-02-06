@@ -1,24 +1,9 @@
-html[data-theme="test"] {
-  .cell {
-    background-color:rgba(#F00, 0.1);
-    outline:solid 1px #F00;
-  }
-}
-
 .cell {
   display:grid;
   grid-auto-flow:row;
   grid-template-rows:1fr;
   grid-column-gap:0;
   grid-row-gap:2rem;
-}
-
-html[data-theme="test"] {
-  .cell__header,
-  .cell__region {
-    background-color:rgba(#F00, 0.1);
-    outline:solid 1px #F00;
-  }
 }
 
 .cell__header {
@@ -304,14 +289,6 @@ html[data-theme="lite"] {
 @media (min-width:#{ $cinema }px) {
   .grid--1_up\@cinema .cell__region {
     width:calc(50% - 2rem);
-  }
-}
-
-html[data-theme="test"] {
-  .cell__title,
-  .cell__subtitle {
-    background-color:rgba(#F00, 0.1);
-    outline:solid 1px #F00;
   }
 }
 

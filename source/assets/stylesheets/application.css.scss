@@ -94,13 +94,6 @@ html[data-theme="lite"] {
   --link_foreground_2:#b33939;
 }
 
-html[data-theme="test"] {
-  body {
-    background-color:#FFF;
-    color:#000;
-  }
-}
-
 body {
   background-color:var(--body_background_1);
   color:var(--body_foreground_1);
