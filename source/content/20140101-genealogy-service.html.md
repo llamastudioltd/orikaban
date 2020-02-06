@@ -10,7 +10,7 @@ hover: index
 
 ---
 
-Find My Past were the first company in the world to put the complete birth, marriage, and death indexes for England and Wales online, and they now provide over 4 billion searchable records available. In 2014 they asked me to help them redesign their membership model and payment journeys.
+Find My Past were the first company in the world to put the complete birth, marriage, and death indexes for England and Wales online, and they now provide over 4 billion searchable records available. In 2014 I helped Find my Past to redesign their membership model and payment journeys.
 
 - **I interviewed users and ran workshops** to learn how people derived value from the service and understand when and how they made the decision to sign up and spend money.
 - **I created posters and presentations** for the board and senior management team, sharing our learning on how their customers wanted to use and pay for their service.
@@ -62,7 +62,7 @@ Find My Past were the first company in the world to put the complete birth, marr
           <source media="(min-width:1024px) and (max-width:1279px)" srcset="post-1-4@tablet_landscape.png">
           <source media="(min-width:1280px) and (max-width:1679px)" srcset="post-1-4@laptop.png">
           <source media="(min-width:1680px)" srcset="post-1-4@cinema.png">
-          <img alt="Wireframe" src="post-1-4@mobile.png" title="Wireframe 4 of 4: Upgrading to a higher-tier plan.">
+          <img alt="Wireframe" src="post-1-4@mobile.png" title="Wireframe 4 of 4: Upgrading to a higher-tier plan">
         </picture>
       </a>
     </li>
