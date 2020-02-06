@@ -46,6 +46,7 @@ html[data-theme="test"] {
 
 .card__title {
   font-family:$font_head;
+  font-feature-settings:'liga', 'clig', 'dlig', 'onum';
   font-weight:400;
 
   padding-left:6rem;
@@ -60,11 +61,11 @@ html[data-theme="test"] {
     position:absolute;
     left:0;
     top:50%;
-    transform:translate3D(0, -50%, 0);
+    transform:translate3D(0, 0, 0);
   }
 
   @media (max-width:#{ $fablet - 1 }px) {
-    font-size:3.75rem;
+    font-size:3rem;
     line-height:1.5;
   }
 

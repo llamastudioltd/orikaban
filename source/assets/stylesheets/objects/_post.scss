@@ -15,23 +15,24 @@ html[data-theme="test"] {
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-
+    margin-left:-4rem;
+    margin-right:-4rem;
   }
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-
+    border-radius:4px;
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-
+    border-radius:4px;
   }
 
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-
+    border-radius:4px;
   }
 
   @media (min-width:#{ $cinema }px) {
-
+    border-radius:4px;
   }
 }
 
@@ -516,11 +517,12 @@ html[data-theme="test"] {
     }
 
     a {
+      border:none !important;
       display:block;
-      text-decoration:none;
     }
 
     img {
+      border-radius:2px;
       box-shadow:0 0 2rem rgba(#000, .2);
     }
   }
@@ -565,12 +567,13 @@ html[data-theme="test"] {
   }
 
   a {
+    border-bottom:solid 1px var(--link_foreground_1);
     color:var(--link_foreground_1);
-    text-decoration:underline;
-  }
+    transition:border-color #{ $beat }s ease-in-out, color #{ $beat }s ease-in-out;
 
-  a:hover {
-    color:var(--post_foreground_1);
-    text-decoration:none;
-  };
+    &:hover {
+      border-color:transparent;
+      color:var(--link_foreground_2);
+    }
+  }
 }

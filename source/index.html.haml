@@ -24,7 +24,7 @@ layout: default
           - blog.articles.select { |p| p.data[:category].downcase == 'article' }.each do |post|
             %li{ class: :grid__node }
               %a{ class: :cell }
-                %a{ class: :cell, data: { category: post.data.category.downcase }, href: url_for(post.path) }
+                %a{ class: :cell, data: { category: post.data.category.downcase, client: post.data.client.downcase }, href: url_for(post.path) }
                   %div{ class: :cell__header }
                     %picture
                       %source{ media: "(min-width:667px) and (max-width:767px)", srcset: "#{ post.url }cell@fablet.png" }
