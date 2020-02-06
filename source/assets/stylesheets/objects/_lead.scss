@@ -30,38 +30,9 @@
   }
 }
 
-.lead__title {
-  font-family:$font_lead;
+.lead__head_1° {
+  @include lead_1°;
+
   font-feature-settings:'liga', 'clig', 'dlig', 'onum';
   font-weight:700;
-
-  @media (max-width:#{ $fablet - 1 }px) {
-    font-size:3.75rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    font-size:4.5rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    font-size:4.5rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    font-size:4.5rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    font-size:6rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $cinema }px) {
-    font-size:6rem;
-    line-height:1.25;
-  }
 }

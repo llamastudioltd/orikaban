@@ -91,43 +91,14 @@
   }
 }
 
-.post__title {
-  font-family:$font_lead;
+.post__head_1° {
+  @include lead_1°;
+
   font-feature-settings:'liga', 'clig', 'dlig', 'onum';
   font-weight:700;
 
   &:not(:last-child) {
     grid-row:2;
-  }
-
-  @media (max-width:#{ $fablet - 1 }px) {
-    font-size:3.75rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    font-size:4.5rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    font-size:4.5rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    font-size:4.5rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    font-size:6rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $cinema }px) {
-    font-size:6rem;
-    line-height:1.25;
   }
 }
 
@@ -163,9 +134,6 @@
   }
 
   h2, h3, h4, h5, h6 {
-    font-family:$font_head;
-    font-feature-settings:'liga', 'clig', 'dlig', 'onum';
-
     &:not(:first-child) {
       margin-top:4rem;
     }
@@ -185,74 +153,20 @@
   }
 
   h2 {
+    @include head_1°;
+
     color:var(--post_foreground_1);
+    font-feature-settings:'liga', 'clig', 'dlig', 'onum';
     font-weight:700;
-
-    @media (max-width:#{ $fablet - 1 }px) {
-      font-size:3.75rem;
-      line-height:1.25;
-    }
-
-    @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-      font-size:3.75rem;
-      line-height:1.25;
-    }
-
-    @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-      font-size:3.75rem;
-      line-height:1.25;
-    }
-
-    @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-      font-size:3.75rem;
-      line-height:1.25;
-    }
-
-    @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-      font-size:3.75rem;
-      line-height:1.25;
-    }
-
-    @media (min-width:#{ $cinema }px) {
-      font-size:3.75rem;
-      line-height:1.25;
-    }
   }
 
   h3 {
+    @include head_1°;
+
     color:var(--post_foreground_2);
+    font-feature-settings:'liga', 'clig', 'dlig', 'onum';
     font-style:italic;
     font-weight:500;
-
-    @media (max-width:#{ $fablet - 1 }px) {
-      font-size:3rem;
-      line-height:1.25;
-    }
-
-    @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-      font-size:3rem;
-      line-height:1.25;
-    }
-
-    @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-      font-size:3rem;
-      line-height:1.25;
-    }
-
-    @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-      font-size:3rem;
-      line-height:1.25;
-    }
-
-    @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-      font-size:3rem;
-      line-height:1.25;
-    }
-
-    @media (min-width:#{ $cinema }px) {
-      font-size:3rem;
-      line-height:1.25;
-    }
   }
 
   h4 {
@@ -268,7 +182,7 @@
   }
 
   dl, ol, ul, p, figcaption {
-    font-family:$font_body;
+    @include body_1°;
     font-weight:400;
 
     @media (max-width:#{ $fablet - 1 }px) {
@@ -533,11 +447,11 @@
     }
   }
 
-  figure figcaption {
+  figcaption {
+    @include body_2°;
+
     color:var(--post_foreground_2);
-    font-family:$font_meta;
-    font-size:2rem;
-    line-height:1.75;
+    font-weight:400;
   }
 
   picture {

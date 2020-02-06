@@ -22,34 +22,146 @@ $font_head:'maiola', serif;
 $font_body:'ibm-plex-sans', sans-serif;
 $font_meta:'ibm-plex-sans', sans-serif;
 
-html {
-  font-smoothing:subpixel-antialiased;
-  font-variant-numeric:tabular-nums;
-  text-size-adjust:none;
+@mixin lead_1° {
+  font-family:$font_lead;
 
   @media (max-width:#{ $fablet - 1 }px) {
-    font-size:8px;
+    font-size:3.75rem;
+    line-height:1.25;
   }
 
   @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    font-size:8px;
+    font-size:4.5rem;
+    line-height:1.25;
   }
 
   @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    font-size:8px;
+    font-size:4.5rem;
+    line-height:1.25;
   }
 
   @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    font-size:8px;
+    font-size:4.5rem;
+    line-height:1.25;
   }
 
   @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    font-size:8px;
+    font-size:6rem;
+    line-height:1.25;
   }
 
   @media (min-width:#{ $cinema }px) {
-    font-size:8px;
+    font-size:6rem;
+    line-height:1.25;
   }
+}
+
+@mixin lead_2° {
+
+}
+
+@mixin head_1° {
+  font-family:$font_head;
+
+  @media (max-width:#{ $fablet - 1 }px) {
+    font-size:3rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    font-size:3.75rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    font-size:3.75rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    font-size:3.75rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    font-size:3.75rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    font-size:3.75rem;
+    line-height:1.25;
+  }
+}
+
+@mixin head_2° {
+  font-family:$font_head;
+
+
+  @media (max-width:#{ $fablet - 1 }px) {
+    font-size:2.625rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
+    font-size:3rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
+    font-size:3rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
+    font-size:3rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
+    font-size:3rem;
+    line-height:1.25;
+  }
+
+  @media (min-width:#{ $cinema }px) {
+    font-size:3rem;
+    line-height:1.25;
+  }
+}
+
+@mixin body_1° {
+  font-family:$font_body;
+  font-size:2.25rem;
+  line-height:1.5;
+}
+
+@mixin body_2° {
+  font-family:$font_meta;
+  font-size:2rem;
+  line-height:1.5;
+}
+
+@mixin meta_1° {
+  @include to_upper;
+
+  font-family:$font_meta;
+  font-size:1.75rem;
+  line-height:1.5;
+}
+
+@mixin meta_2° {
+  @include to_upper;
+
+  font-family:$font_meta;
+  font-size:1.5rem;
+  line-height:1.5;
+}
+
+html {
+  font-size:8px;
+  font-smoothing:subpixel-antialiased;
+  font-variant-numeric:tabular-nums;
+  text-size-adjust:none;
 }
 
 // https://flatuicolors.com/palette/defo
@@ -153,10 +265,7 @@ html[data-theme="lite"] {
 }
 
 h1, h2, h3, h4, h5, h6, dl, ol, ul, p, figcaption {
-  font-family:$font_body;
-  font-size:2.25rem;
-  font-weight:400;
-  line-height:1.5;
+
 }
 
 a {

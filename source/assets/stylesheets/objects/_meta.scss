@@ -17,16 +17,12 @@
 }
 
 .meta__text {
-  @include to_upper;
-
-  font-family:$font_meta;
-  font-size:1.5rem;
+  @include meta_2°;
   font-weight:500;
-  line-height:1;
 
   background-color:var(--link_foreground_1);
   border-radius:2px;
   color:var(--link_background_1);
   display:block;
-  padding:1.25rem 1.5rem;
+  padding:.875rem 1.5rem;
 }

@@ -29,8 +29,9 @@
   }
 }
 
-.card__title {
-  font-family:$font_head;
+.card__head_1° {
+  @include head_1°;
+
   font-feature-settings:'liga', 'clig', 'dlig', 'onum';
   font-weight:400;
 
@@ -47,35 +48,5 @@
     left:0;
     top:50%;
     transform:translate3D(0, 0, 0);
-  }
-
-  @media (max-width:#{ $fablet - 1 }px) {
-    font-size:3rem;
-    line-height:1.5;
-  }
-
-  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    font-size:3.75rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    font-size:3.75rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    font-size:3.75rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    font-size:3.75rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $cinema }px) {
-    font-size:3.75rem;
-    line-height:1.25;
   }
 }

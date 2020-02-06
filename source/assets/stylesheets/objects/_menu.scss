@@ -17,12 +17,8 @@
 }
 
 .menu__list {
-  @include to_upper;
-
-  font-family:$font_meta;
-  font-size:1.625rem;
+  @include meta_1°;
   font-weight:400;
-  line-height:1.5;
 
   display:flex;
   align-items:center;

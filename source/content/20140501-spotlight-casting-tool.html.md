@@ -1,6 +1,6 @@
 ---
 
-title: Designing a new casting management & video sharing platform for casting agents
+title: Designing a new casting management & video sharing platform
 
 category: project
 client: Spotlight

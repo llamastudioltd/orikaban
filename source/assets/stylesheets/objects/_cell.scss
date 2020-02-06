@@ -6,6 +6,19 @@
   grid-row-gap:2rem;
 }
 
+.cell {
+  img {
+    filter:contrast(75%) saturate(75%);
+    transition:filter #{ $beat }s ease-in-out;
+  }
+}
+
+.cell:hover {
+  img {
+    filter:contrast(82.5%) saturate(82.5%);
+  }
+}
+
 .cell__header {
   border-radius:4px;
   transition:background-color #{ $beat }s ease-in-out;
@@ -32,10 +45,6 @@
 
   @media (min-width:#{ $cinema }px) {
     padding:8rem;
-  }
-
-  img {
-    filter:contrast(75%) saturate(66%);
   }
 }
 
@@ -223,35 +232,7 @@ html[data-theme="lite"] {
 }
 
 .cell__region {
-  @media (max-width:#{ $fablet - 1 }px) {
-    font-size:3rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
-    font-size:2.625rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
-    font-size:2.625rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $tablet_landscape }px) and (max-width:#{ $laptop - 1 }px) {
-    font-size:2.625rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $laptop }px) and (max-width:#{ $cinema - 1 }px) {
-    font-size:3rem;
-    line-height:1.25;
-  }
-
-  @media (min-width:#{ $cinema }px) {
-    font-size:3rem;
-    line-height:1.25;
-  }
+  @include head_2°;
 }
 
 @media (max-width:#{ $fablet - 1 }px) {
@@ -262,15 +243,13 @@ html[data-theme="lite"] {
 
 @media (min-width:#{ $fablet }px) and (max-width:#{ $tablet_portrait - 1 }px) {
   .grid--1_up\@fablet .cell__region {
-    font-size:3rem;
-    line-height:1.25;
+
   }
 }
 
 @media (min-width:#{ $tablet_portrait }px) and (max-width:#{ $tablet_landscape - 1 }px) {
   .grid--1_up\@tablet_portrait .cell__region {
-    font-size:3rem;
-    line-height:1.25;
+
   }
 }
 
@@ -292,18 +271,18 @@ html[data-theme="lite"] {
   }
 }
 
-.cell__title,
-.cell__subtitle {
+.cell__head_1°,
+.cell__head_2° {
   display:inline;
   font-family:$font_head;
 }
 
-.cell__title {
+.cell__head_1° {
   font-feature-settings:'liga', 'clig', 'dlig', 'onum';
   font-weight:700;
 }
 
-.cell__subtitle {
+.cell__head_2° {
   font-weight:400;
 
   &:before {
