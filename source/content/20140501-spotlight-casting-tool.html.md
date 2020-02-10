@@ -18,7 +18,7 @@ Spotlight began collating and distributing the details of theatre and film perfo
 - **I built and tested interactive prototypes** to refine and iterate on our solution. I worked through real castings using our prototypes with casting agents, directors and the Spotlight’s videographers.
 
 <figure>
-  <ul data-count="4">
+  <ul>
     <li>
       <a href="post-1-1@cinema.png">
         <picture>

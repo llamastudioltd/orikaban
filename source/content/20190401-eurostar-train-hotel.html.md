@@ -23,7 +23,7 @@ Before 2018, Eurostar used a co-branded platform run by Expedia to up-sell hotel
 With six months until the contract with Expedia expired, I needed a strategy for how to design, build and launch a viable product on time and without a drop in sales. I was working in a domain I knew little about, with little time to speak to customers and with a team that had been rapidly assembled and never worked together.
 
 <figure>
-  <ul data-count="2">
+  <ul>
     <li>
       <a href="post-1-1@cinema.png">
         <picture>
@@ -59,7 +59,7 @@ To understand what Eurostar's customers wanted from such a platform, I ran ad-ho
 The interviews revealed that the Eurostar brand carried a latent respect and trust which could be used to carve out a distinctive space for Eurostar in the market. The team adopted a principle of being as transparent and clear on pricing as possible, showing how a package was discounted and with no gimmicks around scarcity. This also positioned the small number of hotels available at launch as a positive, highlighting how Eurostar had visited and verified each hotel to reinforce the values of trustworthiness and expertise.
 
 <figure>
-  <ul data-count="4">
+  <ul>
     <li>
       <a href="post-2-1@cinema.png">
         <picture>
@@ -121,7 +121,7 @@ The first version of Eurostar's new Train + Hotel platform was launched on time 
 My first step was to validate and deepen my understanding by speaking to many more customers and potential customers. These discussions reinforced what I had heard about other providers and their behaviour concerning pricing and offers, but also exposed that Eurostar was lacking in this area, especially in how cheap train tickets were frequently advertised but hard to buy. This research, running over many months, reinforced the principles the team had adopted and gave me insights that I could share with the wider business to improve how customers felt about Eurostar as a whole.
 
 <figure>
-  <ul data-count="2">
+  <ul>
     <li>
       <a href="post-3-1@cinema.png">
         <picture>
@@ -138,7 +138,7 @@ My first step was to validate and deepen my understanding by speaking to many mo
       <a href="post-3-2@cinema.png">
         <picture>
           <source media="(min-width:667px) and (max-width:767px)" srcset="post-3-2@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post-32-2@tablet_portrait.png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post-3-2@tablet_portrait.png">
           <source media="(min-width:1024px) and (max-width:1279px)" srcset="post-3-2@tablet_landscape.png">
           <source media="(min-width:1280px) and (max-width:1679px)" srcset="post-3-2@laptop.png">
           <source media="(min-width:1680px)" srcset="post-3-2@cinema.png">

@@ -17,7 +17,7 @@ Find My Past were the first company in the world to put the complete birth, marr
 - **I mapped user journeys and created wireframes** outlining the key findings we had uncovered, working with their creative director and design team to incorporate them directly into their new visual language.
 
 <figure>
-  <ul data-count="4">
+  <ul>
     <li>
       <a href="post-1-1@cinema.png">
         <picture>
