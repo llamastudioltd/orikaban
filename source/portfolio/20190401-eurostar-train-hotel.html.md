@@ -29,12 +29,20 @@ With six months until the contract with Expedia expired, I needed a strategy for
     <li>
       <a href="post_1_1.png">
         <picture>
-          <source media="(max-width:666px)" srcset="post_1_1--1_up@mobile.png">
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post_1_1--1_up@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_1_1--2_up@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_1_1--2_up@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_1--2_up@laptop.png">
-          <source media="(min-width:1680px)" srcset="post_1_1--2_up@cinema.png">
+          <source media="(max-width:666px)" srcset="post_1_1--1_up@mobile.webp" type="image/webp">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_1_1--1_up@fablet.webp" type="image/webp">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_1_1--2_up@tablet_portrait.webp" type="image/webp">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_1_1--2_up@tablet_landscape.webp" type="image/webp">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_1--2_up@laptop.webp" type="image/webp">
+          <source media="(min-width:1680px)" srcset="post_1_1--2_up@cinema.webp" type="image/webp">
+
+          <source media="(max-width:666px)" srcset="post_1_1--1_up@mobile.png" type="image/png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_1_1--1_up@fablet.png" type="image/png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_1_1--2_up@tablet_portrait.png" type="image/png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_1_1--2_up@tablet_landscape.png" type="image/png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_1--2_up@laptop.png" type="image/png">
+          <source media="(min-width:1680px)" srcset="post_1_1--2_up@cinema.png" type="image/png">
+
           <img alt="Screenshot of an AirTable" src="post_1_1.png" title="Screenshot 1 of 2: Using AirTable to store to competitors analysis">
         </picture>
       </a>
@@ -42,12 +50,20 @@ With six months until the contract with Expedia expired, I needed a strategy for
     <li>
       <a href="post_1_2.png">
         <picture>
-          <source media="(max-width:666px)" srcset="post_1_2--1_up@mobile.png">
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post_1_2--1_up@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_1_2--2_up@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_1_2--2_up@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_2--2_up@laptop.png">
-          <source media="(min-width:1680px)" srcset="post_1_2--2_up@cinema.png">
+          <source media="(max-width:666px)" srcset="post_1_2--1_up@mobile.webp" type="image/webp">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_1_2--1_up@fablet.webp" type="image/webp">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_1_2--2_up@tablet_portrait.webp" type="image/webp">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_1_2--2_up@tablet_landscape.webp" type="image/webp">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_2--2_up@laptop.webp" type="image/webp">
+          <source media="(min-width:1680px)" srcset="post_1_2--2_up@cinema.webp" type="image/webp">
+
+          <source media="(max-width:666px)" srcset="post_1_2--1_up@mobile.png" type="image/png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_1_2--1_up@fablet.png" type="image/png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_1_2--2_up@tablet_portrait.png" type="image/png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_1_2--2_up@tablet_landscape.png" type="image/png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_2--2_up@laptop.png" type="image/png">
+          <source media="(min-width:1680px)" srcset="post_1_2--2_up@cinema.png" type="image/png">
+
           <img alt="Screenshot of an AirTable" src="post_1_2.png" title="Screenshot 2 of 2: Using AirTable to store to competitors analysis">
         </picture>
       </a>
@@ -67,12 +83,20 @@ The interviews revealed that the Eurostar brand carried a latent respect and tru
     <li>
       <a href="post_2_1.png">
         <picture>
-          <source media="(max-width:666px)" srcset="post_2_1--1_up@mobile.png">
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_1--1_up@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_1--2_up@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_1--2_up@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_1--2_up@laptop.png">
-          <source media="(min-width:1680px)" srcset="post_2_1--2_up@cinema.png">
+          <source media="(max-width:666px)" srcset="post_2_1--1_up@mobile.webp" type="image/webp">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_1--1_up@fablet.webp" type="image/webp">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_1--2_up@tablet_portrait.webp" type="image/webp">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_1--2_up@tablet_landscape.webp" type="image/webp">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_1--2_up@laptop.webp" type="image/webp">
+          <source media="(min-width:1680px)" srcset="post_2_1--2_up@cinema.webp" type="image/webp">
+
+          <source media="(max-width:666px)" srcset="post_2_1--1_up@mobile.png" type="image/png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_1--1_up@fablet.png" type="image/png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_1--2_up@tablet_portrait.png" type="image/png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_1--2_up@tablet_landscape.png" type="image/png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_1--2_up@laptop.png" type="image/png">
+          <source media="(min-width:1680px)" srcset="post_2_1--2_up@cinema.png" type="image/png">
+
           <img alt="Wireframe" src="post_2_1.png" title="Wireframe 1 of 4: The core Train & Hotel journey">
         </picture>
       </a>
@@ -80,12 +104,20 @@ The interviews revealed that the Eurostar brand carried a latent respect and tru
     <li>
       <a href="post_2_2.png">
         <picture>
-          <source media="(max-width:666px)" srcset="post_2_2--1_up@mobile.png">
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_2--1_up@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_2--2_up@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_2--2_up@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_2--2_up@laptop.png">
-          <source media="(min-width:1680px)" srcset="post_2_2--2_up@cinema.png">
+          <source media="(max-width:666px)" srcset="post_2_2--1_up@mobile.webp" type="image/webp">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_2--1_up@fablet.webp" type="image/webp">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_2--2_up@tablet_portrait.webp" type="image/webp">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_2--2_up@tablet_landscape.webp" type="image/webp">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_2--2_up@laptop.webp" type="image/webp">
+          <source media="(min-width:1680px)" srcset="post_2_2--2_up@cinema.webp" type="image/webp">
+
+          <source media="(max-width:666px)" srcset="post_2_2--1_up@mobile.png" type="image/png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_2--1_up@fablet.png" type="image/png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_2--2_up@tablet_portrait.png" type="image/png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_2--2_up@tablet_landscape.png" type="image/png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_2--2_up@laptop.png" type="image/png">
+          <source media="(min-width:1680px)" srcset="post_2_2--2_up@cinema.png" type="image/png">
+
           <img alt="Wireframe" src="post_2_2.png" title="Wireframe 2 of 4: The core Train & Hotel journey">
         </picture>
       </a>
@@ -93,12 +125,20 @@ The interviews revealed that the Eurostar brand carried a latent respect and tru
     <li>
       <a href="post_2_3.png">
         <picture>
-          <source media="(max-width:666px)" srcset="post_2_3--1_up@mobile.png">
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_3--1_up@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_3--2_up@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_3--2_up@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_3--2_up@laptop.png">
-          <source media="(min-width:1680px)" srcset="post_2_3--2_up@cinema.png">
+          <source media="(max-width:666px)" srcset="post_2_3--1_up@mobile.webp" type="image/webp">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_3--1_up@fablet.webp" type="image/webp">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_3--2_up@tablet_portrait.webp" type="image/webp">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_3--2_up@tablet_landscape.webp" type="image/webp">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_3--2_up@laptop.webp" type="image/webp">
+          <source media="(min-width:1680px)" srcset="post_2_3--2_up@cinema.webp" type="image/webp">
+
+          <source media="(max-width:666px)" srcset="post_2_3--1_up@mobile.png" type="image/png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_3--1_up@fablet.png" type="image/png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_3--2_up@tablet_portrait.png" type="image/png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_3--2_up@tablet_landscape.png" type="image/png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_3--2_up@laptop.png" type="image/png">
+          <source media="(min-width:1680px)" srcset="post_2_3--2_up@cinema.png" type="image/png">
+
           <img alt="Wireframe" src="post_2_3.png" title="Wireframe 3 of 4: The core Train & Hotel journey">
         </picture>
       </a>
@@ -106,12 +146,20 @@ The interviews revealed that the Eurostar brand carried a latent respect and tru
     <li>
       <a href="post_2_4.png">
         <picture>
-          <source media="(max-width:666px)" srcset="post_2_4--1_up@mobile.png">
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_4--1_up@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_4--2_up@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_4--2_up@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_4--2_up@laptop.png">
-          <source media="(min-width:1680px)" srcset="post_2_4--2_up@cinema.png">
+          <source media="(max-width:666px)" srcset="post_2_4--1_up@mobile.webp" type="image/webp">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_4--1_up@fablet.webp" type="image/webp">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_4--2_up@tablet_portrait.webp" type="image/webp">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_4--2_up@tablet_landscape.webp" type="image/webp">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_4--2_up@laptop.webp" type="image/webp">
+          <source media="(min-width:1680px)" srcset="post_2_4--2_up@cinema.webp" type="image/webp">
+
+          <source media="(max-width:666px)" srcset="post_2_4--1_up@mobile.png" type="image/png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_2_4--1_up@fablet.png" type="image/png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_2_4--2_up@tablet_portrait.png" type="image/png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_2_4--2_up@tablet_landscape.png" type="image/png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_2_4--2_up@laptop.png" type="image/png">
+          <source media="(min-width:1680px)" srcset="post_2_4--2_up@cinema.png" type="image/png">
+
           <img alt="Wireframe" src="post_2_4.png" title="Wireframe 4 of 4: The core Train & Hotel journey">
         </picture>
       </a>
@@ -133,12 +181,20 @@ My first step was to validate and deepen my understanding by speaking to many mo
     <li>
       <a href="post_3_1.png">
         <picture>
-          <source media="(max-width:666px)" srcset="post_3_1--1_up@mobile.png">
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post_3_1--1_up@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_3_1--2_up@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_3_1--2_up@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_3_1--2_up@laptop.png">
-          <source media="(min-width:1680px)" srcset="post_3_1--2_up@cinema.png">
+          <source media="(max-width:666px)" srcset="post_3_1--1_up@mobile.webp" type="image/webp">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_3_1--1_up@fablet.webp" type="image/webp">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_3_1--2_up@tablet_portrait.webp" type="image/webp">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_3_1--2_up@tablet_landscape.webp" type="image/webp">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_3_1--2_up@laptop.webp" type="image/webp">
+          <source media="(min-width:1680px)" srcset="post_3_1--2_up@cinema.webp" type="image/webp">
+
+          <source media="(max-width:666px)" srcset="post_3_1--1_up@mobile.png" type="image/png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_3_1--1_up@fablet.png" type="image/png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_3_1--2_up@tablet_portrait.png" type="image/png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_3_1--2_up@tablet_landscape.png" type="image/png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_3_1--2_up@laptop.png" type="image/png">
+          <source media="(min-width:1680px)" srcset="post_3_1--2_up@cinema.png" type="image/png">
+
           <img alt="Wireframe" src="post_3_1.png" title="Wireframe 1 of 2: Existing version of the basket">
         </picture>
       </a>
@@ -146,12 +202,20 @@ My first step was to validate and deepen my understanding by speaking to many mo
     <li>
       <a href="post_3_2.png">
         <picture>
-          <source media="(max-width:666px)" srcset="post_3_2--1_up@mobile.png">
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post_3_2--1_up@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_3_2--2_up@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_3_2--2_up@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_3_2--2_up@laptop.png">
-          <source media="(min-width:1680px)" srcset="post_3_2--2_up@cinema.png">
+          <source media="(max-width:666px)" srcset="post_3_2--1_up@mobile.webp" type="image/webp">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_3_2--1_up@fablet.webp" type="image/webp">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_3_2--2_up@tablet_portrait.webp" type="image/webp">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_3_2--2_up@tablet_landscape.webp" type="image/webp">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_3_2--2_up@laptop.webp" type="image/webp">
+          <source media="(min-width:1680px)" srcset="post_3_2--2_up@cinema.webp" type="image/webp">
+
+          <source media="(max-width:666px)" srcset="post_3_2--1_up@mobile.png" type="image/png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_3_2--1_up@fablet.png" type="image/png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_3_2--2_up@tablet_portrait.png" type="image/png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_3_2--2_up@tablet_landscape.png" type="image/png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_3_2--2_up@laptop.png" type="image/png">
+          <source media="(min-width:1680px)" srcset="post_3_2--2_up@cinema.png" type="image/png">
+
           <img alt="Wireframe" src="post_3_2.png" title="Wireframe 2 of 2: Alternate version of the basket">
         </picture>
       </a>

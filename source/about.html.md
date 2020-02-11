@@ -12,12 +12,14 @@ I'm Ben Sekulowicz-Barclay and Llama Studio is my little design agency. I'm a UX
 
 <figure>
   <picture>
-    <source srcset="/assets/images/about@fablet.jpg" media="(min-width:667px) and (max-width:767px)">
-    <source srcset="/assets/images/about@tablet_portrait.jpg" media="(min-width:768px) and (max-width:1023px)">
-    <source srcset="/assets/images/about@tablet_landscape.jpg" media="(min-width:1024px) and (max-width:1279px)">
-    <source srcset="/assets/images/about@laptop.jpg" media="(min-width:1280px) and (max-width:1439px)">
-    <source srcset="/assets/images/about@cinema.jpg" media="(min-width:1440px)">
-    <img src="/assets/images/about@mobile.jpg" alt="Photographs of me arranged in a grid" />
+    <source media="(max-width:666px)" srcset="/assets/images/about@mobile.jpg" type="image/jpeg">
+    <source media="(min-width:667px) and (max-width:767px)" srcset="/assets/images/about@fablet.jpg" type="image/jpeg">
+    <source media="(min-width:768px) and (max-width:1023px)" srcset="/assets/images/about.@tablet_portrait.jpg" type="image/jpeg">
+    <source media="(min-width:1024px) and (max-width:1279px)" srcset="/assets/images/about@tablet_landscape.jpg" type="image/jpeg">
+    <source media="(min-width:1280px) and (max-width:1679px)" srcset="/assets/images/about@laptop.jpg" type="image/jpeg">
+    <source media="(min-width:1680px)" srcset="/assets/images/about@cinema.jpg" type="image/jpeg">
+
+    <img alt="Photographs of me arranged in a grid" src="/assets/images/about.jpg" title="Of all the photos of me, I share these">
   </picture>
 </figure>
 
