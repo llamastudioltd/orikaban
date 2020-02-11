@@ -60,7 +60,7 @@
                   Portfolio
 
             %li{ class: :menu__node }
-              %a{ class: [:menu__link, "#{ "hover" if ["about"].include? current_page.data.hover }"], href: '/about' }
+              %a{ class: [:menu__link, "#{ "hover" if ["about"].include? current_page.data.hover }"], href: '/about/' }
                 - if current_page.data.hover == "about"
                   %strong About
                 - else

@@ -21,18 +21,19 @@ layout: default
     %div{ class: :card__region }
       %div{ class: [:grid, 'grid--1_up@mobile', 'grid--1_up@fablet', 'grid--1_up@tablet_portrait', 'grid--1_up@tablet_landscape', 'grid--1_up@laptop', 'grid--1_up@cinema'] }
         %ul{ class: :grid__list }
-          - blog.articles.select { |p| p.data[:category].downcase == 'article' }.each do |post|
+          - blog.articles.select { |p| p.data[:category].downcase == 'case study' }.each do |post|
             %li{ class: :grid__node }
               %a{ class: :cell }
                 %a{ class: :cell, data: { category: post.data.category.downcase, client: post.data.client.downcase }, href: url_for(post.path) }
                   %div{ class: :cell__header }
                     %picture
-                      %source{ media: "(min-width:667px) and (max-width:767px)", srcset: "#{ post.url }cell@fablet.png" }
-                      %source{ media: "(min-width:768px) and (max-width:1023px)", srcset: "#{ post.url }cell@tablet_portrait.png" }
-                      %source{ media: "(min-width:1024px) and (max-width:1279px)", srcset: "#{ post.url }cell@tablet_landscape.png" }
-                      %source{ media: "(min-width:1280px) and (max-width:1679px)", srcset: "#{ post.url }cell@laptop.png" }
-                      %source{ media: "(min-width:1680px)", srcset: "#{ post.url }cell@cinema.png" }
-                      %img{ src: "#{ post.url }cell@mobile.png", alt: "Cover image - '#{ post.data.title }'" }
+                      %source{ media: "(max-width:666px)", srcset: "#{ post.url }cell--1_up@mobile.png" }
+                      %source{ media: "(min-width:667px) and (max-width:767px)", srcset: "#{ post.url }cell--1_up@fablet.png" }
+                      %source{ media: "(min-width:768px) and (max-width:1023px)", srcset: "#{ post.url }cell--1_up@tablet_portrait.png" }
+                      %source{ media: "(min-width:1024px) and (max-width:1279px)", srcset: "#{ post.url }cell--1_up@tablet_landscape.png" }
+                      %source{ media: "(min-width:1280px) and (max-width:1679px)", srcset: "#{ post.url }cell--1_up@laptop.png" }
+                      %source{ media: "(min-width:1680px)", srcset: "#{ post.url }cell--1_up@cinema.png" }
+                      %img{ src: "#{ post.url }cell.png", alt: "Cover image - '#{ post.data.title }'" }
 
                   %div{ class: :cell__region }
                     %div{ class: :cell__head_1° }
@@ -56,12 +57,13 @@ layout: default
                 %a{ class: :cell, data: { category: post.data.category.downcase }, href: url_for(post.path) }
                   %div{ class: :cell__header }
                     %picture
+                      %source{ media: "(max-width:666px)", srcset: "#{ post.url }cell@mobile.png" }
                       %source{ media: "(min-width:667px) and (max-width:767px)", srcset: "#{ post.url }cell@fablet.png" }
                       %source{ media: "(min-width:768px) and (max-width:1023px)", srcset: "#{ post.url }cell@tablet_portrait.png" }
                       %source{ media: "(min-width:1024px) and (max-width:1279px)", srcset: "#{ post.url }cell@tablet_landscape.png" }
                       %source{ media: "(min-width:1280px) and (max-width:1679px)", srcset: "#{ post.url }cell@laptop.png" }
-                      %source{ media: "(min-width:1680px)", srcset: "#{ post.url }cell@cinema.png" }
-                      %img{ src: "#{ post.url }cell@mobile.png", alt: "Cover image - '#{ post.data.title }'" }
+                      %source{ media: "(min-width:1680px)", srcset: "#{ post.url }cell--1_up@cinema.png" }
+                      %img{ src: "#{ post.url }cell.png", alt: "Cover image - '#{ post.data.title }'" }
 
                   %div{ class: :cell__region }
                     %div{ class: :cell__region }

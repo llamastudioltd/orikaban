@@ -49,7 +49,7 @@
 }
 
 html[data-theme="dark"] {
-  .grid__node:nth-child(1) .cell[data-category="article"] {
+  .cell {
     .cell__header {
       background-color:#2980b9;
     }
@@ -58,7 +58,21 @@ html[data-theme="dark"] {
       background-color:mix(#3498db, #2980b9, 50%);
     }
   }
+}
 
+html[data-theme="lite"] {
+  .cell {
+    .cell__header {
+      background-color:#34ace0;
+    }
+
+    &:hover .cell__header {
+      background-color:mix(#227093, #34ace0, 50%);
+    }
+  }
+}
+
+html[data-theme="dark"] {
   .grid__node:nth-child(1) .cell[data-category="project"] {
     .cell__header {
       background-color:#8e44ad;
@@ -121,16 +135,6 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="lite"] {
-  .grid__node:nth-child(1) .cell[data-category="article"] {
-    .cell__header {
-      background-color:#34ace0;
-    }
-
-    &:hover .cell__header {
-      background-color:mix(#227093, #34ace0, 50%);
-    }
-  }
-
   .grid__node:nth-child(1) .cell[data-category="project"] {
     .cell__header {
       background-color:#706fd3;
