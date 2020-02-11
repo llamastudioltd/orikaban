@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/work/package-travel-platform-eurostar/"
+  to = "/portfolio/eurostar-train-hotel/"
+  status = 301
+  force = true
