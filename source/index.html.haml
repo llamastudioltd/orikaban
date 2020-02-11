@@ -8,13 +8,13 @@ layout: default
 ---
 
 %div{ class: :site_main_area__region }
-  %div{ class: :lead }
+  %section{ class: :lead }
     %h1{ class: :lead__head_1° }
       Llama Studio is the portfolio of Ben Sekulowicz-Barclay, a user experience designer based in Valencia, Spain.
 
 %div{ class: :site_main_area__region }
-  %div{ class: :card }
-    %div{ class: :card__header }
+  %section{ class: :card }
+    %header{ class: :card__header }
       %h1{ class: :card__head_1° }
         Featured case study
 
@@ -25,7 +25,7 @@ layout: default
             %li{ class: :grid__node }
               %a{ class: :cell }
                 %a{ class: :cell, data: { category: post.data.category.downcase, client: post.data.client.downcase }, href: url_for(post.path) }
-                  %div{ class: :cell__header }
+                  %header{ class: :cell__header }
                     %picture
                       %source{ media: "(max-width:666px)", srcset: "#{ post.url }cell--1_up@mobile.png" }
                       %source{ media: "(min-width:667px) and (max-width:767px)", srcset: "#{ post.url }cell--1_up@fablet.png" }
@@ -35,16 +35,16 @@ layout: default
                       %source{ media: "(min-width:1680px)", srcset: "#{ post.url }cell--1_up@cinema.png" }
                       %img{ src: "#{ post.url }cell.png", alt: "Cover image - '#{ post.data.title }'" }
 
-                  %div{ class: :cell__region }
-                    %div{ class: :cell__head_1° }
+                  %footer{ class: :cell__region }
+                    %h1{ class: :cell__head_1° }
                       #{ post.data.client }
 
-                    %div{ class: :cell__head_2° }
+                    %h2{ class: :cell__head_2° }
                       #{ post.data.title }.
 
 %div{ class: :site_main_area__region }
-  %div{ class: :card }
-    %div{ class: :card__header }
+  %section{ class: :card }
+    %header{ class: :card__header }
       %h1{ class: :card__head_1° }
         Recent work
 
@@ -55,20 +55,20 @@ layout: default
             %li{ class: :grid__node }
               %a{ class: :cell }
                 %a{ class: :cell, data: { category: post.data.category.downcase }, href: url_for(post.path) }
-                  %div{ class: :cell__header }
+                  %header{ class: :cell__header }
                     %picture
-                      %source{ media: "(max-width:666px)", srcset: "#{ post.url }cell@mobile.png" }
-                      %source{ media: "(min-width:667px) and (max-width:767px)", srcset: "#{ post.url }cell@fablet.png" }
-                      %source{ media: "(min-width:768px) and (max-width:1023px)", srcset: "#{ post.url }cell@tablet_portrait.png" }
-                      %source{ media: "(min-width:1024px) and (max-width:1279px)", srcset: "#{ post.url }cell@tablet_landscape.png" }
-                      %source{ media: "(min-width:1280px) and (max-width:1679px)", srcset: "#{ post.url }cell@laptop.png" }
-                      %source{ media: "(min-width:1680px)", srcset: "#{ post.url }cell--1_up@cinema.png" }
+                      %source{ media: "(max-width:666px)", srcset: "#{ post.url }cell--1_up@mobile.png" }
+                      %source{ media: "(min-width:667px) and (max-width:767px)", srcset: "#{ post.url }cell--1_up@fablet.png" }
+                      %source{ media: "(min-width:768px) and (max-width:1023px)", srcset: "#{ post.url }cell--2_up@tablet_portrait.png" }
+                      %source{ media: "(min-width:1024px) and (max-width:1279px)", srcset: "#{ post.url }cell--2_up@tablet_landscape.png" }
+                      %source{ media: "(min-width:1280px) and (max-width:1679px)", srcset: "#{ post.url }cell--2_up@laptop.png" }
+                      %source{ media: "(min-width:1680px)", srcset: "#{ post.url }cell--2_up@cinema.png" }
                       %img{ src: "#{ post.url }cell.png", alt: "Cover image - '#{ post.data.title }'" }
 
                   %div{ class: :cell__region }
-                    %div{ class: :cell__region }
-                      %div{ class: :cell__head_1° }
+                    %footer{ class: :cell__region }
+                      %h1{ class: :cell__head_1° }
                         #{ post.data.client }
 
-                      %div{ class: :cell__head_2° }
+                      %h2{ class: :cell__head_2° }
                         #{ post.data.title }.

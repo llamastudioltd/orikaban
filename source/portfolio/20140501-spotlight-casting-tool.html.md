@@ -6,6 +6,8 @@ category: Project
 client: Spotlight
 tags: UX, Service design
 
+description: In 2014 I helped Spotlight to design a new online casting application that would allow casting agents to run, film and share castings from any location in the world.
+
 hover: index
 
 ---
@@ -20,50 +22,54 @@ Spotlight began collating and distributing the details of theatre and film perfo
 <figure>
   <ul>
     <li>
-      <a href="post-1-1.png">
+      <a href="post_1_1.png">
         <picture>
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post-1-1@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post-1-1@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post-1-1@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post-1-1@laptop.png">
-          <source media="(min-width:1680px)" srcset="post-1-1@cinema.png">
-          <img alt="Wireframe" src="post-1-1@mobile.png" title="Wireframe 1 of 4: Calendar view of all current projects and their castings">
+          <source media="(max-width:666px)" srcset="post_1_1--1_up@mobile.png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_1_1--1_up@fablet.png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_1_1--2_up@tablet_portrait.png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_1_1--2_up@tablet_landscape.png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_1--2_up@laptop.png">
+          <source media="(min-width:1680px)" srcset="post_1_1--2_up@cinema.png">
+          <img alt="Wireframe" src="post_1_1.png" title="Wireframe 1 of 4: Calendar view of all current projects and their castings">
         </picture>
       </a>
     </li>
     <li>
-      <a href="post-1-2.png">
+      <a href="post_1_2.png">
         <picture>
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post-1-2@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post-1-2@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post-1-2@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post-1-2@laptop.png">
-          <source media="(min-width:1680px)" srcset="post-1-2@cinema.png">
-          <img alt="Wireframe" src="post-1-2@mobile.png" title="Wireframe 2 of 4: Overview of a specific castings">
+          <source media="(max-width:666px)" srcset="post_1_2--1_up@mobile.png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_1_2--1_up@fablet.png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_1_2--2_up@tablet_portrait.png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_1_2--2_up@tablet_landscape.png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_2--2_up@laptop.png">
+          <source media="(min-width:1680px)" srcset="post_1_2--2_up@cinema.png">
+          <img alt="Wireframe" src="post_1_2.png" title="Wireframe 2 of 4: Overview of a specific castings">
         </picture>
       </a>
     </li>
     <li>
-      <a href="post-1-3.png">
+      <a href="post_1_3.png">
         <picture>
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post-1-3@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post-1-3@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post-1-3@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post-1-3@laptop.png">
-          <source media="(min-width:1680px)" srcset="post-1-3@cinema.png">
-          <img alt="Wireframe" src="post-1-3@mobile.png" title="Wireframe 3 of 4: Editing a casting">
+          <source media="(max-width:666px)" srcset="post_1_3--1_up@mobile.png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_1_3--1_up@fablet.png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_1_3--2_up@tablet_portrait.png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_1_3--2_up@tablet_landscape.png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_3--2_up@laptop.png">
+          <source media="(min-width:1680px)" srcset="post_1_3--2_up@cinema.png">
+          <img alt="Wireframe" src="post_1_3.png" title="Wireframe 3 of 4: Editing a casting">
         </picture>
       </a>
     </li>
     <li>
-      <a href="post-1-4.png">
+      <a href="post_1_4.png">
         <picture>
-          <source media="(min-width:667px) and (max-width:767px)" srcset="post-1-4@fablet.png">
-          <source media="(min-width:768px) and (max-width:1023px)" srcset="post-1-4@tablet_portrait.png">
-          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post-1-4@tablet_landscape.png">
-          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post-1-4@laptop.png">
-          <source media="(min-width:1680px)" srcset="post-1-4@cinema.png">
-          <img alt="Wireframe" src="post-1-4@mobile.png" title="Wireframe 4 of 4: Uploading a new video to an existing casting">
+          <source media="(max-width:666px)" srcset="post_1_4--1_up@mobile.png">
+          <source media="(min-width:667px) and (max-width:767px)" srcset="post_1_4--1_up@fablet.png">
+          <source media="(min-width:768px) and (max-width:1023px)" srcset="post_1_4--2_up@tablet_portrait.png">
+          <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_1_4--2_up@tablet_landscape.png">
+          <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_4--2_up@laptop.png">
+          <source media="(min-width:1680px)" srcset="post_1_4--2_up@cinema.png">
+          <img alt="Wireframe" src="post_1_4.png" title="Wireframe 4 of 4: Uploading a new video to an existing casting">
         </picture>
       </a>
     </li>
