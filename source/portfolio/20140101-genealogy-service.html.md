@@ -29,7 +29,7 @@ Find My Past were the first company in the world to put the complete birth, marr
           <source media="(min-width:1024px) and (max-width:1279px)" srcset="post_1_1--2_up@tablet_landscape.png">
           <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_1--2_up@laptop.png">
           <source media="(min-width:1680px)" srcset="post_1_1--2_up@cinema.png">
-          <img alt="Wireframe" src="post_1_1.png" title="Wireframe 1 of 4: Comparing the three subscription tiers.">
+          <img alt="Wireframe" src="post_1_1.png" title="Wireframe 1 of 4: Comparing the three subscription tiers">
         </picture>
       </a>
     </li>
