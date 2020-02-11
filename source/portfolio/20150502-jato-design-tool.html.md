@@ -45,6 +45,7 @@ Jato provide vehicle pricing data, specification comparisons and much more to ma
           <source media="(min-width:1280px) and (max-width:1679px)" srcset="post_1_2--2_up@laptop.png">
           <source media="(min-width:1680px)" srcset="post_1_2--2_up@cinema.png">
           <img alt="Wireframe" src="post_1_2.png" title="Wireframe 2 of 4: Adding assemblies of components to a project">
+        </picture>
       </a>
     </li>
     <li>
