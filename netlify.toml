@@ -1,5 +1,11 @@
 [[redirects]]
+  from = "/portfolio/*"
+  to = "/work/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/work/package-travel-platform-eurostar/"
-  to = "/portfolio/eurostar-train-hotel/"
+  to = "/work/eurostar-train-hotel/"
   status = 301
   force = true
