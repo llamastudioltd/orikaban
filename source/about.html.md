@@ -1,7 +1,7 @@
 ---
 
-title: Information
-description: Information
+title: About
+description: About Llama Studio and Ben Sekulowicz-Barclay.
 
 hover: about
 layout: wrap_page

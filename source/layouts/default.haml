@@ -33,6 +33,8 @@
 
     %link{ color:"#000000", href: "/safari-pinned-tab.svg", rel: "mask-icon" }
 
+    = javascript_include_tag 'vendor/turbolinks-5.2.0'
+
     = stylesheet_link_tag "https://use.typekit.net/bvk8xtf.css", media: "all"
     = stylesheet_link_tag "application", media: "all"
 
@@ -71,7 +73,7 @@
                   Work
 
             %li{ class: :menu__node }
-              %a{ class: [:menu__link, "#{ "hover" if ["about"].include? current_page.data.hover }"], href: '/about/' }
+              %a{ class: [:menu__link, "#{ "hover" if ["about"].include? current_page.data.hover }"], href: url_for('about') }
                 - if current_page.data.hover == "about"
                   %strong About
                 - else
