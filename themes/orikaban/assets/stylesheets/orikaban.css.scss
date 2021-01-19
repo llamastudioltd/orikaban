@@ -18,12 +18,12 @@
 :root {
   @media (max-width: 567px) {
     --rhythm: clamp(24px, 4.5vw, 27px);
-    --gutter: calc(var(--rhythm) + ((env(safe-area-inset-left) + env(safe-area-inset-right) / 2)));
+    --gutter: var(--rhythm);
   }
   
   @media (min-width: 568px) and (max-width: 767px) {
     --rhythm: 27px;
-    --gutter: calc(var(--rhythm) + ((env(safe-area-inset-left) + env(safe-area-inset-right) / 2)));
+    --gutter: var(--rhythm);
   }
   
   @media (min-width: 768px) and (max-width: 1023px) {
