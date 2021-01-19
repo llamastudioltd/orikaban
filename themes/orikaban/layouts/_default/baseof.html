@@ -16,11 +16,11 @@
 		<link color="#000000" href="{{ .Site.BaseURL }}safari-pinned-tab.svg" rel="mask-icon">
 		
 		{{ $stylesheet := resources.Get "stylesheets/orikaban.css.scss" | toCSS | fingerprint }}
-		<link href="{{ $stylesheet.Permalink }}" rel="stylesheet" type="text/css" />
+		<link href="{{ $stylesheet.Permalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="stylesheet" type="text/css" />
 		
 		{{ range .Site.Params.styleSheets }}
 		{{ $stylesheet := resources.Get . | toCSS | fingerprint }}
-		<link href="{{ $stylesheet.Permalink }}" rel="stylesheet" type="text/css" />
+		<link href="{{ $stylesheet.Permalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="stylesheet" type="text/css" />
 		{{ end }}
 	</head>
 	<body id="ue">
