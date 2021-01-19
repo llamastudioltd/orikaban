@@ -1,0 +1,231 @@
+@import "reset";
+
+@mixin hide_element {
+  clip:rect(1px, 1px, 1px, 1px);
+  height:1px;
+  width:1px;
+  overflow:hidden;
+  position:absolute !important;
+}
+
+@mixin hide_text {
+  text-align:left;
+  text-indent:-9999px;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+:root {
+  @media (max-width: 567px) {
+    --rhythm: clamp(24px, 4.5vw, 27px);
+    --gutter: calc(var(--rhythm) + ((env(safe-area-inset-left) + env(safe-area-inset-right) / 2)));
+  }
+  
+  @media (min-width: 568px) and (max-width: 767px) {
+    --rhythm: 27px;
+    --gutter: calc(var(--rhythm) + ((env(safe-area-inset-left) + env(safe-area-inset-right) / 2)));
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    --rhythm: clamp(27px, 3.5vw, 32px);
+    --gutter: calc(var(--rhythm) * 2);
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    --rhythm: clamp(27px, 2.5vw, 32px);
+    --gutter: calc(var(--rhythm) * 2);
+  }
+  
+  @media (min-width: 1440px) and (max-width: 1679px) {
+    --rhythm: clamp(32px, 2.25vw, 36px);
+    --gutter: calc(var(--rhythm) * 2);
+  }
+  
+  @media (min-width: 1680px) {
+    --rhythm: 2.25vw;
+    --gutter: calc(var(--rhythm) * 2);
+  }
+   
+  --background-1: #000000;
+  --foreground-1: #ffffff;
+  
+  --copy-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  --copy-font-size: calc(var(--rhythm) / 1.5);
+  --copy-font-weight: 400;
+  --copy-line-height: var(--rhythm);
+  
+  --lead-font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  --lead-font-size: clamp(calc(var(--rhythm) * 1), 2vw, calc(var(--rhythm) * 2));
+  --lead-font-weight: 400;
+  --lead-line-height: 1.5;
+}
+ 
+html { 
+  font-size: var(--rhythm);
+}
+
+body {
+  background-color: var(--background-1);
+  color: var(--foreground-1);
+}
+
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: none;
+}
+
+/*
+ *
+ *
+ *
+ *
+ */
+
+.a_lead {
+  h1, h2, h3, h4, h5, h6, p, dl, ol, ul {
+    font-family: var(--copy-font-family);
+    font-size: var(--copy-font-size);
+    font-weight: var(--copy-font-weight);
+    line-height: var(--copy-line-height);
+    
+    &:not([class]):not(:first-child) {
+      margin-top: var(--rhythm);
+    }
+    
+    &:not([class]):not(:last-child) {
+      margin-bottom: var(--rhythm);
+    }
+  }
+  
+  h1 {
+    font-family: var(--lead-font-family);
+    font-size: var(--lead-font-size);
+    font-weight: var(--lead-font-weight);
+    line-height: var(--lead-line-height);
+  }
+}
+
+/*
+ *
+ *
+ *
+ *
+ */
+ 
+.a_logo {
+  @include hide_text;
+  
+  background-image: url("/images/logo--square.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  
+  height: calc(var(--rhythm) * 2);
+  width: calc(var(--rhythm) * 2);
+}
+
+/*
+ *
+ *
+ *
+ *
+ */
+
+/*
+ *
+ *
+ *
+ *
+ */
+
+.o_main {
+  display: grid;
+  align-items: stretch;
+  justify-items: stretch;
+  
+  grid-template-columns: var(--gutter) 1fr var(--rhythm) 1fr var(--rhythm) 1fr var(--rhythm) 1fr var(--gutter);
+  grid-template-rows: 1fr auto;
+}
+
+.o_main__body {
+  @media (max-width: 567px) {
+    grid-column: 2/9;
+    grid-row: 2/3;
+  }
+  
+  @media (min-width: 568px) and (max-width: 767px) {
+    grid-column: 2/9;
+    grid-row: 2/3;
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    grid-column: 2/9;
+    grid-row: 2/3;
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    grid-column: 2/7;
+    grid-row: 2/3;
+  }
+  
+  @media (min-width: 1440px) and (max-width: 1679px) {
+    grid-column: 2/5;
+    grid-row: 2/3;
+  }
+  
+  @media (min-width: 1680px) {
+    grid-column: 2/5;
+    grid-row: 2/3;
+  }
+}
+
+/*
+ *
+ *
+ *
+ *
+ */
+
+.l_page {
+  background-color: var(--background-1);
+  color: var(--foreground-1);
+  
+  display: grid;  
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  grid-template-rows: var(--gutter) auto calc(var(--rhythm) * 4) 1fr var(--gutter);
+  grid-template-areas: 
+    ". . ."
+    ". a ."
+    ". . ."
+    "b b b"
+    ". . .";
+  
+  min-height: 100vh;
+}
+
+.l_page__head,
+.l_page__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.l_page__head {
+  grid-area: a;
+}
+
+.l_page__body {
+  grid-area: b;
+}

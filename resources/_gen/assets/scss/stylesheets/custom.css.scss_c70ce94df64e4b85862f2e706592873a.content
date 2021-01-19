@@ -1,0 +1,6 @@
+@import "https://use.typekit.net/ivx4qar.css";
+:root {
+  --background-1: #000000;
+  --foreground-1: #eef0f1;
+  --copy-font-family: "ibm-plex-sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --lead-font-family: "ibm-plex-sans", -apple-system, BlinkMacSystemFont, sans-serif; }

@@ -1,0 +1,5 @@
+baseURL: "/"
+languageCode: "en-GB"
+title: "Llama Studio"
+
+theme: "orikaban"
