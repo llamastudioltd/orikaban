@@ -1,7 +1,16 @@
 {{ define "main" }}
 <div class="o_main">
   <div class="o_main__body">
-    <div class="a_lead">{{ .Content }}</div>
+    <div class="o_card">
+      <div class="o_card__head">
+        <div class="a_lead">{{ .Content }}</div>
+      </div>
+      <div class="o_card__body">
+        <div class="m_call">
+          <a class="m_call__link" href="mailto:hey@llama.studio">Get in touch</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {{ end }}
