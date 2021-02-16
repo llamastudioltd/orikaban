@@ -1,2 +1,5 @@
+analytics:
+  - "<script async defer data-domain=\"llama.studio\" src=\"https://plausible.io/js/plausible.js\"></script>"
+
 styleSheets: 
-  - "stylesheets/custom.css.scss"
+  - "stylesheets/custom.scss"
